@@ -1,0 +1,365 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .my-container {
+    @apply mx-auto h-full w-full max-w-screen-3xl px-4 md:px-6 lg:px-8 2xl:max-w-screen-2xl;
+  }
+
+  .input-control {
+    @apply focus:outline-primary-blue rounded p-2
+  }
+  .btn-primary {
+    @apply btn-17 px-4 py-2 bg-primary-blue !border-[#cac9c9] text-white hover:!text-white rounded
+  }
+}
+
+/* .dot-bg{
+ opacity: 0.8;
+background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#444cf7 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #444cf7 2px, #e5e5f7 2px) -1px 0;
+background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+} */
+
+/*=======================================================================*/
+/********************************* Colors ********************************/
+/*=======================================================================*/
+:root {
+  --primary-blue: #16157b;
+  --primary: #b7c8f6;
+  --secondary: #64748b;
+  --success: #16a34a;
+  --danger: #dc2626;
+  --warning: #facc15;
+  --info: #0ea5e9;
+  --base: #fff;
+}
+
+/*=======================================================================*/
+/*************************** Under Construction *************************/
+/*=======================================================================*/
+.under-construction {
+  padding: 10px;
+  background: #fff;
+  border: 2px dashed var(--primary-blue) !important;
+  /* Replace with actual $primary-blue value */
+  border-radius: 16px;
+  text-align: center;
+  max-width: 500px;
+  animation: pulseBorder 1.5s infinite alternate;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.under-construction .u-icon {
+  font-size: 4rem;
+  color: var(--primary-blue);
+  /* Replace with actual $primary-blue value */
+}
+
+.under-construction .u-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: var(--primary-blue);
+  /* Replace with actual $primary-blue value */
+}
+
+.under-construction .u-description {
+  font-size: 0.8rem;
+  color: #666;
+  max-width: 400px;
+}
+
+/*=======================================================================*/
+/****************************** Round Area ******************************/
+/*=======================================================================*/
+.round-area {
+  box-shadow: "rgb(0 0 0 / 4%) 0px -20px 20px 0px",
+}
+
+/*=======================================================================*/
+/******************************** Dropdown *****************************/
+/*=======================================================================*/
+.profile-dropdown-menu-content {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.profile-dropdown-container:hover .profile-dropdown-menu-content {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+/* ড্রপডাউন মেনু পজিশনিং এর জন্য */
+.profile-dropdown-menu {
+  position: absolute; /* নিশ্চিত করুন যে এটি পজিশনড */
+  top: 100%; /* ট্রিগারের নিচে দেখানোর জন্য */
+  /* প্রাথমিক অবস্থায় কোনো left/right থাকবে না, JS সেট করবে */
+}
+/*=======================================================================*/
+/******************************** modal *********************************/
+/*=======================================================================*/
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  z-index: 50;
+}
+
+.modal-overlay.hidden {
+  display: none!important;
+}
+.job-filter-modal-box {
+  transform: translateY(100%);
+}
+
+.job-filter-modal-box.show-up {
+  transform: translateY(0);
+}
+
+.job-filter-modal-box.hide-down {
+  transform: translateY(100%);
+}
+
+.job-filter-modal-overlay {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.job-filter-modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+/*=======================================================================*/
+/****************************** Custom Button ***************************/
+/*=======================================================================*/
+/* From Uiverse.io by doniaskima */ 
+.btn-17,
+.btn-17 *,
+.btn-17 :after,
+.btn-17 :before,
+.btn-17:after,
+.btn-17:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-17 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  cursor: pointer;
+  -webkit-mask-image: -webkit-radial-gradient(var(--primary-blue), #de2222);
+  text-transform: capitalize;
+  border: 1px solid;
+}
+
+.btn-17:disabled {
+  cursor: default;
+}
+
+.btn-17:-moz-focusring {
+  outline: auto;
+}
+
+.btn-17 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-17 [hidden] {
+  display: none;
+}
+
+ 
+
+.btn-17,
+.btn-17 .text-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-17 .text-container {
+  display: block;
+  /* mix-blend-mode: difference; */
+}
+
+.btn-17 .text {
+  display: block;
+  position: relative;
+}
+
+.btn-17:hover .text {
+  -webkit-animation: move-up-alternate 0.3s forwards;
+  animation: move-up-alternate 0.3s forwards;
+}
+
+@-webkit-keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(80%);
+  }
+
+  51% {
+    transform: translateY(-80%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(80%);
+  }
+
+  51% {
+    transform: translateY(-80%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.btn-17:after,
+.btn-17:before {
+  --skew: 0.2;
+  background: #322ea1;
+  content: "";
+  display: block;
+  height: 102%;
+  left: calc(-50% - 50% * var(--skew));
+  pointer-events: none;
+  position: absolute;
+  top: -104%;
+  transform: skew(calc(150deg * var(--skew))) translateY(var(--progress, 0));
+  transition: transform 0.2s ease;
+  width: 100%;
+}
+
+.btn-17:after {
+  --progress: 0%;
+  left: calc(50% + 50% * var(--skew));
+  top: 102%;
+  z-index: -1;
+}
+
+.btn-17:hover:before {
+  --progress: 100%;
+}
+
+.btn-17:hover:after {
+  --progress: -102%;
+}
+
+/*=======================================================================*/
+/************************* Special Job Section ***************************/
+/*=======================================================================*/
+.tab-btn {
+  @apply flex-1 px-6 py-3 text-sm font-medium text-gray-700 bg-gray-50 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-blue focus:ring-inset transition-all border-l border-gray-200;
+}
+
+.tab-btn:first-child {
+  @apply border-l-0;
+}
+
+.active-tab {
+  @apply text-white bg-primary-blue hover:bg-blue-900;
+}
+.dot-bg {
+  background-image:  radial-gradient(#232bd1 0.5px, transparent 0.5px), radial-gradient(#343aa3 0.5px, transparent 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0,10px 10px;
+}
+/*=======================================================================*/
+/************************* Marque Animation *****************************/
+/*=======================================================================*/
+
+.testimonial-container:hover .animate-scroll {
+  animation-play-state: paused;
+}
+
+.pause {
+  animation-play-state: paused !important;
+}
+
+
+/*=======================================================================*/
+/************************* Preloader *****************************/
+/*=======================================================================*/
+.gradient-bg {
+  background: linear-gradient(135deg, #f8f8f8 0%, #eff0f8 100%);
+  background-image: radial-gradient(#787fff 0.5px, transparent 0.5px), radial-gradient(#6e75ff 0.5px, #e5e5f7 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+/* .gradient-bg {
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+}
+
+.loading-screen {
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+.loading-screen.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.logo {
+  animation: zoomIn 1.5s ease-out forwards;
+  transform: scale(0);
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.text-xl {
+  animation: fadeIn 2s ease-in forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */

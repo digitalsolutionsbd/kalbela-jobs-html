@@ -1,0 +1,190 @@
+.category {
+    /* border: 1px solid orange; */
+    position: relative;
+  }
+  .category .category-header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid var(--border-color);
+  }
+  .category .category-header .category-item {
+    border-right: 1px solid var(--border-color);
+    background-color: var(--light-background);
+    padding: 14px;
+  }
+  .category .category-header .category-item:last-child {
+    border-top-right-radius: 4px;
+    border-right: none;
+  }
+  .category .category-header .has-dropdown {
+    position: relative;
+  }
+  .category .category-header .has-dropdown .job-by-role-menu {
+    width: 400px;
+    left: 0px;
+  }
+  .category .category-header .has-dropdown .link-menu {
+    width: 300px;
+    left: -72px;
+  }
+  .category .category-header .has-dropdown .government-menu {
+    width: 600px;
+    left: 0;
+  }
+  .category .category-header .has-dropdown .government-menu .job-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    list-style: none;
+    gap: 10px;
+  }
+  .category .category-header .has-dropdown .location-menu {
+    width: 300px;
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    left: 0;
+  }
+  .category .category-header .has-dropdown .location-menu .job-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    list-style: none;
+    gap: 10px;
+  }
+  .category .category-header .has-dropdown .links-menu {
+    width: 240px;
+    height: 300px;
+    left: -13px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .category .category-header .has-dropdown .links-menu .links-listmoreLinks {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(150px, 1fr));
+    list-style: none;
+    gap: 10px;
+  }
+  .category .category-header .has-dropdown .job-by-job-by-role-menu {
+    width: 340px;
+  }
+  .category .category-header .has-dropdown .job-single-menu {
+    display: none;
+    background-color: white;
+    position: absolute;
+    opacity: 0;
+    top: 52px;
+    /* left: 0; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid var(--border-color);
+    /* display: none; */
+    padding: 18px;
+    transition: opacity 3s ease;
+  }
+  .category .category-header .has-dropdown:hover {
+    background-color: white;
+  }
+  .category .category-header .has-dropdown:hover .job-single-menu {
+    transition: opacity 3s ease;
+    opacity: 1;
+    display: block;
+  }
+  
+  .category .category-header .has-mega-dropdown:hover {
+    background-color: white;
+  }
+  .category .category-header :first-child:hover {
+    border-top-left-radius: 6px;
+  }
+    .category .category-header :last-child:hover {
+    border-top-right-radius: 6px;
+  }
+  
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .category .category-header .has-mega-dropdown .mega-menu {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid rgb(231, 228, 228);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+    padding: 24px;
+    border-radius: 0 0 10px 10px;
+    transform: translateY(20px); /* Initial position */
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    z-index: 20;
+  }
+  
+  /* Show on hover with animation */
+  .category .category-header .has-mega-dropdown:hover .mega-menu {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0); /* Slide up */
+    animation: fadeUp 0.4s ease;
+  }
+  
+
+  .category .category-header .has-mega-dropdown .mega-menu .mega-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  .category .category-header .has-mega-dropdown .mega-menu .mega-columns .job-by-category-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+  }
+  .category .category-header .has-mega-dropdown .mega-menu .mega-columns h4 {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: var(--primary-blue);
+  }
+  .category .category-header .has-mega-dropdown .mega-menu .mega-columns ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .category .category-header .has-mega-dropdown .mega-menu .mega-columns ul li a {
+    display: block;
+    padding: 6px 0;
+    color: var(--dark-text);
+    text-decoration: none;
+  }
+  .category .category-header .has-mega-dropdown .mega-menu .mega-columns ul li a:hover {
+    color: var(--primary-blue);
+  }
+  .category .category-header .category-list-item {
+    transition: all 0.2s ease;
+    color: var(--dark-text) !important;
+    padding: 5px 4px;
+  }
+  .category .category-header .category-list-item a {
+    text-decoration: none !important;
+    color: var(--dark-text);
+  }
+  .category .category-header .category-list-item a:hover {
+    color: var(--primary-blue) !important;
+    text-decoration: none !important;
+  }
+  .category .category-header .category-list-item:hover {
+    color: var(--primary-blue) !important;
+    margin-left: 4px;
+    transition: all 0.2s ease;
+  }
