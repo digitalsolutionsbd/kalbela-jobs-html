@@ -1,3 +1,4 @@
+import { initAdvanceSearch } from './advanceSearchJobs.js';
 import { categoryUi } from './category.js';
 import { openCategoryModal, setupCategoryModals } from './categoryModal.js';
  import { initHeaderScroll } from './header.js';
@@ -32,6 +33,7 @@ window.addEventListener("DOMContentLoaded", () => {
   initHeaderScroll();
   categoryUi();
   initSearch();
+  initAdvanceSearch();
   window.setTheme = applyTheme;
 
   window.openCategoryModal = openCategoryModal;

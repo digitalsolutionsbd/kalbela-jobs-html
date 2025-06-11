@@ -34,6 +34,9 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
   --info: #0ea5e9;
   --base: #fff;
 }
+input:-internal-autofill-selected{
+  background-color: transparent !important;
+}
 
 /*=======================================================================*/
 /*************************** Under Construction *************************/
@@ -316,6 +319,32 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
   background-size: 20px 20px;
   background-position: 0 0, 10px 10px;
 }
+
+/*=======================================================================*/
+/************************* Custom Scroll *****************************/
+/*=======================================================================*/
+.scroll-sm::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+.scroll-sm::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 0px;
+}
+ 
+/* Handle */
+.scroll-sm::-webkit-scrollbar-thumb {
+  background: #2f3138; 
+  border-radius: 0px;
+}
+
+/* Handle on hover */
+.scroll-sm::-webkit-scrollbar-thumb:hover {
+  background: #2f3138; 
+}
+
+
 /* .gradient-bg {
   background: linear-gradient(to right, #a1c4fd, #c2e9fb);
 }

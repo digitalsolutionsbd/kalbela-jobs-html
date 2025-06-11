@@ -37,18 +37,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
-<body>
-    <!-- <div id="preloader"
-    class="gradient-bg fixed top-0 left-0 right-0 bottom-0 h-screen inset-0 flex items-center flex-col justify-center z-[9999] loading-screen">
-    <img src="../image/logo_dark.png" alt="" class="logo h-auto md:w-[17rem] w-[15rem] animated  animate-pulse animate-jump animate-infinite    ">
-    <h2 class="text-xl md:mt-4 mt-2">Loading Please Wait...</h2>
-  </div> -->
+<body class="relative">
+    <div class="bg-gradient-to-t from-[#ff000000] to-[#cfe1ff] absolute top-0 left-0 right-0 h-[500px] border"></div>
+
+    <div class="relative z-10">
     <header>
         <!--------------------------------------------------------->
         <!--////////////////// Nav Bar///// //////////////////////-->
         <!--------------------------------------------------------->
         <nav
-            class="mainNav bg-base border-b fixed w-full top-0 left-0 z-50 transition-all duration-300 ease-in-out md:py-4 py-3">
+        id="mainNav"
+            class="mainNav border-b fixed w-full top-0 left-0 z-50 transition-all duration-300 ease-in-out md:py-4 py-3">
             <div class="my-container mx-auto px-4 flex gap-4 items-center justify-between">
                 <div class="nav-searh-logo  scale-90  duration-300 ease-in-out">
                     <a href="/">
@@ -282,17 +281,7 @@
     </header>
 
     <main>
-        <div
-        class="bg-gradient-to-t from-[#ffffff72] to-[#00000025] mt-[70px] md:h-[300px] h-[200px] flex flex-col gap-4 items-center justify-start px-2 py-12 bg-cover"
-        style="background-image: linear-gradient(rgb(10 8 8 / 38%), rgb(12 63 128 / 74%)), url(../image/banner/banner4.png)"
-      >
-        <h3 class="font-semibold md:text-3xl md:mt-8 mt-2 md:block hidden text-xl text-white">
-          Company Profile
-        </h3>
-      </div>
-      
-       <!-- Main content -->
-    <div class="my-container mx-auto relative -mt-24 px-4">
+    <div class="my-container  mx-auto relative mt-[100px] px-4">
         <div class="flex flex-col lg:flex-row lg:gap-8">
           <!-- Company Profile -->
           <div class="lg:w-[400px] lg:mb-0 mb-6">
@@ -587,6 +576,13 @@
       </div>
     </main>
     <br>
+    </div>
+    <!-- <div id="preloader"
+    class="gradient-bg fixed top-0 left-0 right-0 bottom-0 h-screen inset-0 flex items-center flex-col justify-center z-[9999] loading-screen">
+    <img src="../image/logo_dark.png" alt="" class="logo h-auto md:w-[17rem] w-[15rem] animated  animate-pulse animate-jump animate-infinite    ">
+    <h2 class="text-xl md:mt-4 mt-2">Loading Please Wait...</h2>
+  </div> -->
+   
     <!--------------------------------------------------------->
     <!--///////////////////// Footer ////////////////////////-->
     <!--------------------------------------------------------->
@@ -693,6 +689,15 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../js/swiper.js"></script>
     <script>
+ window.addEventListener('scroll', () => {
+    const nav = document.getElementById('mainNav');
+    if (window.scrollY > 10) {  // Change 50 to any pixel value for scroll threshold
+      nav.classList.add('bg-base');
+    } else {
+      nav.classList.remove('bg-base');
+    }
+  });
+
         function openApplyJobModal() {
             document.getElementById("applyModal").classList.remove("hidden");
             document.getElementById("applyModal").classList.add("flex");
@@ -730,6 +735,20 @@
                 closeModal();
             }
         });
+
+        document.addEventListener('DOMContentLoaded', () => {
+  const nav = document.getElementById('mainNav');
+  if (!nav) return;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+});
+
     </script>
     
 

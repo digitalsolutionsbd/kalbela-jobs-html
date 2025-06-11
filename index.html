@@ -296,7 +296,8 @@
         class="sidebar  w-[300px] bg-white h-screen fixed top-0 left-0 z-[2000] transform -translate-x-full transition-transform duration-300 ease-in-out p-4">
         <div class="flex items-center justify-between">
           <a href="/">
-            <img class="logo md:w-[140px] w-[120px] d-none d-lg-block  animated animate-jump " src="src/image/logo_dark.png" alt="logo" />
+            <img class="logo md:w-[140px] w-[120px] d-none d-lg-block  animated animate-jump "
+              src="src/image/logo_dark.png" alt="logo" />
           </a>
 
           <button id="closeSidebar" class=" text-2xl text-black">
@@ -342,27 +343,50 @@
 
         <!-- Modal -->
         <div id="searchModal"
-          class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 opacity-0 pointer-events-none transition-opacity duration-300">
-          <div class="bg-white !w-[100%] !h-full p-6  shadow-lg relative">
-            <div class="h-full md:w-[660px] m-auto w-full flex flex-col md:pt-[10%] pt-[20%] gap-2">
+          class="fixed inset-0 bg-gradient-to-t from-white to-primary  flex justify-center items-start z-50 opacity-0 pointer-events-none transition-opacity duration-300">
+          <div class="lg:!w-[800px] w-full p-6 relative mt-[5%]">
+            <div id="modalContent" class="h-full md:w-full m-auto w-full flex flex-col md:pt-[10%] pt-[20%]">
               <a class="mb-6" href="/">
                 <img id="heroLogo"
                   class="mx-auto h-auto md:w-[17rem] w-[10rem] transition-all duration-500 ease-in-out scale-100 opacity-100"
                   src="src/image/logo_dark.png" alt="logo" />
               </a>
               <div
-                class="bg-white shadow-xl border shadow-[#8080800f] rounded-full w-full  mx-auto flex text-sm justify-between px-3.5 py-2.5 items-center mt-3 cursor-pointer">
+                id="searchRounded"
+                class="bg-white shadow-xl border shadow-[#8080800f] rounded-full w-full  mx-auto flex text-sm justify-between px-3.5 items-center mt-3 cursor-pointer">
                 <div class="flex items-center gap-2">
                   <i class="ri-search-line text-xl"></i>
                   <input type="text" id="searchInput" placeholder="Search job title..."
-                    class="w-full  focus-within:border-none focus:outline-none" />
+                    class="h-[45px] w-full focus-within:border-none focus:outline-none" />
                 </div>
                 <img src="src/image/mic.svg" alt="" />
               </div>
-              <ul id="jobResults" class="mt-4 space-y-2 max-h-[200px] w-full overflow-y-auto"></ul>
+              <ul id="jobResults" class="bg-white space-y-2 max-h-[300px] w-full overflow-y-auto scroll-sm last:rounded-b-xl "></ul>
+              <div class="w-full h-20 mb-12 mt-6">
+                <div class="flex flex-wrap justify-center gap-2">
+                  <a class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag 1</a>
+                  <a class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag 2</a>
+                  <a class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag 3</a>
+                  <a class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag 4</a>
+                  <a class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag 5</a>
+                  <a class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag 6</a> 
+                  <a class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag 7</a> 
+                  <a class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag 8</a>    <a class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag 6</a> 
+                  <a class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag 7</a> 
+                </div>
+                <!-- our tags -->
+                <div class="flex flex-wrap justify-center gap-2 mt-2">
+                  <a class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Our Tag1</a>
+                  <a class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Our Tag2</a>
+                  <a class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Our Tag3</a>
+                  <a class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Our Tag4</a>
+                  <a class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Our Tag5</a>
+                  <a class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Our Tag6</a>   <a class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Our Tag5</a>
+                </div>
+              </div>
+            
             </div>
-            <button id="closeModal"
-              class="absolute top-2 right-2 px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600">X</button>
+            <button id="closeModal"></button>
           </div>
         </div>
 
@@ -374,7 +398,7 @@
   <div class=" my-container bg-transparent ">
     <div style="box-shadow: rgb(0 0 0 / 4%) 0px -20px 20px 0px"
       class="relative md:mt-[-4%] mt-[-20%] bg-gradient-to-t from-transparent  to-white px-4 md:p-6 p-4 rounded-xl">
-      
+
       <!--------------------------------------------------------->
       <!--//////////////////// Category large//////////////////->
       <!--------------------------------------------------------->
@@ -386,7 +410,8 @@
             <div class="mega-menu z-20">
               <div class="mega-columns">
                 <div class="mega-column">
-                  <h2  class="font-semibold text-xl border-b text-primary-blue pb-4 mb-2">Total Category <span id="totalCategory" class="text-danger">(0)</span></h2>
+                  <h2 class="font-semibold text-xl border-b text-primary-blue pb-4 mb-2">Total Category <span
+                      id="totalCategory" class="text-danger">(0)</span></h2>
                   <ul class="job-by-category-list" id="jobByCategory">
                   </ul>
                 </div>
@@ -399,7 +424,8 @@
             <div class="mega-menu z-20">
               <div class="mega-columns">
                 <div class="mega-column">
-                  <h2  class="font-semibold text-xl border-b text-primary-blue pb-4 mb-2">Government Job <span id="totalIndustry" class="text-danger">(0)</span></h2>
+                  <h2 class="font-semibold text-xl border-b text-primary-blue pb-4 mb-2">Government Job <span
+                      id="totalIndustry" class="text-danger">(0)</span></h2>
                   <ul class="job-by-category-list" id="jobByIndustry">
                   </ul>
                 </div>
@@ -418,15 +444,16 @@
             <i class="ri-government-line category-icon"></i>
             <span class="category-name rel">Government Job</span>
             <div class="mega-menu z-20">
-           <div class="mega-container">
-            <div class="mega-columns">
-              <div class="mega-column">
-                <h2  class="font-semibold text-xl border-b text-primary-blue pb-4 mb-2">Government Job <span id="totalGovJob" class="text-danger">(10)</span></h2>
-                <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2" id="GovernmentJoob">
-                </ul>
+              <div class="mega-container">
+                <div class="mega-columns">
+                  <div class="mega-column">
+                    <h2 class="font-semibold text-xl border-b text-primary-blue pb-4 mb-2">Government Job <span
+                        id="totalGovJob" class="text-danger">(10)</span></h2>
+                    <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2" id="GovernmentJoob">
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </div>
-           </div>
             </div>
           </div>
           <!-- <div class="category-item has-dropdown">
@@ -444,63 +471,64 @@
             <i class="ri-government-line category-icon"></i>
             <span class="category-name rel">Job By Section</span>
             <div class="mega-menu z-20">
-           <div class="mega-container">
-            <div class="mega-columns">
-              <div class="mega-column">
-                <!-- <h2  class="font-semibold text-xl border-b text-primary-blue pb-4 mb-2">Total Job <span id="totalRoleJob" class="text-danger">(0)</span></h2> -->
-                <!-- <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2" id="JoobRole">
+              <div class="mega-container">
+                <div class="mega-columns">
+                  <div class="mega-column">
+                    <!-- <h2  class="font-semibold text-xl border-b text-primary-blue pb-4 mb-2">Total Job <span id="totalRoleJob" class="text-danger">(0)</span></h2> -->
+                    <!-- <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2" id="JoobRole">
                 </ul> -->
-                 <!-- Under Construction Card -->
-          <div class=" flex items-center justify-center ">
-            <div class="w-full mx-auto text-center">
-              <div class="bg-gray-50 p-4 md:p-12 w-full border border-gray-100 !rounded-lg">
-                <div
-                  class="bg-gradient-to-r from-[blue] to-primary-blue text-white text-xs font-bold py-2 px-4 !rounded-full inline-block mb-6 animate-pulse">
-                  ⚠️ UNDER CONSTRUCTION ⚠️
-                </div>
-                <h1 class="md:text-4xl text-2xl lg:text-5xl font-bold text-gray-800 mb-4">
-                  We're Building Something
-                  <span class="text-primary-blue">Amazing!</span>
-                </h1>
-                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                  Our website is currently under construction. We're working hard to bring you an incredible experience.
-                  Please check back soon!
-                </p>
-                <div class="bg-blue-50 rounded-lg p-6 mb-8">
-                  <h3 class="text-lg font-semibold text-gray-800 mb-2">Expected Launch</h3>
-                  <p class="text-primary-blue font-medium text-xl">Coming Soon in 2025</p>
-                </div>
-                <div class="border-t border-gray-200 pt-8">
-                  <h3 class="text-lg font-semibold text-gray-800 mb-4">Need to reach us?</h3>
-                  <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="mailto:info@digitalsolutions.ltd"
-                      class="inline-flex items-center justify-center px-6 py-3 bg-primary-blue text-white font-medium rounded-lg hover:bg-blue-900 transition-colors">
-                      <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                          d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-                      </svg>
-                      Email Us
-                    </a>
-                    <a href="tel:+8801985000700"
-                      class="inline-flex items-center justify-center px-6 py-3 bg-gray-600 text-white font-medium rounded-lg hover:bg-gray-700 transition-colors">
-                      <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                          d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
-                      </svg>
-                      Call Us
-                    </a>
+                    <!-- Under Construction Card -->
+                    <div class=" flex items-center justify-center ">
+                      <div class="w-full mx-auto text-center">
+                        <div class="bg-gray-50 p-4 md:p-12 w-full border border-gray-100 !rounded-lg">
+                          <div
+                            class="bg-gradient-to-r from-[blue] to-primary-blue text-white text-xs font-bold py-2 px-4 !rounded-full inline-block mb-6 animate-pulse">
+                            ⚠️ UNDER CONSTRUCTION ⚠️
+                          </div>
+                          <h1 class="md:text-4xl text-2xl lg:text-5xl font-bold text-gray-800 mb-4">
+                            We're Building Something
+                            <span class="text-primary-blue">Amazing!</span>
+                          </h1>
+                          <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                            Our website is currently under construction. We're working hard to bring you an incredible
+                            experience.
+                            Please check back soon!
+                          </p>
+                          <div class="bg-blue-50 rounded-lg p-6 mb-8">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">Expected Launch</h3>
+                            <p class="text-primary-blue font-medium text-xl">Coming Soon in 2025</p>
+                          </div>
+                          <div class="border-t border-gray-200 pt-8">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-4">Need to reach us?</h3>
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                              <a href="mailto:info@digitalsolutions.ltd"
+                                class="inline-flex items-center justify-center px-6 py-3 bg-primary-blue text-white font-medium rounded-lg hover:bg-blue-900 transition-colors">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                  <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                </svg>
+                                Email Us
+                              </a>
+                              <a href="tel:+8801985000700"
+                                class="inline-flex items-center justify-center px-6 py-3 bg-gray-600 text-white font-medium rounded-lg hover:bg-gray-700 transition-colors">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                  <path
+                                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                                </svg>
+                                Call Us
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Under Construction Card -->
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- End of Under Construction Card -->
-              </div>
-            </div>
-           </div>
-            </div>
-          </div>
-<!--           
+          <!--           
           <div class="category-item has-dropdown">
             <i class="ri-map-pin-line category-icon"></i>
             <span class="category-name">Job By Location</span>
@@ -513,15 +541,16 @@
             <i class="ri-government-line category-icon"></i>
             <span class="category-name rel">Job By Location</span>
             <div class="mega-menu z-20">
-           <div class="mega-container">
-            <div class="mega-columns">
-              <div class="mega-column">
-                <h2  class="font-semibold text-xl border-b text-primary-blue pb-4 mb-2">Total Location <span id="totalLocation" class="text-danger">(0)</span></h2>
-                <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2" id="joobLocation">
-                </ul>
+              <div class="mega-container">
+                <div class="mega-columns">
+                  <div class="mega-column">
+                    <h2 class="font-semibold text-xl border-b text-primary-blue pb-4 mb-2">Total Location <span
+                        id="totalLocation" class="text-danger">(0)</span></h2>
+                    <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2" id="joobLocation">
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </div>
-           </div>
             </div>
           </div>
           <!-- <div class="category-item has-dropdown">
@@ -536,15 +565,15 @@
             <i class="ri-government-line category-icon"></i>
             <span class="category-name rel">More Links</span>
             <div class="mega-menu z-20">
-           <div class="mega-container">
-            <div class="mega-columns">
-              <div class="mega-column">
-                <h2  class="font-semibold text-xl border-b text-primary-blue pb-4 mb-2">Links</h2>
-                <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2" id="moreLinks">
-                </ul>
+              <div class="mega-container">
+                <div class="mega-columns">
+                  <div class="mega-column">
+                    <h2 class="font-semibold text-xl border-b text-primary-blue pb-4 mb-2">Links</h2>
+                    <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2" id="moreLinks">
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </div>
-           </div>
             </div>
           </div>
         </div>
@@ -764,280 +793,270 @@
             </header>
             <figure class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-4 gap-4">
               <!-- Card 1 -->
-              <a href="/src/pages/job-details.html"
-                class="relative overflow-hidden border cursor-pointer  border-gray-200 duration-150  divide-y divide-gray-200  hover:shadow-lg rounded-md">
-                <div class="p-2">
-                  <div class="flex items-start justify-start">
-                    <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                      src="https://media.licdn.com/dms/image/v2/C510BAQEhBWM1jX08fw/company-logo_200_200/company-logo_200_200/0/1630578624123/brain_station_23_logo?e=2147483647&v=beta&t=Mnfby5HpZM7vOn2xGUaXPOAay0N6yiYLxjMww8s1Ktg"
-                      alt="" />
-
-                    <!-- <div class="w-16 h-16 flex items-center justify-center text-3xl text-[#00000041] font-bold rounded-lg md:h-20 md:w-20 p-2 bg-blue-100">N</div> -->
-
-                    <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                      <div class="">
-                        <p class="text-sm font-bold text-gray-900">Beoplay M5 Bluetooth Speaker</p>
-                        <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Brain Station</p>
-                      </div>
-                      <p class="text-sm text-gray-400">06/01/2025</p>
+              <a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+                <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+                  <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+                </button>
+                <div class="flex justify-between items-start mb-4">
+                  <div class="flex items-center">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                      <span class="text-blue-600 font-bold text-lg">G</span>
                     </div>
-                    <img src="src/image/icon/fire.png" alt="fire icon"
-                      class="w-20 transform rotate-[-30deg] absolute -right-6 -bottom-1 opacity-[0.3]">
+                    <div class="ml-3">
+                      <h3 class="text-sm font-semibold text-gray-800">Senior Frontend Developer</h3>
+                      <p class="text-gray-600 text-xs">Google Inc.</p>
+                    </div>
                   </div>
                 </div>
+                <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+                  <span><i class="ri-calendar-2-line text-[15px]"></i> Jun 10 2025</span>
+                  <!-- <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 10 2025</span> | -->
+       |<span><i class="ri-map-pin-line text-[15px]"></i> Mirpur, Dhaka</span>
+                </div>
+                <!-- <div class="flex justify-between items-center text-xs">
+                  <div>
+                    <p class="text-gray-500">📍 San Francisco, CA</p>
+                    <p class="font-semibold text-gray-800">$120,000 - $160,000</p>
+                  </div>
+                </div> -->
               </a>
-              <!-- Card 1 -->
-              <a href="/src/pages/job-details.html"
-                class="relative overflow-hidden border cursor-pointer  border-gray-200 duration-150  divide-y divide-gray-200  hover:shadow-lg rounded-md">
-                <div class="p-2">
-                  <div class="flex items-start justify-start">
-                    <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                      src="https://media.licdn.com/dms/image/v2/C510BAQEhBWM1jX08fw/company-logo_200_200/company-logo_200_200/0/1630578624123/brain_station_23_logo?e=2147483647&v=beta&t=Mnfby5HpZM7vOn2xGUaXPOAay0N6yiYLxjMww8s1Ktg"
-                      alt="" />
-
-                    <!-- <div class="w-16 h-16 flex items-center justify-center text-3xl text-[#00000041] font-bold rounded-lg md:h-20 md:w-20 p-2 bg-blue-100">N</div> -->
-
-                    <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                      <div class="">
-                        <p class="text-sm font-bold text-gray-900">Beoplay M5 Bluetooth Speaker</p>
-                        <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Brain Station</p>
-                      </div>
-                      <p class="text-sm text-gray-400">06/01/2025</p>
+              <!-- Card 2 -->
+              <a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+                <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+                  <i class="ri-bookmark-fill text-primary-blue hover:!text-primary-blue text-xl"></i>
+                </button>
+                <div class="flex justify-between items-start mb-4">
+                  <div class="flex items-center">
+                    <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                      <span class="text-orange-600 font-bold text-lg">H</span>
                     </div>
-                    <img src="src/image/icon/fire.png" alt="fire icon"
-                      class="w-20 transform rotate-[-30deg] absolute -right-6 -bottom-1 opacity-[0.3]">
+                    <div class="ml-3">
+                      <h3 class="text-sm font-semibold text-gray-800">Senior Frontend Developer</h3>
+                      <p class="text-gray-600 text-xs">Google Inc.</p>
+                    </div>
                   </div>
                 </div>
+                <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+                  <span><i class="ri-calendar-2-line text-[15px]"></i> Jun 10 2025</span>
+                  <!-- <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 10 2025</span> | -->
+                  |<span><i class="ri-map-pin-line text-[15px]"></i> Mirpur, Dhaka</span>
+                </div>
+                <!-- <div class="flex justify-between items-center text-xs">
+                  <div>
+                    <p class="text-gray-500">📍 San Francisco, CA</p>
+                    <p class="font-semibold text-gray-800">$120,000 - $160,000</p>
+                  </div>
+                </div> -->
               </a>
-              <!-- Card 4 -->
-              <a href="/src/pages/job-details.html"
-                class="relative overflow-hidden border cursor-pointer  border-gray-200 duration-150  divide-y divide-gray-200  hover:shadow-lg rounded-md">
-                <div class="p-2">
-                  <div class="flex items-start justify-start">
-                    <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                      src="https://media.licdn.com/dms/image/v2/C510BAQEhBWM1jX08fw/company-logo_200_200/company-logo_200_200/0/1630578624123/brain_station_23_logo?e=2147483647&v=beta&t=Mnfby5HpZM7vOn2xGUaXPOAay0N6yiYLxjMww8s1Ktg"
-                      alt="" />
-
-                    <!-- <div class="w-16 h-16 flex items-center justify-center text-3xl text-[#00000041] font-bold rounded-lg md:h-20 md:w-20 p-2 bg-blue-100">N</div> -->
-
-                    <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                      <div class="">
-                        <p class="text-sm font-bold text-gray-900">Beoplay M5 Bluetooth Speaker</p>
-                        <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Brain Station</p>
-                      </div>
-                      <p class="text-sm text-gray-400">06/01/2025</p>
+              <!-- Card 3 -->
+              <a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+                <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+                  <i class="ri-bookmark-fill text-primary-blue hover:!text-primary-blue text-xl"></i>
+                </button>
+                <div class="flex justify-between items-start mb-4">
+                  <div class="flex items-center">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center">
+                      <span class="text-indigo-600 font-bold text-lg">N</span>
                     </div>
-                    <img src="src/image/icon/fire.png" alt="fire icon"
-                      class="w-20 transform rotate-[-30deg] absolute -right-6 -bottom-1 opacity-[0.3]">
+                    <div class="ml-3">
+                      <h3 class="text-sm font-semibold text-gray-800">Senior Frontend Developer</h3>
+                      <p class="text-gray-600 text-xs">Google Inc.</p>
+                    </div>
                   </div>
                 </div>
-              </a>
-              <!-- Card 5 -->
-              <a href="/src/pages/job-details.html"
-                class="relative overflow-hidden border cursor-pointer  border-gray-200 duration-150  divide-y divide-gray-200  hover:shadow-lg rounded-md">
-                <div class="p-2">
-                  <div class="flex items-start justify-start">
-                    <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                      src="https://media.licdn.com/dms/image/v2/C510BAQEhBWM1jX08fw/company-logo_200_200/company-logo_200_200/0/1630578624123/brain_station_23_logo?e=2147483647&v=beta&t=Mnfby5HpZM7vOn2xGUaXPOAay0N6yiYLxjMww8s1Ktg"
-                      alt="" />
-
-                    <!-- <div class="w-16 h-16 flex items-center justify-center text-3xl text-[#00000041] font-bold rounded-lg md:h-20 md:w-20 p-2 bg-blue-100">N</div> -->
-
-                    <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                      <div class="">
-                        <p class="text-sm font-bold text-gray-900">Beoplay M5 Bluetooth Speaker</p>
-                        <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Brain Station</p>
-                      </div>
-                      <p class="text-sm text-gray-400">06/01/2025</p>
-                    </div>
-                    <img src="src/image/icon/fire.png" alt="fire icon"
-                      class="w-20 transform rotate-[-30deg] absolute -right-6 -bottom-1 opacity-[0.3]">
-                  </div>
+                <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+                  <span><i class="ri-calendar-2-line text-[15px]"></i> Jun 10 2025</span>
+                  <!-- <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 10 2025</span> | -->
+ |<span><i class="ri-map-pin-line text-[15px]"></i> Mirpur, Dhaka</span>
                 </div>
-              </a>
-              <!-- Card 1 -->
-              <a href="/src/pages/job-details.html"
-                class="relative overflow-hidden border cursor-pointer  border-gray-200 duration-150  divide-y divide-gray-200  hover:shadow-lg rounded-md">
-                <div class="p-2">
-                  <div class="flex items-start justify-start">
-                    <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                      src="https://media.licdn.com/dms/image/v2/C510BAQEhBWM1jX08fw/company-logo_200_200/company-logo_200_200/0/1630578624123/brain_station_23_logo?e=2147483647&v=beta&t=Mnfby5HpZM7vOn2xGUaXPOAay0N6yiYLxjMww8s1Ktg"
-                      alt="" />
-
-                    <!-- <div class="w-16 h-16 flex items-center justify-center text-3xl text-[#00000041] font-bold rounded-lg md:h-20 md:w-20 p-2 bg-blue-100">N</div> -->
-
-                    <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                      <div class="">
-                        <p class="text-sm font-bold text-gray-900">Beoplay M5 Bluetooth Speaker</p>
-                        <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Brain Station</p>
-                      </div>
-                      <p class="text-sm text-gray-400">06/01/2025</p>
-                    </div>
-                    <img src="src/image/icon/fire.png" alt="fire icon"
-                      class="w-20 transform rotate-[-30deg] absolute -right-6 -bottom-1 opacity-[0.3]">
+                <!-- <div class="flex justify-between items-center text-xs">
+                  <div>
+                    <p class="text-gray-500">📍 San Francisco, CA</p>
+                    <p class="font-semibold text-gray-800">$120,000 - $160,000</p>
                   </div>
-                </div>
-              </a>
-              <!-- Card 6 -->
-              <a href="/src/pages/job-details.html"
-                class="relative overflow-hidden border cursor-pointer  border-gray-200 duration-150  divide-y divide-gray-200  hover:shadow-lg rounded-md">
-                <div class="p-2">
-                  <div class="flex items-start justify-start">
-                    <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                      src="https://media.licdn.com/dms/image/v2/C510BAQEhBWM1jX08fw/company-logo_200_200/company-logo_200_200/0/1630578624123/brain_station_23_logo?e=2147483647&v=beta&t=Mnfby5HpZM7vOn2xGUaXPOAay0N6yiYLxjMww8s1Ktg"
-                      alt="" />
-
-                    <!-- <div class="w-16 h-16 flex items-center justify-center text-3xl text-[#00000041] font-bold rounded-lg md:h-20 md:w-20 p-2 bg-blue-100">N</div> -->
-
-                    <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                      <div class="">
-                        <p class="text-sm font-bold text-gray-900">Beoplay M5 Bluetooth Speaker</p>
-                        <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Brain Station</p>
-                      </div>
-                      <p class="text-sm text-gray-400">06/01/2025</p>
-                    </div>
-                    <img src="src/image/icon/fire.png" alt="fire icon"
-                      class="w-20 transform rotate-[-30deg] absolute -right-6 -bottom-1 opacity-[0.3]">
-                  </div>
-                </div>
-              </a>
-              <!-- Card 1 -->
-              <a href="/src/pages/job-details.html"
-                class="relative overflow-hidden border cursor-pointer  border-gray-200 duration-150  divide-y divide-gray-200  hover:shadow-lg rounded-md">
-                <div class="p-2">
-                  <div class="flex items-start justify-start">
-                    <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                      src="https://media.licdn.com/dms/image/v2/C510BAQEhBWM1jX08fw/company-logo_200_200/company-logo_200_200/0/1630578624123/brain_station_23_logo?e=2147483647&v=beta&t=Mnfby5HpZM7vOn2xGUaXPOAay0N6yiYLxjMww8s1Ktg"
-                      alt="" />
-
-                    <!-- <div class="w-16 h-16 flex items-center justify-center text-3xl text-[#00000041] font-bold rounded-lg md:h-20 md:w-20 p-2 bg-blue-100">N</div> -->
-
-                    <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                      <div class="">
-                        <p class="text-sm font-bold text-gray-900">Beoplay M5 Bluetooth Speaker</p>
-                        <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Brain Station</p>
-                      </div>
-                      <p class="text-sm text-gray-400">06/01/2025</p>
-                    </div>
-                    <img src="src/image/icon/fire.png" alt="fire icon"
-                      class="w-20 transform rotate-[-30deg] absolute -right-6 -bottom-1 opacity-[0.3]">
-                  </div>
-                </div>
-              </a>
-              <!-- Card 1 -->
-              <a href="/src/pages/job-details.html"
-                class="relative overflow-hidden border cursor-pointer  border-gray-200 duration-150  divide-y divide-gray-200  hover:shadow-lg rounded-md">
-                <div class="p-2">
-                  <div class="flex items-start justify-start">
-                    <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                      src="https://media.licdn.com/dms/image/v2/C510BAQEhBWM1jX08fw/company-logo_200_200/company-logo_200_200/0/1630578624123/brain_station_23_logo?e=2147483647&v=beta&t=Mnfby5HpZM7vOn2xGUaXPOAay0N6yiYLxjMww8s1Ktg"
-                      alt="" />
-
-                    <!-- <div class="w-16 h-16 flex items-center justify-center text-3xl text-[#00000041] font-bold rounded-lg md:h-20 md:w-20 p-2 bg-blue-100">N</div> -->
-
-                    <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                      <div class="">
-                        <p class="text-sm font-bold text-gray-900">Beoplay M5 Bluetooth Speaker</p>
-                        <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Brain Station</p>
-                      </div>
-                      <p class="text-sm text-gray-400">06/01/2025</p>
-                    </div>
-                    <img src="src/image/icon/fire.png" alt="fire icon"
-                      class="w-20 transform rotate-[-30deg] absolute -right-6 -bottom-1 opacity-[0.3]">
-                  </div>
-                </div>
+                </div> -->
               </a>
               <!-- Card 4 -->
-              <a href="/src/pages/job-details.html"
-                class="relative overflow-hidden border cursor-pointer  border-gray-200 duration-150  divide-y divide-gray-200  hover:shadow-lg rounded-md">
-                <div class="p-2">
-                  <div class="flex items-start justify-start">
-                    <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                      src="https://media.licdn.com/dms/image/v2/C510BAQEhBWM1jX08fw/company-logo_200_200/company-logo_200_200/0/1630578624123/brain_station_23_logo?e=2147483647&v=beta&t=Mnfby5HpZM7vOn2xGUaXPOAay0N6yiYLxjMww8s1Ktg"
-                      alt="" />
-
-                    <!-- <div class="w-16 h-16 flex items-center justify-center text-3xl text-[#00000041] font-bold rounded-lg md:h-20 md:w-20 p-2 bg-blue-100">N</div> -->
-
-                    <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                      <div class="">
-                        <p class="text-sm font-bold text-gray-900">Beoplay M5 Bluetooth Speaker</p>
-                        <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Brain Station</p>
-                      </div>
-                      <p class="text-sm text-gray-400">06/01/2025</p>
+              <a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+                <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+                  <i class="ri-bookmark-fill text-primary-blue hover:!text-primary-blue text-xl"></i>
+                </button>
+                <div class="flex justify-between items-start mb-4">
+                  <div class="flex items-center">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center">
+                      <span class="text-indigo-600 font-bold text-lg">M</span>
                     </div>
-                    <img src="src/image/icon/fire.png" alt="fire icon"
-                      class="w-20 transform rotate-[-30deg] absolute -right-6 -bottom-1 opacity-[0.3]">
+                    <div class="ml-3">
+                      <h3 class="text-sm font-semibold text-gray-800">Senior Frontend Developer</h3>
+                      <p class="text-gray-600 text-xs">Google Inc.</p>
+                    </div>
                   </div>
                 </div>
+                <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+                  <span><i class="ri-calendar-2-line text-[15px]"></i> Jun 10 2025</span>
+                  <!-- <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 10 2025</span> | -->
+
+                  
+                  |<span><i class="ri-map-pin-line text-[15px]"></i> Mirpur, Dhaka</span>
+                </div>
+                <!-- <div class="flex justify-between items-center text-xs">
+                  <div>
+                    <p class="text-gray-500">📍 San Francisco, CA</p>
+                    <p class="font-semibold text-gray-800">$120,000 - $160,000</p>
+                  </div>
+                </div> -->
               </a>
               <!-- Card 5 -->
-              <a href="/src/pages/job-details.html"
-                class="relative overflow-hidden border cursor-pointer  border-gray-200 duration-150  divide-y divide-gray-200  hover:shadow-lg rounded-md">
-                <div class="p-2">
-                  <div class="flex items-start justify-start">
-                    <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                      src="https://media.licdn.com/dms/image/v2/C510BAQEhBWM1jX08fw/company-logo_200_200/company-logo_200_200/0/1630578624123/brain_station_23_logo?e=2147483647&v=beta&t=Mnfby5HpZM7vOn2xGUaXPOAay0N6yiYLxjMww8s1Ktg"
-                      alt="" />
-
-                    <!-- <div class="w-16 h-16 flex items-center justify-center text-3xl text-[#00000041] font-bold rounded-lg md:h-20 md:w-20 p-2 bg-blue-100">N</div> -->
-
-                    <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                      <div class="">
-                        <p class="text-sm font-bold text-gray-900">Beoplay M5 Bluetooth Speaker</p>
-                        <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Brain Station</p>
-                      </div>
-                      <p class="text-sm text-gray-400">06/01/2025</p>
+              <a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+                <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+                  <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+                </button>
+                <div class="flex justify-between items-start mb-4">
+                  <div class="flex items-center">
+                    <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
+                      <span class="text-gray-600 font-bold text-lg">X</span>
                     </div>
-                    <img src="src/image/icon/fire.png" alt="fire icon"
-                      class="w-20 transform rotate-[-30deg] absolute -right-6 -bottom-1 opacity-[0.3]">
+                    <div class="ml-3">
+                      <h3 class="text-sm font-semibold text-gray-800">Senior Frontend Developer</h3>
+                      <p class="text-gray-600 text-xs">Google Inc.</p>
+                    </div>
                   </div>
                 </div>
-              </a>
-              <!-- Card 1 -->
-              <a href="/src/pages/job-details.html"
-                class="relative overflow-hidden border cursor-pointer  border-gray-200 duration-150  divide-y divide-gray-200  hover:shadow-lg rounded-md">
-                <div class="p-2">
-                  <div class="flex items-start justify-start">
-                    <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                      src="https://media.licdn.com/dms/image/v2/C510BAQEhBWM1jX08fw/company-logo_200_200/company-logo_200_200/0/1630578624123/brain_station_23_logo?e=2147483647&v=beta&t=Mnfby5HpZM7vOn2xGUaXPOAay0N6yiYLxjMww8s1Ktg"
-                      alt="" />
+                <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+                  <span><i class="ri-calendar-2-line text-[15px]"></i> Jun 10 2025</span>
+                  <!-- <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 10 2025</span> | -->
 
-                    <!-- <div class="w-16 h-16 flex items-center justify-center text-3xl text-[#00000041] font-bold rounded-lg md:h-20 md:w-20 p-2 bg-blue-100">N</div> -->
-
-                    <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                      <div class="">
-                        <p class="text-sm font-bold text-gray-900">Beoplay M5 Bluetooth Speaker</p>
-                        <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Brain Station</p>
-                      </div>
-                      <p class="text-sm text-gray-400">06/01/2025</p>
-                    </div>
-                    <img src="src/image/icon/fire.png" alt="fire icon"
-                      class="w-20 transform rotate-[-30deg] absolute -right-6 -bottom-1 opacity-[0.3]">
-                  </div>
+                  
+                  |<span><i class="ri-map-pin-line text-[15px]"></i> Mirpur, Dhaka</span>
                 </div>
+                <!-- <div class="flex justify-between items-center text-xs">
+    <div>
+      <p class="text-gray-500">📍 San Francisco, CA</p>
+      <p class="font-semibold text-gray-800">$120,000 - $160,000</p>
+    </div>
+  </div> -->
               </a>
+
               <!-- Card 6 -->
-              <a href="/src/pages/job-details.html"
-                class="relative overflow-hidden border cursor-pointer  border-gray-200 duration-150  divide-y divide-gray-200  hover:shadow-lg rounded-md">
-                <div class="p-2">
-                  <div class="flex items-start justify-start">
-                    <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                      src="https://media.licdn.com/dms/image/v2/C510BAQEhBWM1jX08fw/company-logo_200_200/company-logo_200_200/0/1630578624123/brain_station_23_logo?e=2147483647&v=beta&t=Mnfby5HpZM7vOn2xGUaXPOAay0N6yiYLxjMww8s1Ktg"
-                      alt="" />
-
-                    <!-- <div class="w-16 h-16 flex items-center justify-center text-3xl text-[#00000041] font-bold rounded-lg md:h-20 md:w-20 p-2 bg-blue-100">N</div> -->
-
-                    <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                      <div class="">
-                        <p class="text-sm font-bold text-gray-900">Beoplay M5 Bluetooth Speaker</p>
-                        <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Brain Station</p>
-                      </div>
-                      <p class="text-sm text-gray-400">06/01/2025</p>
+              <a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+                <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+                  <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+                </button>
+                <div class="flex justify-between items-start mb-4">
+                  <div class="flex items-center">
+                    <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center">
+                      <span class="text-teal-600 font-bold text-lg">Y</span>
                     </div>
-                    <img src="src/image/icon/fire.png" alt="fire icon"
-                      class="w-20 transform rotate-[-30deg] absolute -right-6 -bottom-1 opacity-[0.3]">
+                    <div class="ml-3">
+                      <h3 class="text-sm font-semibold text-gray-800">Senior Frontend Developer</h3>
+                      <p class="text-gray-600 text-xs">Google Inc.</p>
+                    </div>
                   </div>
                 </div>
+                <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+                  <span><i class="ri-calendar-2-line text-[15px]"></i> Jun 10 2025</span>
+                  <!-- <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 10 2025</span> | -->
+
+                  
+                  |<span><i class="ri-map-pin-line text-[15px]"></i> Mirpur, Dhaka</span>
+                </div>
+                <!-- <div class="flex justify-between items-center text-xs">
+    <div>
+      <p class="text-gray-500">📍 San Francisco, CA</p>
+      <p class="font-semibold text-gray-800">$120,000 - $160,000</p>
+    </div>
+  </div> -->
+              </a>
+
+              <!-- Card 7 -->
+              <a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+                <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+                  <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+                </button>
+                <div class="flex justify-between items-start mb-4">
+                  <div class="flex items-center">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                      <span class="text-green-600 font-bold text-lg">Z</span>
+                    </div>
+                    <div class="ml-3">
+                      <h3 class="text-sm font-semibold text-gray-800">Senior Frontend Developer</h3>
+                      <p class="text-gray-600 text-xs">Google Inc.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+                  <span><i class="ri-calendar-2-line text-[15px]"></i> Jun 10 2025</span>
+                  <!-- <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 10 2025</span> | -->
+
+                  
+                  |<span><i class="ri-map-pin-line text-[15px]"></i> Mirpur, Dhaka</span>
+                </div>
+                <!-- <div class="flex justify-between items-center text-xs">
+    <div>
+      <p class="text-gray-500">📍 San Francisco, CA</p>
+      <p class="font-semibold text-gray-800">$120,000 - $160,000</p>
+    </div>
+  </div> -->
+              </a>
+              <!-- Card 7 -->
+              <a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+                <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+                  <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+                </button>
+                <div class="flex justify-between items-start mb-4">
+                  <div class="flex items-center">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                      <span class="text-purple-600 font-bold text-lg">T</span>
+                    </div>
+                    <div class="ml-3">
+                      <h3 class="text-sm font-semibold text-gray-800">Senior Frontend Developer</h3>
+                      <p class="text-gray-600 text-xs">Google Inc.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+                  <span><i class="ri-calendar-2-line text-[15px]"></i> Jun 10 2025</span>
+                  <!-- <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 10 2025</span> | -->
+                  
+                  |<span><i class="ri-map-pin-line text-[15px]"></i> Mirpur, Dhaka</span>
+                </div>
+                <!-- <div class="flex justify-between items-center text-xs">
+    <div>
+      <p class="text-gray-500">📍 San Francisco, CA</p>
+      <p class="font-semibold text-gray-800">$120,000 - $160,000</p>
+    </div>
+  </div> -->
+              </a>
+
+              <!-- Card 7 -->
+              <a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+                <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+                  <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+                </button>
+                <div class="flex justify-between items-start mb-4">
+                  <div class="flex items-center">
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
+                      <span class="text-red-600 font-bold text-lg">S</span>
+                    </div>
+                    <div class="ml-3">
+                      <h3 class="text-sm font-semibold text-gray-800">Senior Frontend Developer</h3>
+                      <p class="text-gray-600 text-xs">Google Inc.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+                  <span><i class="ri-calendar-2-line text-[15px]"></i> Jun 10 2025</span>
+                  <!-- <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 10 2025</span> | -->
+
+                  
+                  |<span><i class="ri-map-pin-line text-[15px]"></i> Mirpur, Dhaka</span>
+                </div>
+                <!-- <div class="flex justify-between items-center text-xs">
+    <div>
+      <p class="text-gray-500">📍 San Francisco, CA</p>
+      <p class="font-semibold text-gray-800">$120,000 - $160,000</p>
+    </div>
+  </div> -->
               </a>
             </figure>
           </section>
@@ -1051,259 +1070,346 @@
                   class="ri-arrow-right-line"></i></a>
             </header>
             <figure class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-4 gap-4">
-              <!-- 1 -->
-              <a href="#"
-                class="relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-                <div class="p-2">
-                  <div class="flex items-start justify-start">
-                    <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2 p-2"
-                      src="src/image/icon/bd_gov.png" alt="BPSC">
-                    <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                      <div>
-                        <p class="text-sm font-bold text-gray-900">Assistant Commissioner</p>
-                        <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">BPSC</p>
-                      </div>
-                      <p class="text-sm text-gray-400">15/06/2025</p>
+
+               <!-- Card 1 -->
+               <a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+                <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+                  <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+                </button>
+                <div class="flex justify-between items-start mb-4">
+                  <div class="flex items-center">
+                    <div class="w-12 h-12 overflow-hidden p-1.5 bg-indigo-100 rounded-lg flex items-center justify-center">
+                      <img src="src/image/icon/bd_gov.png" alt="logo" class="w-full h-full">
+                      <!-- <span class="text-blue-600 font-bold text-lg">G</span> -->
+                    </div>
+                    <div class="ml-3">
+                      <h3 class="text-sm font-semibold text-gray-800">Senior Frontend Developer</h3>
+                      <p class="text-gray-600 text-xs">Google Inc.</p>
                     </div>
                   </div>
                 </div>
+                <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+                  <span><i class="ri-calendar-2-line text-[15px]"></i> Jun 10 2025</span>
+                  <!-- <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 10 2025</span> | -->
+                  |<span><i class="ri-map-pin-line text-[15px]"></i> Mirpur, Dhaka</span>
+                </div>
+                <!-- <div class="flex justify-between items-center text-xs">
+                  <div>
+                    <p class="text-gray-500">📍 San Francisco, CA</p>
+                    <p class="font-semibold text-gray-800">$120,000 - $160,000</p>
+                  </div>
+                </div> -->
               </a>
 
-              <!-- 2 -->
-              <a href="#"
-                class="relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-                <div class="p-2">
-                  <div class="flex items-start justify-start">
-                    <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2 "
-                      src="src/image/icon/bd_gov.png" alt="Police">
-                    <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                      <div>
-                        <p class="text-sm font-bold text-gray-900">Sub Inspector</p>
-                        <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Bangladesh Police</p>
-                      </div>
-                      <p class="text-sm text-gray-400">20/06/2025</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
+              <!-- Card 2 -->
+<a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+  <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+    <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+  </button>
+  <div class="flex justify-between items-start mb-4">
+    <div class="flex items-center">
+      <div class="w-12 h-12 overflow-hidden p-1.5 bg-indigo-100 rounded-lg flex items-center justify-center">
+        <img src="src/image/icon/bd_gov.png" alt="logo" class="w-full h-full">
+      </div>
+      <div class="ml-3">
+        <h3 class="text-sm font-semibold text-gray-800">Assistant Programmer</h3>
+        <p class="text-gray-600 text-xs">ICT Division</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+    <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 1 2025</span>
+    |<span><i class="ri-map-pin-line text-[15px]"></i> Agargaon, Dhaka</span>
+  </div>
+</a>
 
-              <!-- 3 -->
-              <a href="#"
-                class="relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-                <div class="p-2">
-                  <div class="flex items-start justify-start">
-                    <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2" src="src/image/icon/gov.png"
-                      alt="Bangladesh Bank">
-                    <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                      <div>
-                        <p class="text-sm font-bold text-gray-900">Officer (General)</p>
-                        <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Bangladesh Bank</p>
-                      </div>
-                      <p class="text-sm text-gray-400">25/06/2025</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
+<!-- Card 3 -->
+<a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+  <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+    <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+  </button>
+  <div class="flex justify-between items-start mb-4">
+    <div class="flex items-center">
+      <div class="w-12 h-12 overflow-hidden p-1.5 bg-indigo-100 rounded-lg flex items-center justify-center">
+        <img src="src/image/icon/bd_gov.png" alt="logo" class="w-full h-full">
+      </div>
+      <div class="ml-3">
+        <h3 class="text-sm font-semibold text-gray-800">Data Entry Operator</h3>
+        <p class="text-gray-600 text-xs">Ministry of Education</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+    <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 15 2025</span>
+    |<span><i class="ri-map-pin-line text-[15px]"></i> Motijheel, Dhaka</span>
+  </div>
+</a>
 
-              <!-- 4 -->
-              <a href="#"
-                class="relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-                <div class="p-2">
-                  <div class="flex items-start justify-start">
-                    <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                      src="src/image/icon/bd_gov.png" alt="DGHS">
-                    <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                      <div>
-                        <p class="text-sm font-bold text-gray-900">Medical Officer</p>
-                        <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">DGHS</p>
-                      </div>
-                      <p class="text-sm text-gray-400">28/06/2025</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
+<!-- Card 4 -->
+<a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+  <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+    <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+  </button>
+  <div class="flex justify-between items-start mb-4">
+    <div class="flex items-center">
+      <div class="w-12 h-12 overflow-hidden p-1.5 bg-indigo-100 rounded-lg flex items-center justify-center">
+        <img src="src/image/icon/bd_gov.png" alt="logo" class="w-full h-full">
+      </div>
+      <div class="ml-3">
+        <h3 class="text-sm font-semibold text-gray-800">Junior Clerk</h3>
+        <p class="text-gray-600 text-xs">Local Government Division</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+    <span><i class="ri-calendar-2-line text-[15px]"></i> Aug 1 2025</span>
+    |<span><i class="ri-map-pin-line text-[15px]"></i> Rajshahi</span>
+  </div>
+</a>
+ 
+<!-- Card 5 -->
+<a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+  <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+    <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+  </button>
+  <div class="flex justify-between items-start mb-4">
+    <div class="flex items-center">
+      <div class="w-12 h-12 overflow-hidden p-1.5 bg-indigo-100 rounded-lg flex items-center justify-center">
+        <img src="src/image/icon/bd_gov.png" alt="logo" class="w-full h-full">
+      </div>
+      <div class="ml-3">
+        <h3 class="text-sm font-semibold text-gray-800">Sub Assistant Engineer</h3>
+        <p class="text-gray-600 text-xs">Public Works Department</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+    <span><i class="ri-calendar-2-line text-[15px]"></i> Aug 5 2025</span>
+    |<span><i class="ri-map-pin-line text-[15px]"></i> Khulna</span>
+  </div>
+</a>
 
-              <!-- 5 -->
-              <a href="#"
-                class="relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-                <div class="p-2">
-                  <div class="flex items-start justify-start">
-                    <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                      src="src/image/icon/bd_gov.png" alt="Railway">
-                    <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                      <div>
-                        <p class="text-sm font-bold text-gray-900">Train Operator</p>
-                        <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Bangladesh Railway</p>
-                      </div>
-                      <p class="text-sm text-gray-400">30/06/2025</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
+<!-- Card 6 -->
+<a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+  <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+    <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+  </button>
+  <div class="flex justify-between items-start mb-4">
+    <div class="flex items-center">
+      <div class="w-12 h-12 overflow-hidden p-1.5 bg-indigo-100 rounded-lg flex items-center justify-center">
+        <img src="src/image/icon/bd_gov.png" alt="logo" class="w-full h-full">
+      </div>
+      <div class="ml-3">
+        <h3 class="text-sm font-semibold text-gray-800">Health Assistant</h3>
+        <p class="text-gray-600 text-xs">Ministry of Health</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+    <span><i class="ri-calendar-2-line text-[15px]"></i> Aug 12 2025</span>
+    |<span><i class="ri-map-pin-line text-[15px]"></i> Comilla</span>
+  </div>
+</a>
 
-              <!-- 6 -->
-              <a href="#"
-                class="relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-                <div class="p-2">
-                  <div class="flex items-start justify-start">
-                    <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                      src="src/image/icon/bd_gov.png" alt="Post Office">
-                    <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                      <div>
-                        <p class="text-sm font-bold text-gray-900">Postal Assistant</p>
-                        <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">BD Post</p>
-                      </div>
-                      <p class="text-sm text-gray-400">02/07/2025</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
+<!-- Card 7 -->
+<a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+  <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+    <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+  </button>
+  <div class="flex justify-between items-start mb-4">
+    <div class="flex items-center">
+      <div class="w-12 h-12 overflow-hidden p-1.5 bg-indigo-100 rounded-lg flex items-center justify-center">
+        <img src="src/image/icon/bd_gov.png" alt="logo" class="w-full h-full">
+      </div>
+      <div class="ml-3">
+        <h3 class="text-sm font-semibold text-gray-800">Constable</h3>
+        <p class="text-gray-600 text-xs">Bangladesh Police</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+    <span><i class="ri-calendar-2-line text-[15px]"></i> Aug 20 2025</span>
+    |<span><i class="ri-map-pin-line text-[15px]"></i> Chittagong</span>
+  </div>
+</a>
 
-              <!-- 7 -->
-              <a href="#"
-                class="relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-                <div class="p-2">
-                  <div class="flex items-start justify-start">
-                    <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                      src="src/image/icon/bd_gov.png" alt="BTRC">
-                    <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                      <div>
-                        <p class="text-sm font-bold text-gray-900">Technical Officer</p>
-                        <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">BTRC</p>
-                      </div>
-                      <p class="text-sm text-gray-400">05/07/2025</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
+<!-- Card 8 -->
+<a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+  <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+    <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+  </button>
+  <div class="flex justify-between items-start mb-4">
+    <div class="flex items-center">
+      <div class="w-12 h-12 overflow-hidden p-1.5 bg-indigo-100 rounded-lg flex items-center justify-center">
+        <img src="src/image/icon/bd_gov.png" alt="logo" class="w-full h-full">
+      </div>
+      <div class="ml-3">
+        <h3 class="text-sm font-semibold text-gray-800">Field Officer</h3>
+        <p class="text-gray-600 text-xs">Border Guard Bangladesh (BGB)</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+    <span><i class="ri-calendar-2-line text-[15px]"></i> Sep 1 2025</span>
+    |<span><i class="ri-map-pin-line text-[15px]"></i> Sylhet</span>
+  </div>
+</a>
 
-              <!-- 8 -->
-              <a href="#"
-                class="relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-                <div class="p-2">
-                  <div class="flex items-start justify-start">
-                    <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                      src="src/image/icon/bd_gov.png" alt="Finance Ministry">
-                    <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                      <div>
-                        <p class="text-sm font-bold text-gray-900">Accountant</p>
-                        <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Finance Division</p>
-                      </div>
-                      <p class="text-sm text-gray-400">08/07/2025</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
+<!-- Card 9 -->
+<a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+  <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+    <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+  </button>
+  <div class="flex justify-between items-start mb-4">
+    <div class="flex items-center">
+      <div class="w-12 h-12 overflow-hidden p-1.5 bg-indigo-100 rounded-lg flex items-center justify-center">
+        <img src="src/image/icon/bd_gov.png" alt="logo" class="w-full h-full">
+      </div>
+      <div class="ml-3">
+        <h3 class="text-sm font-semibold text-gray-800">Auditor</h3>
+        <p class="text-gray-600 text-xs">Comptroller and Auditor General</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+    <span><i class="ri-calendar-2-line text-[15px]"></i> Sep 10 2025</span>
+    |<span><i class="ri-map-pin-line text-[15px]"></i> Barisal</span>
+  </div>
+</a>
 
-              <!-- 9 -->
-              <a href="#"
-                class="relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-                <div class="p-2">
-                  <div class="flex items-start justify-start">
-                    <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                      src="src/image/icon/bd_gov.png" alt="Air Force">
-                    <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                      <div>
-                        <p class="text-sm font-bold text-gray-900">Flight Cadet</p>
-                        <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Bangladesh Air Force</p>
-                      </div>
-                      <p class="text-sm text-gray-400">10/07/2025</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
+<!-- Card 10 -->
+<a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+  <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+    <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+  </button>
+  <div class="flex justify-between items-start mb-4">
+    <div class="flex items-center">
+      <div class="w-12 h-12 overflow-hidden p-1.5 bg-indigo-100 rounded-lg flex items-center justify-center">
+        <img src="src/image/icon/bd_gov.png" alt="logo" class="w-full h-full">
+      </div>
+      <div class="ml-3">
+        <h3 class="text-sm font-semibold text-gray-800">Assistant Teacher</h3>
+        <p class="text-gray-600 text-xs">Primary Education Board</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+    <span><i class="ri-calendar-2-line text-[15px]"></i> Sep 15 2025</span>
+    |<span><i class="ri-map-pin-line text-[15px]"></i> Rajshahi</span>
+  </div>
+</a>
 
-              <!-- 10 -->
-              <a href="#"
-                class="relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-                <div class="p-2">
-                  <div class="flex items-start justify-start">
-                    <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                      src="src/image/icon/bd_gov.png" alt="Navy">
-                    <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                      <div>
-                        <p class="text-sm font-bold text-gray-900">Sailor</p>
-                        <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Bangladesh Navy</p>
-                      </div>
-                      <p class="text-sm text-gray-400">12/07/2025</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
+<!-- Card 11 -->
+<a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+  <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+    <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+  </button>
+  <div class="flex justify-between items-start mb-4">
+    <div class="flex items-center">
+      <div class="w-12 h-12 overflow-hidden p-1.5 bg-indigo-100 rounded-lg flex items-center justify-center">
+        <img src="src/image/icon/bd_gov.png" alt="logo" class="w-full h-full">
+      </div>
+      <div class="ml-3">
+        <h3 class="text-sm font-semibold text-gray-800">Office Assistant</h3>
+        <p class="text-gray-600 text-xs">Bangladesh Secretariat</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+    <span><i class="ri-calendar-2-line text-[15px]"></i> Sep 22 2025</span>
+    |<span><i class="ri-map-pin-line text-[15px]"></i> Dhaka</span>
+  </div>
+</a>
 
-              <!-- 11 -->
-              <a href="#"
-                class="relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-                <div class="p-2">
-                  <div class="flex items-start justify-start">
-                    <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                      src="src/image/icon/bd_gov.png" alt="Education Ministry">
-                    <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                      <div>
-                        <p class="text-sm font-bold text-gray-900">Lecturer (Math)</p>
-                        <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Education Board</p>
-                      </div>
-                      <p class="text-sm text-gray-400">14/07/2025</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
+<!-- Card 12 -->
+<a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+  <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+    <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+  </button>
+  <div class="flex justify-between items-start mb-4">
+    <div class="flex items-center">
+      <div class="w-12 h-12 overflow-hidden p-1.5 bg-indigo-100 rounded-lg flex items-center justify-center">
+        <img src="src/image/icon/bd_gov.png" alt="logo" class="w-full h-full">
+      </div>
+      <div class="ml-3">
+        <h3 class="text-sm font-semibold text-gray-800">Junior Clerk</h3>
+        <p class="text-gray-600 text-xs">Ministry of Agriculture</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+    <span><i class="ri-calendar-2-line text-[15px]"></i> Oct 1 2025</span>
+    |<span><i class="ri-map-pin-line text-[15px]"></i> Rangpur</span>
+  </div>
+</a>
 
-              <!-- 12 -->
-              <a href="#"
-                class="relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-                <div class="p-2">
-                  <div class="flex items-start justify-start">
-                    <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                      src="src/image/icon/bd_gov.png" alt="Army">
-                    <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                      <div>
-                        <p class="text-sm font-bold text-gray-900">2nd Lieutenant</p>
-                        <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Bangladesh Army</p>
-                      </div>
-                      <p class="text-sm text-gray-400">16/07/2025</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
 
-              <!-- 13 -->
-              <a href="#"
-                class="relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-                <div class="p-2">
-                  <div class="flex items-start justify-start">
-                    <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                      src="src/image/icon/bd_gov.png" alt="Admin Ministry">
-                    <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                      <div>
-                        <p class="text-sm font-bold text-gray-900">Office Assistant</p>
-                        <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Public Admin Ministry</p>
-                      </div>
-                      <p class="text-sm text-gray-400">18/07/2025</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
+<!-- Card 13 -->
+<a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+  <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+    <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+  </button>
+  <div class="flex justify-between items-start mb-4">
+    <div class="flex items-center">
+      <div class="w-12 h-12 overflow-hidden p-1.5 bg-indigo-100 rounded-lg flex items-center justify-center">
+        <img src="src/image/icon/bd_gov.png" alt="logo" class="w-full h-full">
+      </div>
+      <div class="ml-3">
+        <h3 class="text-sm font-semibold text-gray-800">Assistant Teacher</h3>
+        <p class="text-gray-600 text-xs">Primary Education Board</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+    <span><i class="ri-calendar-2-line text-[15px]"></i> Sep 15 2025</span>
+    |<span><i class="ri-map-pin-line text-[15px]"></i> Rajshahi</span>
+  </div>
+</a>
 
-              <!-- 14 -->
-              <a href="#"
-                class="relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-                <div class="p-2">
-                  <div class="flex items-start justify-start">
-                    <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                      src="src/image/icon/bd_gov.png" alt="Info Ministry">
-                    <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                      <div>
-                        <p class="text-sm font-bold text-gray-900">News Editor</p>
-                        <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Information Ministry</p>
-                      </div>
-                      <p class="text-sm text-gray-400">20/07/2025</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
+<!-- Card 14 -->
+<a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+  <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+    <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+  </button>
+  <div class="flex justify-between items-start mb-4">
+    <div class="flex items-center">
+      <div class="w-12 h-12 overflow-hidden p-1.5 bg-indigo-100 rounded-lg flex items-center justify-center">
+        <img src="src/image/icon/bd_gov.png" alt="logo" class="w-full h-full">
+      </div>
+      <div class="ml-3">
+        <h3 class="text-sm font-semibold text-gray-800">Office Assistant</h3>
+        <p class="text-gray-600 text-xs">Bangladesh Secretariat</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+    <span><i class="ri-calendar-2-line text-[15px]"></i> Sep 22 2025</span>
+    |<span><i class="ri-map-pin-line text-[15px]"></i> Dhaka</span>
+  </div>
+</a>
+
+<!-- Card 15 -->
+<a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+  <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+    <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+  </button>
+  <div class="flex justify-between items-start mb-4">
+    <div class="flex items-center">
+      <div class="w-12 h-12 overflow-hidden p-1.5 bg-indigo-100 rounded-lg flex items-center justify-center">
+        <img src="src/image/icon/bd_gov.png" alt="logo" class="w-full h-full">
+      </div>
+      <div class="ml-3">
+        <h3 class="text-sm font-semibold text-gray-800">Junior Clerk</h3>
+        <p class="text-gray-600 text-xs">Ministry of Agriculture</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+    <span><i class="ri-calendar-2-line text-[15px]"></i> Oct 1 2025</span>
+    |<span><i class="ri-map-pin-line text-[15px]"></i> Rangpur</span>
+  </div>
+</a>
             </figure>
-
           </section>
         </div>
         <div class="md:flex flex-col gap-2 hidden">
@@ -1352,165 +1458,248 @@
       </header>
 
       <figure class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 mt-4 gap-4">
-        <!-- Card 1 -->
-        <a href="/src/pages/job-details.html"
-          class="relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-          <div class="p-2">
-            <div class="flex items-start justify-start">
-              <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                src="https://media.licdn.com/dms/image/v2/C510BAQEhBWM1jX08fw/company-logo_200_200/company-logo_200_200/0/1630578624123/brain_station_23_logo?e=2147483647&v=beta&t=Mnfby5HpZM7vOn2xGUaXPOAay0N6yiYLxjMww8s1Ktg"
-                alt="" />
-              <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                <div>
-                  <p class="text-sm font-bold text-gray-900">Beoplay M5 Bluetooth Speaker</p>
-                  <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Brain Station</p>
-                </div>
-                <p class="text-sm text-gray-400">06/01/2025</p>
+         <!-- Card 4 -->
+         <a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+          <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+            <i class="ri-bookmark-fill text-primary-blue hover:!text-primary-blue text-xl"></i>
+          </button>
+          <div class="flex justify-between items-start mb-4">
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center">
+                <span class="text-indigo-600 font-bold text-lg">M</span>
               </div>
-              <!-- <img src="src/image/icon/job.png" alt="fire icon" class="w-20 transform rotate-[-30deg] absolute -right-6 -bottom-1 opacity-[0.3]"> -->
+              <div class="ml-3">
+                <h3 class="text-sm font-semibold text-gray-800">Senior Frontend Developer</h3>
+                <p class="text-gray-600 text-xs">Google Inc.</p>
+              </div>
             </div>
           </div>
-        </a>
+          <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+            <span><i class="ri-calendar-2-line text-[15px]"></i> Jun 10 2025</span>
+            <!-- <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 10 2025</span> | -->
 
-        <!-- Card 2 -->
-        <a href="/src/pages/job-details.html"
-          class="relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-          <div class="p-2">
-            <div class="flex items-start justify-start">
-              <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQlz_GVDi1Y4BuQuPBrZSZO3kysfRQ8CQcQyFNLwSgpT9hz7HmmVE-tiOAy9yc4y3fnNc&usqp=CAU"
-                alt="" />
-              <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                <div>
-                  <p class="text-sm font-bold text-gray-900">Junior Web Developer</p>
-                  <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">InnovateX</p>
-                </div>
-                <p class="text-sm text-gray-400">07/01/2025</p>
-              </div>
-              <!-- <img src="src/image/icon/job.png" alt="fire icon" class="w-20 transform rotate-[-30deg] absolute -right-6 -bottom-1 opacity-[0.3]"> -->
-            </div>
+            
+            |<span><i class="ri-map-pin-line text-[15px]"></i> Mirpur, Dhaka</span>
           </div>
-        </a>
-
-        <!-- Card 3 -->
-        <a href="/src/pages/job-details.html"
-          class="relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-          <div class="p-2">
-            <div class="flex items-start justify-start">
-              <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfaCdyzDLotdzG5YKZZbJERySTXhe5EZ7zJlm4_DQgijbCujeNg88RxIwEOn5Kh8qK70A&usqp=CAU"
-                alt="" />
-              <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                <div>
-                  <p class="text-sm font-bold text-gray-900">Graphic Design Intern</p>
-                  <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">PixelCraft</p>
-                </div>
-                <p class="text-sm text-gray-400">07/02/2025</p>
-              </div>
-              <!-- <img src="src/image/icon/job.png" alt="fire icon" class="w-20 transform rotate-[-30deg] absolute -right-6 -bottom-1 opacity-[0.3]"> -->
+          <!-- <div class="flex justify-between items-center text-xs">
+            <div>
+              <p class="text-gray-500">📍 San Francisco, CA</p>
+              <p class="font-semibold text-gray-800">$120,000 - $160,000</p>
             </div>
-          </div>
+          </div> -->
         </a>
-
-        <!-- Card 4 -->
-        <a href="/src/pages/job-details.html"
-          class="relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-          <div class="p-2">
-            <div class="flex items-start justify-start">
-              <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLnhPfsWPvU0vK8dgz-p2v80YVqbyRb4PuZESlIjfbc2e2zp2gkQ2oqX9U__ciUQgVLLQ&usqp=CAU"
-                alt="" />
-              <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                <div>
-                  <p class="text-sm font-bold text-gray-900">Marketing Assistant</p>
-                  <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">MarketWave</p>
-                </div>
-                <p class="text-sm text-gray-400">07/03/2025</p>
-              </div>
-              <!-- <img src="src/image/icon/job.png" alt="fire icon" class="w-20 transform rotate-[-30deg] absolute -right-6 -bottom-1 opacity-[0.3]"> -->
-            </div>
-          </div>
-        </a>
-
         <!-- Card 5 -->
-        <a href="/src/pages/job-details.html"
-          class="relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-          <div class="p-2">
-            <div class="flex items-start justify-start">
-              <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                src="https://images.yourstory.com/cs/images/companies/134ee64f54de-bdtasklimited1-1614340690489.jpg"
-                alt="" />
-              <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                <div>
-                  <p class="text-sm font-bold text-gray-900">Data Analyst Intern</p>
-                  <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">BDTask Ltd</p>
-                </div>
-                <p class="text-sm text-gray-400">07/04/2025</p>
+        <a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+          <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+            <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+          </button>
+          <div class="flex justify-between items-start mb-4">
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
+                <span class="text-gray-600 font-bold text-lg">X</span>
               </div>
-              <!-- <img src="src/image/icon/job.png" alt="fire icon" class="w-20 transform rotate-[-30deg] absolute -right-6 -bottom-1 opacity-[0.3]"> -->
+              <div class="ml-3">
+                <h3 class="text-sm font-semibold text-gray-800">Senior Frontend Developer</h3>
+                <p class="text-gray-600 text-xs">Google Inc.</p>
+              </div>
             </div>
           </div>
-        </a>
-        <!-- Card 3 -->
-        <a href="/src/pages/job-details.html"
-          class="relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-          <div class="p-2">
-            <div class="flex items-start justify-start">
-              <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfaCdyzDLotdzG5YKZZbJERySTXhe5EZ7zJlm4_DQgijbCujeNg88RxIwEOn5Kh8qK70A&usqp=CAU"
-                alt="" />
-              <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                <div>
-                  <p class="text-sm font-bold text-gray-900">Graphic Design Intern</p>
-                  <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">PixelCraft</p>
-                </div>
-                <p class="text-sm text-gray-400">07/02/2025</p>
-              </div>
-              <!-- <img src="src/image/icon/job.png" alt="fire icon" class="w-20 transform rotate-[-30deg] absolute -right-6 -bottom-1 opacity-[0.3]"> -->
-            </div>
+          <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+            <span><i class="ri-calendar-2-line text-[15px]"></i> Jun 10 2025</span>
+            <!-- <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 10 2025</span> | -->
+
+            
+            |<span><i class="ri-map-pin-line text-[15px]"></i> Mirpur, Dhaka</span>
           </div>
+          <!-- <div class="flex justify-between items-center text-xs">
+<div>
+<p class="text-gray-500">📍 San Francisco, CA</p>
+<p class="font-semibold text-gray-800">$120,000 - $160,000</p>
+</div>
+</div> -->
         </a>
 
-        <!-- Card 4 -->
-        <a href="/src/pages/job-details.html"
-          class="relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-          <div class="p-2">
-            <div class="flex items-start justify-start">
-              <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLnhPfsWPvU0vK8dgz-p2v80YVqbyRb4PuZESlIjfbc2e2zp2gkQ2oqX9U__ciUQgVLLQ&usqp=CAU"
-                alt="" />
-              <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                <div>
-                  <p class="text-sm font-bold text-gray-900">Marketing Assistant</p>
-                  <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">MarketWave</p>
-                </div>
-                <p class="text-sm text-gray-400">07/03/2025</p>
+        <!-- Card 6 -->
+        <a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+          <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+            <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+          </button>
+          <div class="flex justify-between items-start mb-4">
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center">
+                <span class="text-teal-600 font-bold text-lg">Y</span>
               </div>
-              <!-- <img src="src/image/icon/job.png" alt="fire icon" class="w-20 transform rotate-[-30deg] absolute -right-6 -bottom-1 opacity-[0.3]"> -->
+              <div class="ml-3">
+                <h3 class="text-sm font-semibold text-gray-800">Senior Frontend Developer</h3>
+                <p class="text-gray-600 text-xs">Google Inc.</p>
+              </div>
             </div>
           </div>
+          <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+            <span><i class="ri-calendar-2-line text-[15px]"></i> Jun 10 2025</span>
+            <!-- <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 10 2025</span> | -->
+
+            
+            |<span><i class="ri-map-pin-line text-[15px]"></i> Mirpur, Dhaka</span>
+          </div>
+          <!-- <div class="flex justify-between items-center text-xs">
+<div>
+<p class="text-gray-500">📍 San Francisco, CA</p>
+<p class="font-semibold text-gray-800">$120,000 - $160,000</p>
+</div>
+</div> -->
         </a>
 
-        <!-- Card 5 -->
-        <a href="/src/pages/job-details.html"
-          class="relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-          <div class="p-2">
-            <div class="flex items-start justify-start">
-              <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2"
-                src="https://images.yourstory.com/cs/images/companies/134ee64f54de-bdtasklimited1-1614340690489.jpg"
-                alt="" />
-              <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                <div>
-                  <p class="text-sm font-bold text-gray-900">Data Analyst Intern</p>
-                  <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">BDTask Ltd</p>
-                </div>
-                <p class="text-sm text-gray-400">07/04/2025</p>
+        <!-- Card 7 -->
+        <a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+          <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+            <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+          </button>
+          <div class="flex justify-between items-start mb-4">
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                <span class="text-green-600 font-bold text-lg">Z</span>
               </div>
-              <!-- <img src="src/image/icon/job.png" alt="fire icon" class="w-20 transform rotate-[-30deg] absolute -right-6 -bottom-1 opacity-[0.3]"> -->
+              <div class="ml-3">
+                <h3 class="text-sm font-semibold text-gray-800">Senior Frontend Developer</h3>
+                <p class="text-gray-600 text-xs">Google Inc.</p>
+              </div>
             </div>
           </div>
+          <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+            <span><i class="ri-calendar-2-line text-[15px]"></i> Jun 10 2025</span>
+            <!-- <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 10 2025</span> | -->
+
+            
+            |<span><i class="ri-map-pin-line text-[15px]"></i> Mirpur, Dhaka</span>
+          </div>
+          <!-- <div class="flex justify-between items-center text-xs">
+<div>
+<p class="text-gray-500">📍 San Francisco, CA</p>
+<p class="font-semibold text-gray-800">$120,000 - $160,000</p>
+</div>
+</div> -->
+        </a>
+        <!-- Card 7 -->
+        <a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+          <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+            <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+          </button>
+          <div class="flex justify-between items-start mb-4">
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                <span class="text-purple-600 font-bold text-lg">T</span>
+              </div>
+              <div class="ml-3">
+                <h3 class="text-sm font-semibold text-gray-800">Senior Frontend Developer</h3>
+                <p class="text-gray-600 text-xs">Google Inc.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+            <span><i class="ri-calendar-2-line text-[15px]"></i> Jun 10 2025</span>
+            <!-- <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 10 2025</span> | -->
+            
+            |<span><i class="ri-map-pin-line text-[15px]"></i> Mirpur, Dhaka</span>
+          </div>
+          <!-- <div class="flex justify-between items-center text-xs">
+<div>
+<p class="text-gray-500">📍 San Francisco, CA</p>
+<p class="font-semibold text-gray-800">$120,000 - $160,000</p>
+</div>
+</div> -->
         </a>
 
+        <!-- Card 7 -->
+        <a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+          <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+            <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+          </button>
+          <div class="flex justify-between items-start mb-4">
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
+                <span class="text-red-600 font-bold text-lg">S</span>
+              </div>
+              <div class="ml-3">
+                <h3 class="text-sm font-semibold text-gray-800">Senior Frontend Developer</h3>
+                <p class="text-gray-600 text-xs">Google Inc.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+            <span><i class="ri-calendar-2-line text-[15px]"></i> Jun 10 2025</span>
+            <!-- <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 10 2025</span> | -->
+
+            
+            |<span><i class="ri-map-pin-line text-[15px]"></i> Mirpur, Dhaka</span>
+          </div>
+          <!-- <div class="flex justify-between items-center text-xs">
+<div>
+<p class="text-gray-500">📍 San Francisco, CA</p>
+<p class="font-semibold text-gray-800">$120,000 - $160,000</p>
+</div>
+</div> -->
+        </a>
+        
+        <!-- Card 7 -->
+        <a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+          <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+            <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+          </button>
+          <div class="flex justify-between items-start mb-4">
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
+                <span class="text-red-600 font-bold text-lg">S</span>
+              </div>
+              <div class="ml-3">
+                <h3 class="text-sm font-semibold text-gray-800">Senior Frontend Developer</h3>
+                <p class="text-gray-600 text-xs">Google Inc.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+            <span><i class="ri-calendar-2-line text-[15px]"></i> Jun 10 2025</span>
+            <!-- <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 10 2025</span> | -->
+
+            
+            |<span><i class="ri-map-pin-line text-[15px]"></i> Mirpur, Dhaka</span>
+          </div>
+          <!-- <div class="flex justify-between items-center text-xs">
+<div>
+<p class="text-gray-500">📍 San Francisco, CA</p>
+<p class="font-semibold text-gray-800">$120,000 - $160,000</p>
+</div>
+</div> -->
+        </a><!-- Card 7 -->
+        <a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+          <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+            <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+          </button>
+          <div class="flex justify-between items-start mb-4">
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
+                <span class="text-red-600 font-bold text-lg">S</span>
+              </div>
+              <div class="ml-3">
+                <h3 class="text-sm font-semibold text-gray-800">Senior Frontend Developer</h3>
+                <p class="text-gray-600 text-xs">Google Inc.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+            <span><i class="ri-calendar-2-line text-[15px]"></i> Jun 10 2025</span>
+            <!-- <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 10 2025</span> | -->
+
+            
+            |<span><i class="ri-map-pin-line text-[15px]"></i> Mirpur, Dhaka</span>
+          </div>
+          <!-- <div class="flex justify-between items-center text-xs">
+<div>
+<p class="text-gray-500">📍 San Francisco, CA</p>
+<p class="font-semibold text-gray-800">$120,000 - $160,000</p>
+</div>
+</div> -->
+        </a> 
       </figure>
     </section>
     <!--------------------------------------------------------->
@@ -1543,151 +1732,250 @@
       <!-- Tab Contents -->
       <div id="tab-contents">
         <div
-          class="tab-content bg-gray-50 w-full rounded-lg grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 lg:gap-4 gap-2 border border-gray-200 lg:p-12 md:p-4 p-2"
+          class="tab-content bg-gray-50 w-full rounded-lg grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 lg:gap-4 gap-2 border border-gray-200 lg:p-8 md:p-4 p-2"
           data-tab="domestic">
-          <!-- 1 -->
-          <a href="#"
-            class="bg-white relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-            <div class="p-2">
-              <div class="flex items-start justify-start">
-                <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2" src="src/image/icon/bd_gov.png"
-                  alt="Railway">
-                <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                  <div>
-                    <p class="text-sm font-bold text-gray-900">Train Operator</p>
-                    <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Bangladesh Railway</p>
-                  </div>
-                  <p class="text-sm text-gray-400">30/06/2025</p>
-                </div>
+      
+        <!-- Card 7 -->
+        <a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+          <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+            <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+          </button>
+          <div class="flex justify-between items-start mb-4">
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                <span class="text-purple-600 font-bold text-lg">T</span>
+              </div>
+              <div class="ml-3">
+                <h3 class="text-sm font-semibold text-gray-800">Senior Frontend Developer</h3>
+                <p class="text-gray-600 text-xs">Google Inc.</p>
               </div>
             </div>
-          </a>
+          </div>
+          <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+            <span><i class="ri-calendar-2-line text-[15px]"></i> Jun 10 2025</span>
+            <!-- <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 10 2025</span> | -->
+            
+            |<span><i class="ri-map-pin-line text-[15px]"></i> Mirpur, Dhaka</span>
+          </div>
+          <!-- <div class="flex justify-between items-center text-xs">
+<div>
+<p class="text-gray-500">📍 San Francisco, CA</p>
+<p class="font-semibold text-gray-800">$120,000 - $160,000</p>
+</div>
+</div> -->
+        </a>
 
-          <!-- 2 -->
-          <a href="#"
-            class="bg-white relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-            <div class="p-2">
-              <div class="flex items-start justify-start">
-                <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2" src="src/image/icon/bd_gov.png"
-                  alt="Post Office">
-                <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                  <div>
-                    <p class="text-sm font-bold text-gray-900">Postal Assistant</p>
-                    <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">BD Post</p>
-                  </div>
-                  <p class="text-sm text-gray-400">02/07/2025</p>
-                </div>
+        <!-- Card 7 -->
+        <a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+          <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+            <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+          </button>
+          <div class="flex justify-between items-start mb-4">
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
+                <span class="text-red-600 font-bold text-lg">S</span>
+              </div>
+              <div class="ml-3">
+                <h3 class="text-sm font-semibold text-gray-800">Senior Frontend Developer</h3>
+                <p class="text-gray-600 text-xs">Google Inc.</p>
               </div>
             </div>
-          </a>
+          </div>
+          <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+            <span><i class="ri-calendar-2-line text-[15px]"></i> Jun 10 2025</span>
+            <!-- <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 10 2025</span> | -->
 
-          <!-- 3 -->
-          <a href="#"
-            class="bg-white relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-            <div class="p-2">
-              <div class="flex items-start justify-start">
-                <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2" src="src/image/icon/bd_gov.png"
-                  alt="BTRC">
-                <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                  <div>
-                    <p class="text-sm font-bold text-gray-900">Technical Officer</p>
-                    <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">BTRC</p>
-                  </div>
-                  <p class="text-sm text-gray-400">05/07/2025</p>
-                </div>
+            
+            |<span><i class="ri-map-pin-line text-[15px]"></i> Mirpur, Dhaka</span>
+          </div>
+          <!-- <div class="flex justify-between items-center text-xs">
+<div>
+<p class="text-gray-500">📍 San Francisco, CA</p>
+<p class="font-semibold text-gray-800">$120,000 - $160,000</p>
+</div>
+</div> -->
+        </a>
+        
+        <!-- Card 7 -->
+        <a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+          <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+            <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+          </button>
+          <div class="flex justify-between items-start mb-4">
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
+                <span class="text-red-600 font-bold text-lg">S</span>
+              </div>
+              <div class="ml-3">
+                <h3 class="text-sm font-semibold text-gray-800">Senior Frontend Developer</h3>
+                <p class="text-gray-600 text-xs">Google Inc.</p>
               </div>
             </div>
-          </a>
+          </div>
+          <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+            <span><i class="ri-calendar-2-line text-[15px]"></i> Jun 10 2025</span>
+            <!-- <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 10 2025</span> | -->
 
-          <!-- 4 -->
-          <a href="#"
-            class="bg-white relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-            <div class="p-2">
-              <div class="flex items-start justify-start">
-                <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2" src="src/image/icon/bd_gov.png"
-                  alt="Finance Ministry">
-                <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                  <div>
-                    <p class="text-sm font-bold text-gray-900">Accountant</p>
-                    <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Finance Division</p>
-                  </div>
-                  <p class="text-sm text-gray-400">08/07/2025</p>
-                </div>
+            
+            |<span><i class="ri-map-pin-line text-[15px]"></i> Mirpur, Dhaka</span>
+          </div>
+          <!-- <div class="flex justify-between items-center text-xs">
+<div>
+<p class="text-gray-500">📍 San Francisco, CA</p>
+<p class="font-semibold text-gray-800">$120,000 - $160,000</p>
+</div>
+</div> -->
+        </a><!-- Card 7 -->
+        <a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+          <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+            <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+          </button>
+          <div class="flex justify-between items-start mb-4">
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
+                <span class="text-red-600 font-bold text-lg">S</span>
+              </div>
+              <div class="ml-3">
+                <h3 class="text-sm font-semibold text-gray-800">Senior Frontend Developer</h3>
+                <p class="text-gray-600 text-xs">Google Inc.</p>
               </div>
             </div>
-          </a>
+          </div>
+          <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+            <span><i class="ri-calendar-2-line text-[15px]"></i> Jun 10 2025</span>
+            <!-- <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 10 2025</span> | -->
 
-          <!-- 5 -->
-          <a href="#"
-            class="bg-white relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-            <div class="p-2">
-              <div class="flex items-start justify-start">
-                <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2" src="src/image/icon/bd_gov.png"
-                  alt="Air Force">
-                <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                  <div>
-                    <p class="text-sm font-bold text-gray-900">Flight Cadet</p>
-                    <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Bangladesh Air Force</p>
-                  </div>
-                  <p class="text-sm text-gray-400">10/07/2025</p>
-                </div>
-              </div>
+            
+            |<span><i class="ri-map-pin-line text-[15px]"></i> Mirpur, Dhaka</span>
+          </div>
+          <!-- <div class="flex justify-between items-center text-xs">
+<div>
+<p class="text-gray-500">📍 San Francisco, CA</p>
+<p class="font-semibold text-gray-800">$120,000 - $160,000</p>
+</div>
+</div> -->
+        </a> 
+      </a>
+      <!-- Card 7 -->
+      <a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+        <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+          <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+        </button>
+        <div class="flex justify-between items-start mb-4">
+          <div class="flex items-center">
+            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+              <span class="text-purple-600 font-bold text-lg">T</span>
             </div>
-          </a>
+            <div class="ml-3">
+              <h3 class="text-sm font-semibold text-gray-800">Senior Frontend Developer</h3>
+              <p class="text-gray-600 text-xs">Google Inc.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+          <span><i class="ri-calendar-2-line text-[15px]"></i> Jun 10 2025</span>
+          <!-- <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 10 2025</span> | -->
+          
+          |<span><i class="ri-map-pin-line text-[15px]"></i> Mirpur, Dhaka</span>
+        </div>
+        <!-- <div class="flex justify-between items-center text-xs">
+<div>
+<p class="text-gray-500">📍 San Francisco, CA</p>
+<p class="font-semibold text-gray-800">$120,000 - $160,000</p>
+</div>
+</div> -->
+      </a>
 
-          <!-- 6 -->
-          <a href="#"
-            class="bg-white relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-            <div class="p-2">
-              <div class="flex items-start justify-start">
-                <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2" src="src/image/icon/bd_gov.png"
-                  alt="Navy">
-                <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                  <div>
-                    <p class="text-sm font-bold text-gray-900">Sailor</p>
-                    <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Bangladesh Navy</p>
-                  </div>
-                  <p class="text-sm text-gray-400">12/07/2025</p>
-                </div>
-              </div>
+      <!-- Card 7 -->
+      <a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+        <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+          <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+        </button>
+        <div class="flex justify-between items-start mb-4">
+          <div class="flex items-center">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
+              <span class="text-red-600 font-bold text-lg">S</span>
             </div>
-          </a>
+            <div class="ml-3">
+              <h3 class="text-sm font-semibold text-gray-800">Senior Frontend Developer</h3>
+              <p class="text-gray-600 text-xs">Google Inc.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+          <span><i class="ri-calendar-2-line text-[15px]"></i> Jun 10 2025</span>
+          <!-- <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 10 2025</span> | -->
 
-          <!-- 7 -->
-          <a href="#"
-            class="bg-white relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-            <div class="p-2">
-              <div class="flex items-start justify-start">
-                <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2" src="src/image/icon/bd_gov.png"
-                  alt="Education Ministry">
-                <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                  <div>
-                    <p class="text-sm font-bold text-gray-900">Lecturer (Math)</p>
-                    <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Education Board</p>
-                  </div>
-                  <p class="text-sm text-gray-400">14/07/2025</p>
-                </div>
-              </div>
+          
+          |<span><i class="ri-map-pin-line text-[15px]"></i> Mirpur, Dhaka</span>
+        </div>
+        <!-- <div class="flex justify-between items-center text-xs">
+<div>
+<p class="text-gray-500">📍 San Francisco, CA</p>
+<p class="font-semibold text-gray-800">$120,000 - $160,000</p>
+</div>
+</div> -->
+      </a>
+      
+      <!-- Card 7 -->
+      <a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+        <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+          <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+        </button>
+        <div class="flex justify-between items-start mb-4">
+          <div class="flex items-center">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
+              <span class="text-red-600 font-bold text-lg">S</span>
             </div>
-          </a>
+            <div class="ml-3">
+              <h3 class="text-sm font-semibold text-gray-800">Senior Frontend Developer</h3>
+              <p class="text-gray-600 text-xs">Google Inc.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+          <span><i class="ri-calendar-2-line text-[15px]"></i> Jun 10 2025</span>
+          <!-- <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 10 2025</span> | -->
 
-          <!-- 8 -->
-          <a href="#"
-            class="bg-white relative overflow-hidden border cursor-pointer border-gray-200 duration-150 divide-y divide-gray-200 hover:shadow-lg rounded-md">
-            <div class="p-2">
-              <div class="flex items-start justify-start">
-                <img class="w-16 bg-gray-50 border h-16 rounded-lg md:h-20 md:w-20 p-2" src="src/image/icon/bd_gov.png"
-                  alt="Army">
-                <div class="flex flex-col self-stretch justify-between ml-5 mr-auto">
-                  <div>
-                    <p class="text-sm font-bold text-gray-900">2nd Lieutenant</p>
-                    <p class="mt-2 text-sm font-medium text-gray-600 md:mt-0">Bangladesh Army</p>
-                  </div>
-                  <p class="text-sm text-gray-400">16/07/2025</p>
-                </div>
-              </div>
+          
+          |<span><i class="ri-map-pin-line text-[15px]"></i> Mirpur, Dhaka</span>
+        </div>
+        <!-- <div class="flex justify-between items-center text-xs">
+<div>
+<p class="text-gray-500">📍 San Francisco, CA</p>
+<p class="font-semibold text-gray-800">$120,000 - $160,000</p>
+</div>
+</div> -->
+      </a><!-- Card 7 -->
+      <a href="src/pages/job-details.html" class="bg-gray-50 rounded-lg p-4 border hover:shadow-lg transition-shadow relative">
+        <button class="absolute right-2 top-2 w-8 h-8 rounded-xl flex items-center justify-center">
+          <i class="ri-bookmark-line text-gray-500 hover:!text-primary-blue text-xl"></i>
+        </button>
+        <div class="flex justify-between items-start mb-4">
+          <div class="flex items-center">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
+              <span class="text-red-600 font-bold text-lg">S</span>
             </div>
-          </a>
+            <div class="ml-3">
+              <h3 class="text-sm font-semibold text-gray-800">Senior Frontend Developer</h3>
+              <p class="text-gray-600 text-xs">Google Inc.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap text-xs text-gray-600 gap-x-2 items-center">
+          <span><i class="ri-calendar-2-line text-[15px]"></i> Jun 10 2025</span>
+          <!-- <span><i class="ri-calendar-2-line text-[15px]"></i> Jul 10 2025</span> | -->
+
+          
+          |<span><i class="ri-map-pin-line text-[15px]"></i> Mirpur, Dhaka</span>
+        </div>
+        <!-- <div class="flex justify-between items-center text-xs">
+<div>
+<p class="text-gray-500">📍 San Francisco, CA</p>
+<p class="font-semibold text-gray-800">$120,000 - $160,000</p>
+</div>
+</div> -->
+      </a> 
         </div>
         <div class="tab-content hidden" data-tab="skilled">
           <!-- Under Construction Card -->
