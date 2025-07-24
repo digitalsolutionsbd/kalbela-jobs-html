@@ -39,3 +39,45 @@
     },
   });
   
+  
+  /********************************
+   ********* Similar job slider ****
+   ********************************/
+  const jobNewsSlider = new Swiper(".jobNewsSlider", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    autoplay: {
+      delay: 2700,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".jobNewsSlider .swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 1, // Show 2 items from 768px+
+      },
+    },
+  });
+  
+  
+  /********************************
+   **** Government header slider ****
+   ********************************/
+  const governmentHeaderSlider = new Swiper(".governmentHeaderSlider", {
+    spaceBetween: 30,
+    effect: "fade",
+    autoplay: {
+      delay: 2700,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  })

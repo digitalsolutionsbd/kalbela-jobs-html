@@ -117,7 +117,8 @@ export const categoryUi = () => {
     totalCategory.textContent = `(${jobRoles.length})`;
   jobRoles?.map(role => {
       const li = document.createElement("li");
-      li.classList.add("category-list-item");
+    li.classList.add("category-list-item");
+
       li.innerHTML = `
         <a href="${role.link}" class="d-flex align-items-center">
           <i class="ri-arrow-right-s-fill"></i>

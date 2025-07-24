@@ -30,269 +30,362 @@
     <link rel="canonical" href="https://www.kalbelajobs.com" />
 
     <!-- CSS & Plugins -->
-    <link rel="stylesheet" href="../css/output.css">
-    <link rel="stylesheet" href="../css//header.css">
-    <link rel="stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="/src/css/output.css">
+    <link rel="stylesheet" href="/src/css//header.css">
+    <link rel="stylesheet" href="/src/css/swiper.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
-<body>
-    <!-- <div id="preloader"
-    class="gradient-bg fixed top-0 left-0 right-0 bottom-0 h-screen inset-0 flex items-center flex-col justify-center z-[9999] loading-screen">
-    <img src="../image/logo_dark.png" alt="" class="logo h-auto md:w-[17rem] w-[15rem] animated  animate-pulse animate-jump animate-infinite    ">
-    <h2 class="text-xl md:mt-4 mt-2">Loading Please Wait...</h2>
-  </div> -->
-    <header>
-        <!--------------------------------------------------------->
-        <!--////////////////// Nav Bar///// //////////////////////-->
-        <!--------------------------------------------------------->
-        <nav
-            class="mainNav bg-base border-b fixed w-full top-0 left-0 z-50 transition-all duration-300 ease-in-out md:py-4 py-3">
-            <div class="my-container mx-auto px-4 flex gap-4 items-center justify-between">
-                <div class="nav-searh-logo  scale-90  duration-300 ease-in-out">
-                    <a href="/">
-                        <img class="logo md:w-[140px] w-[140px] " src="../image/logo_dark.png" alt="logo" />
-                    </a>
-                </div>
+<body class="relative">
+    <div class="bg-gradient-to-t from-[#ff000000] to-[#cfe1ff] absolute top-0 left-0 right-0 h-[500px] "></div>
 
+    <div class="relative z-10">
+        <header class=" flex items-center justify-center md:h-[320px] h-[360px]">
+            <!--------------------------------------------------------->
+            <!--////////////////////// Navbar /////////////////////////->
+            <!--------------------------------------------------------->
+            <nav class="mainNav fixed w-full top-0 left-0 z-50 transition-all duration-300 ease-in-out lg:py-4 py-2">
+              <div class="my-container mx-auto px-4 flex gap-4 items-center justify-between">
                 <div
-                    class="navLinksContainerSearch justify-end  md:flex gap-4 items-center  w-full transition-all duration-300 ease-in-out">
-                    <ul class="md:flex hidden space-x-4 md:space-x-4">
-                        <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Home</a></li>
-                        <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Jobseeker</a></li>
-                        <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Employer</a></li>
-                        <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Service</a></li>
-                        <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Training</a></li>
-                        <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Easy Learning</a></li>
-                        <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Career Resource</a></li>
-                        <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Contact Us</a></li>
-                    </ul>
-
-                    <div class="right-side-search duration-150 flex justify-end items-center gap-4 ">
-                        <div class="relative hidden text-left group  profile-dropdown">
-                            <div class="profileImage flex-shrink-0">
-                                <button
-                                    class="bg-[var(--primary-blue)] hover:bg-blue-800 text-white py-2 px-4 rounded">Login</button>
-                            </div>
-                            <div class="absolute -mt-2 pt-4 z-10 dropdown-menu profile-dropdown-menu">
-                                <div class="py-1 bg-white w-auto border rounded-lg shadow-xl opacity-0 hidden group-hover:block invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 transform scale-95 group-hover:scale-100 ease-out"
-                                    role="menu">
-                                    <div class="mx-1 flex items-center">
-                                        <button
-                                            class="selectJobseeker rounded-r-none text-white py-1 px-4 rounded">Jobseeker</button>
-                                        <button
-                                            class="selectEmployer rounded-l-none text-white py-1 px-4 rounded">Employer</button>
-                                    </div>
-
-                                    <a href="#"
-                                        class="menu-link block px-4 py-2 text-sm text-gray-700 hover:bg-blue-500 hover:text-white rounded-md mx-1 my-0.5"
-                                        data-path="login">Login</a>
-                                    <a href="#"
-                                        class="menu-link block px-4 py-2 text-sm text-gray-700 hover:bg-blue-500 hover:text-white rounded-md mx-1 my-0.5"
-                                        data-path="register">Register</a>
-                                    <a href="#"
-                                        class="menu-link block px-4 py-2 text-sm text-gray-700 hover:bg-blue-500 hover:text-white rounded-md mx-1 my-0.5"
-                                        data-path="help">Help Center</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="relative  text-left group  profile-dropdown">
-                            <div class="profileImage flex-shrink-0">
-                                <img src="https://avatar.iran.liara.run/public/3" alt="Profile"
-                                    class="w-10 h-10 rounded-full border-2 border-gray-300 object-cover" />
-                            </div>
-
-                            <div class="absolute -mt-2 pt-4 z-10 dropdown-menu profile-dropdown-menu">
-                                <div class="py-1 bg-white w-48 border rounded-lg shadow-xl opacity-0 hidden group-hover:block invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 transform scale-95 group-hover:scale-100 ease-out"
-                                    role="menu" aria-orientation="vertical">
-                                    <a href="#"
-                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-500 hover:text-white rounded-md mx-1 my-0.5">Dashboard</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-500 hover:text-white rounded-md mx-1 my-0.5">Profile</a>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-500 hover:text-white rounded-md mx-1 my-0.5">Logout</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center gap-4">
-              
-                            <div class="relative text-left group  profile-dropdown">
-                              <button class=" bg-gray-100 text-primary-blue rounded-full flex items-center justify-center w-10 h-10 text-xl"><i class="ri-notification-line"></i></button>
-                              
-                              <div class="absolute -mt-2 pt-4 z-10 dropdown-menu profile-dropdown-menu">
-                                <div
-                                  class="py-1 bg-white w-[300px] border rounded-lg shadow-xl opacity-0 hidden group-hover:block invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 transform scale-95 group-hover:scale-100 ease-out"
-                                  role="menu" aria-orientation="vertical">
-                                  <div class="px-4 py-3 border-b border-gray-100">
-                                    <div class="flex items-center justify-between">
-                                        <h3 class="text-lg font-semibold text-gray-900">Notifications</h3>
-                                        <button class="text-sm text-primary-blue hover:text-blue-700 font-medium">
-                                            Mark all read
-                                        </button>
-                                    </div>
-                                </div>
-                
-                                <!-- Notification List -->
-                                <div class="max-h-96 overflow-y-auto">
-                                    <!-- notification 1 -->
-                                    <div class="px-4 py-3 hover:bg-gray-50 border-l-4 border-primary-blue bg-blue-50">
-                                        <div class="flex items-start space-x-3">
-                                            <div class="flex-shrink-0">
-                                                <div class="w-10 h-10 bg-primary-blue rounded-full flex items-center justify-center">
-                                                    <i class="ri-briefcase-line text-white text-sm"></i>
-                                                </div>
-                                            </div>
-                                            <div class="flex-1 min-w-0">
-                                                <div class="flex items-center justify-between">
-                                                    <p class="text-sm font-medium text-gray-900">New Job Posted</p>
-                                                    <span class="w-2 h-2 bg-primary-blue rounded-full"></span>
-                                                </div>
-                                                <p class="text-sm text-gray-600 mt-1">
-                                                    <span class="font-medium">Senior Frontend Developer</span> at TechCorp Inc.
-                                                </p>
-                                                <p class="text-xs text-gray-500 mt-1">2 minutes ago</p>
-                                                <div class="flex space-x-2 mt-2">
-                                                    <button class="text-xs bg-primary-blue text-white px-2 py-1 rounded hover:bg-blue-700">
-                                                        View Job
-                                                    </button>
-                                                    <button class="text-xs text-gray-600 hover:text-gray-800">
-                                                        Dismiss
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                
-                                    <!-- notification 2 -->
-                                    <div class="px-4 py-3 hover:bg-gray-50 border-l-4 border-green-500 bg-green-50">
-                                        <div class="flex items-start space-x-3">
-                                            <div class="flex-shrink-0">
-                                                <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
-                                                    <i class="ri-check-line text-white text-sm"></i>
-                                                </div>
-                                            </div>
-                                            <div class="flex-1 min-w-0">
-                                                <div class="flex items-center justify-between">
-                                                    <p class="text-sm font-medium text-gray-900">Application Update</p>
-                                                    <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-                                                </div>
-                                                <p class="text-sm text-gray-600 mt-1">
-                                                    Your application for <span class="font-medium">UX Designer</span> has been reviewed
-                                                </p>
-                                                <p class="text-xs text-gray-500 mt-1">1 hour ago</p>
-                                                <div class="flex space-x-2 mt-2">
-                                                    <button class="text-xs bg-green-500 text-white px-2 py-1 rounded hover:bg-green-600">
-                                                        View Status
-                                                    </button>
-                                                    <button class="text-xs text-gray-600 hover:text-gray-800">
-                                                        Dismiss
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                     <!-- notification 3 -->
-                                    <div class="px-4 py-3 hover:bg-gray-50 border-l-4 border-primary-blue bg-blue-50">
-                                        <div class="flex items-start space-x-3">
-                                            <div class="flex-shrink-0">
-                                                <div class="w-10 h-10 bg-primary-blue rounded-full flex items-center justify-center">
-                                                    <i class="ri-briefcase-line text-white text-sm"></i>
-                                                </div>
-                                            </div>
-                                            <div class="flex-1 min-w-0">
-                                                <div class="flex items-center justify-between">
-                                                    <p class="text-sm font-medium text-gray-900">New Job Posted</p>
-                                                    <span class="w-2 h-2 bg-primary-blue rounded-full"></span>
-                                                </div>
-                                                <p class="text-sm text-gray-600 mt-1">
-                                                    <span class="font-medium">Senior Frontend Developer</span> at TechCorp Inc.
-                                                </p>
-                                                <p class="text-xs text-gray-500 mt-1">2 minutes ago</p>
-                                                <div class="flex space-x-2 mt-2">
-                                                    <button class="text-xs bg-primary-blue text-white px-2 py-1 rounded hover:bg-blue-700">
-                                                        View Job
-                                                    </button>
-                                                    <button class="text-xs text-gray-600 hover:text-gray-800">
-                                                        Dismiss
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                
-                                    <!-- notification 4 -->
-                                    <div class="px-4 py-3 hover:bg-gray-50 border-l-4 border-green-500 bg-green-50">
-                                        <div class="flex items-start space-x-3">
-                                            <div class="flex-shrink-0">
-                                                <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
-                                                    <i class="ri-check-line text-white text-sm"></i>
-                                                </div>
-                                            </div>
-                                            <div class="flex-1 min-w-0">
-                                                <div class="flex items-center justify-between">
-                                                    <p class="text-sm font-medium text-gray-900">Application Update</p>
-                                                    <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-                                                </div>
-                                                <p class="text-sm text-gray-600 mt-1">
-                                                    Your application for <span class="font-medium">UX Designer</span> has been reviewed
-                                                </p>
-                                                <p class="text-xs text-gray-500 mt-1">1 hour ago</p>
-                                                <div class="flex space-x-2 mt-2">
-                                                    <button class="text-xs bg-green-500 text-white px-2 py-1 rounded hover:bg-green-600">
-                                                        View Status
-                                                    </button>
-                                                    <button class="text-xs text-gray-600 hover:text-gray-800">
-                                                        Dismiss
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-4 py-3 border-t border-gray-100 bg-gray-50">
-                                  <button class="w-full text-center text-sm text-primary-blue hover:text-blue-700 font-medium">
-                                      View All Notifications
-                                  </button>
-                              </div>
-                                </div>
-                              </div>
-                            </div>
-              
-              
-                            <button class="menuButton w-8 h-8 lg:hidden rounded-full flex items-center justify-center ">
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z"></path>
-                              </svg>
-                            </button>
-                          </div>
-              
-
-                    </div>
+                  class="nav-logo opacity-0 hidden scale-90 transform -translate-x-10 transition-all duration-300 ease-in-out">
+                  <a href="/">
+                    <img class="logo lg:w-[140px] w-[130px]" src="/src/image/logo_dark.png" alt="logo" />
+                  </a>
                 </div>
-            </div>
-        </nav>
-
-        <!--------------------------------------------------------->
-        <!--//////////////////  Sidebar  ////////////////////////-->
-        <!--------------------------------------------------------->
-        <div id="sidebar-container"></div>
-    </header>
-
-    <main>
-        <div
-        class="bg-gradient-to-t from-[#ffffff72] to-[#00000025] mt-[70px] md:h-[300px] h-[200px] flex flex-col gap-4 items-center justify-start px-2 py-12 bg-cover"
-        style="background-image: linear-gradient(rgb(10 8 8 / 38%), rgb(12 63 128 / 74%)), url(../image/banner/banner4.png)"
-      >
-        <h3 class="font-semibold md:text-3xl md:mt-8 mt-2 md:block hidden text-xl text-white">
-          Company Profile
-        </h3>
-      </div>
       
-       <!-- Main content -->
-    <div class="my-container mx-auto relative -mt-24 px-4">
+                <div
+                  class="navLinksContainer justify-between gap-4 lg:flex  items-center  w-full transition-all duration-300 ease-in-out">
+                  <ul class="lg:flex hidden space-x-4 lg:space-x-4">
+                    <li><a href="/" class="text-gray-700 hover:text-blue-600 font-medium">Home</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Jobseeker</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Employer</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Service</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Training</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Easy Learning</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Career Resource</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Contact Us</a></li>
+                  </ul>
+      
+                  <div class="right-side duration-150 flex justify-between items-center gap-4 ">
+                    <div class="relative text-left group lg:block hidden loginDropdown">
+      
+      
+                      <div class="absolute login-dropdown-menu -mt-2 pt-4 z-10">
+      
+                      </div>
+                    </div>
+      
+      
+                    <div class="relative  text-left group  profile-dropdown">
+                      <div class="profileImage flex-shrink-0">
+                        <button class="bg-[var(--primary-blue)] hover:bg-blue-800 text-white py-2 px-4 rounded">Login</button>
+                      </div>
+      
+                      <div class="absolute -mt-2 pt-4 z-10 dropdown-menu profile-dropdown-menu">
+                        <div
+                          class="py-1 bg-white w-auto border rounded-lg shadow-xl opacity-0 hidden group-hover:block invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 transform scale-95 group-hover:scale-100 ease-out"
+                          role="menu">
+                          <div class="mx-1 flex items-center">
+                            <button class="selectJobseeker rounded-r-none text-white py-1 px-4 rounded">Jobseeker</button>
+                            <button class="selectEmployer rounded-l-none text-white py-1 px-4 rounded">Employer</button>
+                          </div>
+      
+                          <a href="#"
+                            class="menu-link block px-4 py-2 text-sm text-gray-700 hover:bg-blue-500 hover:text-white rounded-md mx-1 my-0.5"
+                            data-path="signin">Sign in</a>
+                          <a href="#"
+                            class="menu-link block px-4 py-2 text-sm text-gray-700 hover:bg-blue-500 hover:text-white rounded-md mx-1 my-0.5"
+                            data-path="register">Register</a>
+                          <a href="#"
+                            class="menu-link block px-4 py-2 text-sm text-gray-700 hover:bg-blue-500 hover:text-white rounded-md mx-1 my-0.5"
+                            data-path="help">Help Center</a>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="relative hidden text-left group  profile-dropdown">
+                      <div class="profileImage flex-shrink-0">
+                        <img src="https://randomuser.me/api/portraits/men/19.jpg" alt="Profile"
+                          class="w-10 h-10 rounded-full border-2 border-gray-300 object-cover" />
+                      </div>
+      
+                      <div class="absolute -mt-2 pt-4 z-10 dropdown-menu profile-dropdown-menu">
+                        <div
+                          class="py-1 bg-white w-48 border rounded-lg shadow-xl opacity-0 hidden group-hover:block invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 transform scale-95 group-hover:scale-100 ease-out"
+                          role="menu" aria-orientation="vertical">
+                          <a href="#"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-500 hover:text-white rounded-md mx-1 my-0.5">Dashboard</a>
+                          <a href="#"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-500 hover:text-white rounded-md mx-1 my-0.5">Profile</a>
+                          <a href="#"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-500 hover:text-white rounded-md mx-1 my-0.5">Logout</a>
+                        </div>
+                      </div>
+                    </div>
+      
+      
+                    <div class="flex items-center gap-4">
+      
+                      <div class="relative text-left group  profile-dropdown">
+                        <button
+                          class=" bg-gray-100 text-primary-blue rounded-full flex items-center justify-center w-10 h-10 text-xl"><i
+                            class="ri-notification-line"></i></button>
+      
+                        <div class="absolute -mt-2 pt-4 z-10 dropdown-menu profile-dropdown-menu">
+                          <div
+                            class="py-1 bg-white w-[300px] border rounded-lg shadow-xl opacity-0 hidden group-hover:block invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 transform scale-95 group-hover:scale-100 ease-out"
+                            role="menu" aria-orientation="vertical">
+                            <div class="px-4 py-3 border-b border-gray-100">
+                              <div class="flex items-center justify-between">
+                                <h3 class="text-lg font-semibold text-gray-900">Notifications</h3>
+                                <button class="text-sm text-primary-blue hover:text-blue-700 font-medium">
+                                  Mark all read
+                                </button>
+                              </div>
+                            </div>
+      
+                            <!-- Notification List -->
+                            <div class="max-h-96 overflow-y-auto">
+                              <!-- notification 1 -->
+                              <div class="px-4 py-3 hover:bg-gray-50 border-l-4 border-primary-blue bg-blue-50">
+                                <div class="flex items-start space-x-3">
+                                  <div class="flex-shrink-0">
+                                    <div class="w-10 h-10 bg-primary-blue rounded-full flex items-center justify-center">
+                                      <i class="ri-briefcase-line text-white text-sm"></i>
+                                    </div>
+                                  </div>
+                                  <div class="flex-1 min-w-0">
+                                    <div class="flex items-center justify-between">
+                                      <p class="text-sm font-medium text-gray-900">New Job Posted</p>
+                                      <span class="w-2 h-2 bg-primary-blue rounded-full"></span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mt-1">
+                                      <span class="font-medium">Senior Frontend Developer</span> at TechCorp Inc.
+                                    </p>
+                                    <p class="text-xs text-gray-500 mt-1">2 minutes ago</p>
+                                    <div class="flex space-x-2 mt-2">
+                                      <button class="text-xs bg-primary-blue text-white px-2 py-1 rounded hover:bg-blue-700">
+                                        View Job
+                                      </button>
+                                      <button class="text-xs text-gray-600 hover:text-gray-800">
+                                        Dismiss
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+      
+                              <!-- notification 2 -->
+                              <div class="px-4 py-3 hover:bg-gray-50 border-l-4 border-green-500 bg-green-50">
+                                <div class="flex items-start space-x-3">
+                                  <div class="flex-shrink-0">
+                                    <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
+                                      <i class="ri-check-line text-white text-sm"></i>
+                                    </div>
+                                  </div>
+                                  <div class="flex-1 min-w-0">
+                                    <div class="flex items-center justify-between">
+                                      <p class="text-sm font-medium text-gray-900">Application Update</p>
+                                      <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mt-1">
+                                      Your application for <span class="font-medium">UX Designer</span> has been reviewed
+                                    </p>
+                                    <p class="text-xs text-gray-500 mt-1">1 hour ago</p>
+                                    <div class="flex space-x-2 mt-2">
+                                      <button class="text-xs bg-green-500 text-white px-2 py-1 rounded hover:bg-green-600">
+                                        View Status
+                                      </button>
+                                      <button class="text-xs text-gray-600 hover:text-gray-800">
+                                        Dismiss
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- notification 3 -->
+                              <div class="px-4 py-3 hover:bg-gray-50 border-l-4 border-primary-blue bg-blue-50">
+                                <div class="flex items-start space-x-3">
+                                  <div class="flex-shrink-0">
+                                    <div class="w-10 h-10 bg-primary-blue rounded-full flex items-center justify-center">
+                                      <i class="ri-briefcase-line text-white text-sm"></i>
+                                    </div>
+                                  </div>
+                                  <div class="flex-1 min-w-0">
+                                    <div class="flex items-center justify-between">
+                                      <p class="text-sm font-medium text-gray-900">New Job Posted</p>
+                                      <span class="w-2 h-2 bg-primary-blue rounded-full"></span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mt-1">
+                                      <span class="font-medium">Senior Frontend Developer</span> at TechCorp Inc.
+                                    </p>
+                                    <p class="text-xs text-gray-500 mt-1">2 minutes ago</p>
+                                    <div class="flex space-x-2 mt-2">
+                                      <button class="text-xs bg-primary-blue text-white px-2 py-1 rounded hover:bg-blue-700">
+                                        View Job
+                                      </button>
+                                      <button class="text-xs text-gray-600 hover:text-gray-800">
+                                        Dismiss
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+      
+                              <!-- notification 4 -->
+                              <div class="px-4 py-3 hover:bg-gray-50 border-l-4 border-green-500 bg-green-50">
+                                <div class="flex items-start space-x-3">
+                                  <div class="flex-shrink-0">
+                                    <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
+                                      <i class="ri-check-line text-white text-sm"></i>
+                                    </div>
+                                  </div>
+                                  <div class="flex-1 min-w-0">
+                                    <div class="flex items-center justify-between">
+                                      <p class="text-sm font-medium text-gray-900">Application Update</p>
+                                      <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mt-1">
+                                      Your application for <span class="font-medium">UX Designer</span> has been reviewed
+                                    </p>
+                                    <p class="text-xs text-gray-500 mt-1">1 hour ago</p>
+                                    <div class="flex space-x-2 mt-2">
+                                      <button class="text-xs bg-green-500 text-white px-2 py-1 rounded hover:bg-green-600">
+                                        View Status
+                                      </button>
+                                      <button class="text-xs text-gray-600 hover:text-gray-800">
+                                        Dismiss
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="px-4 py-3 border-t border-gray-100 bg-gray-50">
+                              <button class="w-full text-center text-sm text-primary-blue hover:text-blue-700 font-medium">
+                                View All Notifications
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+      
+            <!--------------------------------------------------------->
+            <!--///////////////////// Sidebar ///////////////////////->
+            <!-------------------------------------------------------->
+            <aside
+              class="sidebar  w-[300px] bg-white h-screen fixed top-0 left-0 z-[2000] transform -translate-x-full transition-transform duration-300 ease-in-out p-4">
+              <div class="flex items-center justify-between">
+                <a href="/">
+                  <img class="logo md:w-[140px] w-[120px] d-none d-lg-block  animated animate-jump "
+                    src="/src/image/logo_dark.png" alt="logo" />
+                </a>
+      
+                <button id="closeSidebar" class=" text-2xl text-black">
+                  <i class="ri-close-line"></i>
+                </button>
+              </div>
+              <ul class="sidebar-list space-y-4 mt-4">
+                <li><a href="/" class="text-gray-700 hover:text-blue-600 font-medium">Home</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Jobseeker</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Employer</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Service</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Training</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Easy Learning</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Career Resource</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Contact Us</a></li>
+              </ul>
+            </aside>
+            <div class="overlay hidden bg-[#000000d7] w-full h-screen fixed top-0 left-0 opacity- z-[1000] ">
+            </div>
+            <!--------------------------------------------------------->
+            <!--////////////////////// Header content/////////////////->
+            <!--------------------------------------------------------->
+            <div class="header-contetn heroLogo transition-all duration-500 ease-in-out scale-100 opacity-100 w-full flex flex-col items-center mt-[160px] ">
+              <a href="/">
+                <img
+                  class="mx-auto  h-auto md:w-[17rem] w-[10rem] transition-all duration-500 ease-in-out scale-100 opacity-100"
+                  src="/src/image/logo_dark.png" alt="logo" />
+              </a>
+              <h1
+                class="mt-[1.3rem] bg-clip-text text-foreground-800 animate-marquee text-center text-[27px] font-bold leading-tight md:text-4xl lg:text-[1.9rem]">
+                Find Your Dream Jobs
+              </h1>
+    
+            </div>
+          </header>
+<!-- bottom nav -->
+          <div class="fixed bottom-0 left-0 right-0 w-[100%] max-w-md lg:hidden block mx-auto z-50">
+            <div class="bg-white border rounded-t-xl shadow-[rgba(0,0,0,0.09)_10px_-20px_20px_0px] p-2 h-[70px]">
+              <div class="flex items-center justify-between h-full px-2">
+      
+                <!-- Menu Button -->
+                <button
+                  class="nav-button menuButton w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" x2="20" y1="6" y2="6" />
+                    <line x1="4" x2="20" y1="12" y2="12" />
+                    <line x1="4" x2="20" y1="18" y2="18" />
+                  </svg>
+                  <span class="sr-only">Menu</span>
+                </button>
+      
+                <!-- Shortcut Button -->
+                <button data-modal="shortcut"
+                  class="nav-button w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                      points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+                  </svg>
+                  <span class="sr-only">Shortcuts</span>
+                </button>
+      
+                <!-- Home Button -->
+                <a href="/"
+                  class="nav-button w-12 h-12 rounded-full flex items-center justify-center bg-blue-50 hover:bg-blue-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                    <polyline points="9,22 9,12 15,12 15,22" />
+                  </svg>
+                  <span class="sr-only">Home</span>
+                </a>
+      
+                <!-- Search Button -->
+                <button data-modal="search"
+                  class="nav-button w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.35-4.35" />
+                  </svg>
+                  <span class="sr-only">Search</span>
+                </button>
+      
+                <!-- Profile Button -->
+                <button data-modal="profile"
+                  class="nav-button w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                    <circle cx="12" cy="7" r="4" />
+                  </svg>
+                  <span class="sr-only">Profile</span>
+                </button>
+      
+              </div>
+            </div>
+          </div>
+    <main>
+    <div style="margin-top: 100px;" class="my-container  mx-auto relative px-4">
         <div class="flex flex-col lg:flex-row lg:gap-8">
           <!-- Company Profile -->
           <div class="lg:w-[400px] lg:mb-0 mb-6">
@@ -369,7 +462,7 @@
                                   <span class="text-blue-600 font-bold text-lg">G</span>
                               </a>
                               <div class="ml-3">
-                                  <a href="job-details.html" class="text-lg font-semibold text-gray-800">Senior
+                                  <a href="job-details.html" class="lg:text-lg text-sm font-semibold text-gray-800">Senior
                                       Frontend Developer</a>
                                   <p class="text-gray-600">Google Inc.</p>
                               </div>
@@ -387,10 +480,10 @@
                       <div class="flex justify-between items-center">
                           <div>
                               <p class="text-sm text-gray-500">📍 San Francisco, CA</p>
-                              <p class="text-lg font-semibold text-gray-800">$120,000 - $160,000</p>
+                              <p class="lg:text-lg text-sm font-semibold text-gray-800">$120,000 - $160,000</p>
                           </div>
                           <button onclick="openApplyJobModal()" class="btn-primary">
-                              <div class="text-container">Apply Now</div>
+                              <div class="text-container md:text-md text-sm">Apply Now</div>
                           </button>
                       </div>
                   </div>
@@ -405,7 +498,7 @@
                                   <span class="text-purple-600 font-bold text-lg">G</span>
                               </a>
                               <div class="ml-3">
-                                  <a href="job-details.html" class="text-lg font-semibold text-gray-800">UX/UI
+                                  <a href="job-details.html" class="lg:text-lg text-sm font-semibold text-gray-800">UX/UI
                                       Designer</a>
                                   <p class="text-gray-600">Microsoft</p>
                               </div>
@@ -423,10 +516,10 @@
                       <div class="flex justify-between items-center">
                           <div>
                               <p class="text-sm text-gray-500">📍 New York, NY</p>
-                              <p class="text-lg font-semibold text-gray-800">$90,000 - $130,000</p>
+                              <p class="lg:text-lg text-sm font-semibold text-gray-800">$90,000 - $130,000</p>
                           </div>
                           <button onclick="openApplyJobModal()" class="btn-primary">
-                              <div class="text-container">Apply Now</div>
+                              <div class="text-container md:text-md text-sm">Apply Now</div>
                           </button>
                       </div>
                   </div>
@@ -441,7 +534,7 @@
                                   <span class="text-blue-600 font-bold text-lg">G</span>
                               </a>
                               <div class="ml-3">
-                                  <a href="job-details.html" class="text-lg font-semibold text-gray-800">Backend
+                                  <a href="job-details.html" class="lg:text-lg text-sm font-semibold text-gray-800">Backend
                                       Engineer</a>
                                   <p class="text-gray-600">Netflix</p>
                               </div>
@@ -459,10 +552,10 @@
                       <div class="flex justify-between items-center">
                           <div>
                               <p class="text-sm text-gray-500">📍 Los Angeles, CA</p>
-                              <p class="text-lg font-semibold text-gray-800">$140,000 - $180,000</p>
+                              <p class="lg:text-lg text-sm font-semibold text-gray-800">$140,000 - $180,000</p>
                           </div>
                           <button onclick="openApplyJobModal()" class="btn-primary">
-                              <div class="text-container">Apply Now</div>
+                              <div class="text-container md:text-md text-sm">Apply Now</div>
                           </button>
                       </div>
                   </div>
@@ -477,7 +570,7 @@
                                   <span class="text-blue-600 font-bold text-lg">G</span>
                               </a>
                               <div class="ml-3">
-                                  <a href="job-details.html" class="text-lg font-semibold text-gray-800">Data
+                                  <a href="job-details.html" class="lg:text-lg text-sm font-semibold text-gray-800">Data
                                       Scientist</a>
                                   <p class="text-gray-600">Amazon</p>
                               </div>
@@ -495,10 +588,10 @@
                       <div class="flex justify-between items-center">
                           <div>
                               <p class="text-sm text-gray-500">📍 Remote</p>
-                              <p class="text-lg font-semibold text-gray-800">$110,000 - $150,000</p>
+                              <p class="lg:text-lg text-sm font-semibold text-gray-800">$110,000 - $150,000</p>
                           </div>
                           <button onclick="openApplyJobModal()" class="btn-primary">
-                              <div class="text-container">Apply Now</div>
+                              <div class="text-container md:text-md text-sm">Apply Now</div>
                           </button>
                       </div>
                   </div>
@@ -513,7 +606,7 @@
                                   <span class="text-blue-600 font-bold text-lg">G</span>
                               </a>
                               <div class="ml-3">
-                                  <a href="job-details.html" class="text-lg font-semibold text-gray-800">DevOps
+                                  <a href="job-details.html" class="lg:text-lg text-sm font-semibold text-gray-800">DevOps
                                       Engineer</a>
                                   <p class="text-gray-600">Spotify</p>
                               </div>
@@ -531,10 +624,10 @@
                       <div class="flex justify-between items-center">
                           <div>
                               <p class="text-sm text-gray-500">📍 Austin, TX</p>
-                              <p class="text-lg font-semibold text-gray-800">$100,000 - $140,000</p>
+                              <p class="lg:text-lg text-sm font-semibold text-gray-800">$100,000 - $140,000</p>
                           </div>
                           <button onclick="openApplyJobModal()" class="btn-primary">
-                              <div class="text-container">Apply Now</div>
+                              <div class="text-container md:text-md text-sm">Apply Now</div>
                           </button>
                       </div>
                   </div>
@@ -549,7 +642,7 @@
                                   <span class="text-blue-600 font-bold text-lg">G</span>
                               </a>
                               <div class="ml-3">
-                                  <a href="job-details.html" class="text-lg font-semibold text-gray-800">Product
+                                  <a href="job-details.html" class="lg:text-lg text-sm font-semibold text-gray-800">Product
                                       Manager</a>
                                   <p class="text-gray-600">Tesla</p>
                               </div>
@@ -567,10 +660,10 @@
                       <div class="flex justify-between items-center">
                           <div>
                               <p class="text-sm text-gray-500">📍 Chicago, IL</p>
-                              <p class="text-lg font-semibold text-gray-800">$130,000 - $170,000</p>
+                              <p class="lg:text-lg text-sm font-semibold text-gray-800">$130,000 - $170,000</p>
                           </div>
                           <button onclick="openApplyJobModal()" class="btn-primary">
-                              <div class="text-container">Apply Now</div>
+                              <div class="text-container md:text-md text-sm">Apply Now</div>
                           </button>
                       </div>
                   </div>
@@ -587,6 +680,13 @@
       </div>
     </main>
     <br>
+    </div>
+    <!-- <div id="preloader"
+    class="gradient-bg fixed top-0 left-0 right-0 bottom-0 h-screen inset-0 flex items-center flex-col justify-center z-[9999] loading-screen">
+    <img src="../image/logo_dark.png" alt="" class="logo h-auto md:w-[17rem] w-[15rem] animated  animate-pulse animate-jump animate-infinite    ">
+    <h2 class="text-xl md:mt-4 mt-2">Loading Please Wait...</h2>
+  </div> -->
+   
     <!--------------------------------------------------------->
     <!--///////////////////// Footer ////////////////////////-->
     <!--------------------------------------------------------->
@@ -599,9 +699,9 @@
                     <img src="../image/logo_light.png" alt="logo"
                         class="w-32 md:w-48 transition-all duration-300 ease-in-out" />
                     <ul class="mt-8 space-y-4 text-white">
-                        <li><a href="/about" class="hover:text-opacity-80">About</a></li>
-                        <li><a href="/contact" class="hover:text-opacity-80">Contact</a></li>
-                        <li><a href="/help" class="hover:text-opacity-80">Help</a></li>
+                        <li><a href="/src/pages/about.html" class="hover:text-opacity-80">About</a></li>
+                        <li><a href="../pages/contact.html" class="hover:text-opacity-80">Contact</a></li>
+                        <li><a href="/src/pages/help.html" class="hover:text-opacity-80">Help</a></li>
                         <li><a href="/overview" class="hover:text-opacity-80">Overview</a></li>
                         <li><a href="/privacy" class="hover:text-opacity-80">Privacy</a></li>
                         <li><a href="/terms_of_service" class="hover:text-opacity-80">Terms of Service</a></li>
@@ -612,7 +712,7 @@
                 <div>
                     <p class="text-base text-gray-400">Our Services</p>
                     <ul class="mt-8 space-y-4 text-white">
-                        <li><a href="#" class="hover:text-opacity-80">POB Post</a></li>
+                        <li><a href="../pages/pbo-post.html" class="hover:text-opacity-80">POB Post</a></li>
                         <li><a href="#" class="hover:text-opacity-80">Resume Bank</a></li>
                         <li><a href="#" class="hover:text-opacity-80">HR Consultancy</a></li>
                         <li><a href="#" class="hover:text-opacity-80">HR Outsourcing</a></li>
@@ -625,12 +725,12 @@
                 <div>
                     <p class="text-base text-gray-400">Jobs by Section</p>
                     <ul class="mt-8 space-y-4 text-white">
-                        <li><a href="/local-jobs" class="hover:text-opacity-80">Local Jobs</a></li>
-                        <li><a href="/govt-jobs" class="hover:text-opacity-80">Government Jobs</a></li>
-                        <li><a href="/world-wide-job" class="hover:text-opacity-80">Worldwide Jobs</a></li>
+                        <li><a href="/src/pages/local-jobs.html" class="hover:text-opacity-80">Local Jobs</a></li>
+                        <li><a href="/src/pages/all-government-jobs.html" class="hover:text-opacity-80">Government Jobs</a></li>
+                        <li><a href="/src/pages/world-wide-job.html" class="hover:text-opacity-80">Worldwide Jobs</a></li>
                         <li><a href="/pbo-professional" class="hover:text-opacity-80">Kalbela Pro</a></li>
-                        <li><a href="/semi-unskilled-worker" class="hover:text-opacity-80">Semi-Unskilled Jobs</a></li>
-                        <li><a href="/skilled-worker" class="hover:text-opacity-80">Skilled Worker Jobs</a></li>
+                        <li><a href="/src/pages/unskilled-jobs.html" class="hover:text-opacity-80">Semi-Unskilled Jobs</a></li>>
+                         <li><a href="/src/pages/skilled-jobs.html" class="hover:text-opacity-80">Skilled Worker Jobs</a></li>
                     </ul>
                 </div>
 
@@ -688,11 +788,20 @@
     <!------------------------------------------------------------>
     <!--//////////////////// Script //////////////////////-->
     <!--------------------------------------------------------->
-    <script type="module" src="../js/main.js"></script>
-    <script src="../js/uploadFile.js"></script>
+    <script type="module" src="/src/js/main.js"></script>
+    <script src="/src/js/uploadFile.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../js/swiper.js"></script>
+    <script src="/src/js/swiper.js"></script>
     <script>
+ window.addEventListener('scroll', () => {
+    const nav = document.getElementById('mainNav');
+    if (window.scrollY > 10) {  // Change 50 to any pixel value for scroll threshold
+      nav.classList.add('bg-base');
+    } else {
+      nav.classList.remove('bg-base');
+    }
+  });
+
         function openApplyJobModal() {
             document.getElementById("applyModal").classList.remove("hidden");
             document.getElementById("applyModal").classList.add("flex");
@@ -730,9 +839,21 @@
                 closeModal();
             }
         });
-    </script>
-    
 
+        document.addEventListener('DOMContentLoaded', () => {
+  const nav = document.getElementById('mainNav');
+  if (!nav) return;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+});
+
+    </script>
 </body>
 
 </html>

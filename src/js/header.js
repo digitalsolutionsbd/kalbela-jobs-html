@@ -6,7 +6,7 @@ export function handleNavbarScroll() {
   const profileDropdownMenu = document.querySelectorAll('.profile-dropdown-menu');
   const loginDropdownMnu = document.querySelectorAll('.login-dropdown-menu');
   
-  const logo = document.querySelector('.nav-logo');
+  const logo = document.querySelectorAll('.nav-logo');
   const authMenu1 = document.querySelector('.authMenu1');
   const heroLogo = document.querySelector('.heroLogo');
   const navLinksContainer = document.querySelector('.navLinksContainer');
@@ -50,7 +50,9 @@ export function handleNavbarScroll() {
           nav.classList.remove('py-6');
         });
         authMenu1?.classList.add('opacity-0', 'scale-90', '-translate-x-10', 'hidden');
-        logo.classList.remove('hidden', 'opacity-0', 'scale-90', '-translate-x-10');
+        logo.forEach(itm => {
+          itm.classList.remove('hidden', 'opacity-0', 'scale-90', '-translate-x-10');
+         })
         navLinksContainer.classList.remove('justify-between');
         navLinksContainer.classList.add('justify-end');
       } else {
@@ -59,7 +61,9 @@ export function handleNavbarScroll() {
           nav.classList.add('py-6');
         });
         authMenu1?.classList.remove('opacity-0', 'scale-90', '-translate-x-10', 'hidden');
-        logo.classList.add('hidden', 'opacity-0', 'scale-90', '-translate-x-10');
+        logo.forEach(itm => {
+          itm.classList.add('hidden', 'opacity-0', 'scale-90', '-translate-x-10');
+        });
         navLinksContainer.classList.remove('justify-end');
         navLinksContainer.classList.add('justify-between');
       }

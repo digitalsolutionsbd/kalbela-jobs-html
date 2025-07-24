@@ -74,7 +74,7 @@ export function openCategoryModal(category) {
     }else if (list?.id == 'list-job_by_location') {
         data?.forEach(role => {
             const li = document.createElement("li");
-            li.classList.add("category-list-item", "mb-2");
+            li.classList.add(" ", "mb-2");
             li.innerHTML = `
               <a href="${role.link}" class="d-flex align-items-center">
                 <i class="ri-arrow-right-s-fill"></i>

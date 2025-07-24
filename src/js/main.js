@@ -1,12 +1,15 @@
+import { initAdvanceSearch } from './advanceSearchJobs.js';
+import { initModals } from './bottomNav.js';
 import { categoryUi } from './category.js';
 import { openCategoryModal, setupCategoryModals } from './categoryModal.js';
+import { initSmartDropdown, setupGlobalDropdownEvents } from './dropdown.js';
  import { initHeaderScroll } from './header.js';
 import { initSearch } from './search.js';
- import { applyTheme, initTheme } from './theme.js';
-  
-// // $(document).ready(() => {
-// //   $('select').niceSelect();
-// // })
+import { initTheme } from './theme.js';
+   
+// $(document).ready(() => {
+//   $('select').niceSelect();
+// })
 
 
  
@@ -32,8 +35,11 @@ window.addEventListener("DOMContentLoaded", () => {
   initHeaderScroll();
   categoryUi();
   initSearch();
-  window.setTheme = applyTheme;
-
+  initModals();
+  initAdvanceSearch();
+  initSmartDropdown();
+  setupGlobalDropdownEvents();
+ 
   window.openCategoryModal = openCategoryModal;
   setupCategoryModals();
 

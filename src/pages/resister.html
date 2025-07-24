@@ -30,19 +30,19 @@
     <link rel="canonical" href="https://www.kalbelajobs.com" />
 
     <!-- CSS & Plugins -->
-    <link rel="stylesheet" href="../css/output.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="/src/css/output.css">
+    <link rel="stylesheet" href="/src/css/header.css">
+    <link rel="stylesheet" href="/src/css/swiper.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <div id="preloader"
+    <!-- <div id="preloader"
     class="gradient-bg fixed top-0 left-0 right-0 bottom-0 h-screen inset-0 flex items-center flex-col justify-center z-[9999] loading-screen">
     <img src="../image/logo_dark.png" alt="" class="logo h-auto md:w-[17rem] w-[15rem] animated  animate-pulse animate-jump animate-infinite    ">
     <h2 class="text-xl md:mt-4 mt-2">Loading Please Wait...</h2>
-  </div>
+  </div> -->
   <!--------------------------------------------------------->
   <!--//////////////////// Main Content ///////////////////->
 <!--------------------------------------------------------->
@@ -62,7 +62,7 @@
                 <div
                     class="navLinksContainerSearch justify-end  md:flex gap-4 items-center  w-full transition-all duration-300 ease-in-out">
                     <ul class="md:flex hidden space-x-4 md:space-x-4">
-                        <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Home</a></li>
+                        <li><a href="/" class="text-gray-700 hover:text-blue-600 font-medium">Home</a></li>
                         <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Jobseeker</a></li>
                         <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Employer</a></li>
                         <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Service</a></li>
@@ -103,7 +103,7 @@
 
                         <div class="relative hidden text-left group  profile-dropdown">
                             <div class="profileImage flex-shrink-0">
-                                <img src="https://avatar.iran.liara.run/public/3" alt="Profile"
+                                <img src="https://randomuser.me/api/portraits/men/19.jpg" alt="Profile"
                                     class="w-10 h-10 rounded-full border-2 border-gray-300 object-cover" />
                             </div>
 
@@ -292,7 +292,7 @@
                 </button>
             </div>
             <ul class="sidebar-list space-y-4 mt-4">
-                <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Home</a></li>
+                <li><a href="/" class="text-gray-700 hover:text-blue-600 font-medium">Home</a></li>
                 <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Jobseeker</a></li>
                 <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Employer</a></li>
                 <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Service</a></li>
@@ -520,9 +520,9 @@
                     <img src="../image/logo_light.png" alt="logo"
                         class="w-32 md:w-48 transition-all duration-300 ease-in-out" />
                     <ul class="mt-8 space-y-4 text-white">
-                        <li><a href="/about" class="hover:text-opacity-80">About</a></li>
-                        <li><a href="/contact" class="hover:text-opacity-80">Contact</a></li>
-                        <li><a href="/help" class="hover:text-opacity-80">Help</a></li>
+                        <li><a href="/src/pages/about.html" class="hover:text-opacity-80">About</a></li>
+                        <li><a href="../pages/contact.html" class="hover:text-opacity-80">Contact</a></li>
+                        <li><a href="/src/pages/help.html" class="hover:text-opacity-80">Help</a></li>
                         <li><a href="/overview" class="hover:text-opacity-80">Overview</a></li>
                         <li><a href="/privacy" class="hover:text-opacity-80">Privacy</a></li>
                         <li><a href="/terms_of_service" class="hover:text-opacity-80">Terms of Service</a></li>
@@ -533,7 +533,7 @@
                 <div>
                     <p class="text-base text-gray-400">Our Services</p>
                     <ul class="mt-8 space-y-4 text-white">
-                        <li><a href="#" class="hover:text-opacity-80">POB Post</a></li>
+                        <li><a href="../pages/pbo-post.html" class="hover:text-opacity-80">POB Post</a></li>
                         <li><a href="#" class="hover:text-opacity-80">Resume Bank</a></li>
                         <li><a href="#" class="hover:text-opacity-80">HR Consultancy</a></li>
                         <li><a href="#" class="hover:text-opacity-80">HR Outsourcing</a></li>
@@ -546,12 +546,12 @@
                 <div>
                     <p class="text-base text-gray-400">Jobs by Section</p>
                     <ul class="mt-8 space-y-4 text-white">
-                        <li><a href="/local-jobs" class="hover:text-opacity-80">Local Jobs</a></li>
-                        <li><a href="/govt-jobs" class="hover:text-opacity-80">Government Jobs</a></li>
-                        <li><a href="/world-wide-job" class="hover:text-opacity-80">Worldwide Jobs</a></li>
+                        <li><a href="/src/pages/local-jobs.html" class="hover:text-opacity-80">Local Jobs</a></li>
+                        <li><a href="/src/pages/all-government-jobs.html" class="hover:text-opacity-80">Government Jobs</a></li>
+                        <li><a href="/src/pages/world-wide-job.html" class="hover:text-opacity-80">Worldwide Jobs</a></li>
                         <li><a href="/pbo-professional" class="hover:text-opacity-80">Kalbela Pro</a></li>
-                        <li><a href="/semi-unskilled-worker" class="hover:text-opacity-80">Semi-Unskilled Jobs</a></li>
-                        <li><a href="/skilled-worker" class="hover:text-opacity-80">Skilled Worker Jobs</a></li>
+                        <li><a href="/src/pages/unskilled-jobs.html" class="hover:text-opacity-80">Semi-Unskilled Jobs</a></li>>
+                         <li><a href="/src/pages/skilled-jobs.html" class="hover:text-opacity-80">Skilled Worker Jobs</a></li>
                     </ul>
                 </div>
 
@@ -609,10 +609,10 @@
     <!------------------------------------------------------------>
     <!--//////////////////// Script //////////////////////-->
     <!--------------------------------------------------------->
-    <script type="module" src="../js/main.js"></script>
-    <script src="../js/uploadFile.js"></script>
+    <script type="module" src="/src/js/main.js"></script>
+    <script src="/src/js/uploadFile.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../js/swiper.js"></script>
+    <script src="/src/js/swiper.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applied Jobs | KalbelaJobs</title>
+    <meta name="description"
+        content="Kalbela Jobs is your one-stop destination to discover the latest government and private job circulars in Bangladesh. Apply easily and start your career today." />
+    <meta name="keywords"
+        content="Kalbela Jobs, BD jobs, Government jobs, Private jobs, Job circular Bangladesh, Apply for jobs" />
+    <meta name="author" content="Kalbela Jobs Team" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kalbela Jobs – Find Your Dream Job in Bangladesh" />
+    <meta property="og:description"
+        content="Kalbela Jobs offers the latest job circulars including government and private jobs in Bangladesh." />
+    <meta property="og:image" content="../image/logo_light.png" />
+    <meta property="og:url" content="https://www.kalbelajobs.com" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kalbela Jobs – Find Your Dream Job in Bangladesh" />
+    <meta name="twitter:description"
+        content="Kalbela Jobs offers the latest job circulars including government and private jobs in Bangladesh." />
+    <meta name="twitter:image" content="assets/image/logo_light.png" />
+    <link rel="icon" href="../image/favicon.ico" />
+    <link rel="canonical" href="https://www.kalbelajobs.com" />
+
+    <!-- CSS & Plugins -->
+    <link rel="stylesheet" href="/src/css/output.css">
+    <link rel="stylesheet" href="/src/css/header.css">
+    <link rel="stylesheet" href="/src/css/swiper.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+
+</head>
+
+<body class="bg-gray-100">
+    <div id="mobile-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden lg:hidden"></div>
+    <div id="sidebar"
+        class="fixed left-0 top-0 h-full w-64 bg-background shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out lg:translate-x-0 z-50">
+        <div class="flex items-center justify-between px-6 h-[73px]  border-gray-200 ">
+            <div class="flex items-center space-x-3">
+                <a href="/">
+                    <img class="logo lg:w-[140px] w-[130px]" src="/src/image/logo_dark.png" alt="logo" />
+                </a>
+            </div>
+            <button id="close-sidebar" class="lg:hidden text-foreground hover:text-black">
+                <i class="ri-close-line text-xl"></i>
+            </button>
+        </div>
+
+        <nav>
+            <div class="flex flex-col justify-between h-screen px-4 ">
+                <div>
+                    <div class="flex text-foreground items-center justify-between mb-4 pb-2 md:pb-0">
+                        <h2 class="text-lg font-semibold px-2">Menu</h2>
+                    </div>
+                    <div class="space-y-2 text-foreground-800">
+                        <a href="/src/pages/dashboard/home.html"
+                            class="flex items-center w-full px-4 py-2 text-left rounded hover:bg-background-muted duration-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-gauge-icon lucide-gauge">
+                                <path d="m12 14 4-4" />
+                                <path d="M3.34 19a10 10 0 1 1 17.32 0" />
+                            </svg> <span class="ml-2">Dashboard</span>
+                        </a>
+                        <a href="/src/pages/dashboard/profile.html"
+                            class="flex items-center w-full px-4 py-2 text-left rounded  hover:bg-background-muted duration-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-user-round-pen-icon lucide-user-round-pen">
+                                <path d="M2 21a8 8 0 0 1 10.821-7.487" />
+                                <path
+                                    d="M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
+                                <circle cx="10" cy="8" r="5" />
+                            </svg>
+                            <span class="ml-2">Profile</span>
+                        </a>
+                        <a href="/src/pages/dashboard/saved-jobs.html"
+                            class="flex items-center w-full px-4 py-2 text-left rounded  hover:bg-background-muted duration-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-bookmark-check-icon lucide-bookmark-check">
+                                <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z" />
+                                <path d="m9 10 2 2 4-4" />
+                            </svg>
+                            <span class="ml-2">Saved Jobs</span>
+                        </a>
+                        <a href="/src/pages/dashboard/applied-jobs.html"
+                            class="flex items-center w-full px-4 py-2 text-left rounded bg-background-muted hover:bg-background-muted duration-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-briefcase-business-icon lucide-briefcase-business">
+                                <path d="M12 12h.01" />
+                                <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                                <path d="M22 13a18.15 18.15 0 0 1-20 0" />
+                                <rect width="20" height="14" x="2" y="6" rx="2" />
+                            </svg>
+                            <span class="ml-2">Applied Jobs</span>
+                        </a>
+                        <a href="/src/pages/dashboard/products.html"
+                            class="flex items-center w-full px-4 py-2 text-left rounded hover:bg-background-muted duration-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-shopping-cart-icon lucide-shopping-cart">
+                                <circle cx="8" cy="21" r="1" />
+                                <circle cx="19" cy="21" r="1" />
+                                <path
+                                    d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+                            </svg>
+                            <span class="ml-2">Products</span>
+                        </a>
+                        <a href="/src/pages/dashboard/reports.html"
+                            class="flex items-center w-full px-4 py-2 text-left rounded hover:bg-background-muted duration-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-clipboard-plus-icon lucide-clipboard-plus">
+                                <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+                                <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                                <path d="M9 14h6" />
+                                <path d="M12 17v-6" />
+                            </svg>
+                            <span class="ml-2">Reports</span>
+                        </a>
+                        <a href="/src/pages/dashboard/resume-builder.html"
+                            class="flex items-center w-full px-4 py-2 text-left rounded hover:bg-background-muted duration-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-file-user-icon lucide-file-user">
+                                <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                                <path d="M15 18a3 3 0 1 0-6 0" />
+                                <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z" />
+                                <circle cx="12" cy="13" r="2" />
+                            </svg>
+                            <span class="ml-2">Resume Builder</span>
+                        </a>
+                         <div class="group duration-200 rounded-md hover:bg-gray-50 hover:pb-2">
+                             <div class="flex items-center w-full px-4 py-2 text-left rounded  group-hover:bg-background-muted duration-200">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings-icon lucide-settings"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+                            <span class="ml-2">Setting</span>
+                            </div>
+
+                            <ul class="text-sm px-2 mt-2 space-y-2 group-hover:!h-[45px] h-0 duration-200 !overflow-hidden ">
+                                <li>
+                                    <a href="/src/pages/employer-dashboard/password-setting.html"
+                                        class="flex items-center w-full px-2 py-2 text-left rounded  hover:bg-background-muted duration-200">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-lock-icon lucide-user-lock"><circle cx="10" cy="7" r="4"/><path d="M10.3 15H7a4 4 0 0 0-4 4v2"/><path d="M15 15.5V14a2 2 0 0 1 4 0v1.5"/><rect width="8" height="5" x="13" y="16" rx=".899"/></svg>
+                                        <span class="ml-2">Password Setting</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <button
+                        class="flex items-center justify-center w-full py-2 mt-4 text-white bg-rose-600 rounded hover:bg-rose-700">
+                        🚪 <span class="ml-2">Logout</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="absolute bottom-0 left-0 right-0 p-4  border-foreground-300 bg-background">
+            <button
+                class="px-4 py-2 flex items-center gap-2 justify-center rounded-md  bg-danger-500 text-white w-full"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-log-out-icon lucide-log-out">
+                    <path d="m16 17 5-5-5-5" />
+                    <path d="M21 12H9" />
+                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                </svg> Logout</button>
+        </div>
+    </div>
+
+    <div class="lg:ml-64 overflow-x-hidden py-2 md:px-4 px-2 ">
+        <header class="bg-background rounded-lg shadow-sm">
+            <div class="flex items-center justify-between px-6 py-4">
+                <div class="flex items-center gap-2">
+                    <button id="mobile-menu-btn" class="lg:hidden text-foreground hover:text-black">
+                        <i class="ri-menu-line text-2xl"></i>
+                    </button>
+                    <h2 class="text-xl font-semibold text-foreground lg:ml-0 ml-4">applied Jobs</h2>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <ul class="lg:flex text-sm hidden space-x-4 md:space-x-4">
+                        <li><a href="/" class="text-foreground hover:text-blue-600 font-medium">Home</a></li>
+                        <li><a href="#" class="text-foreground hover:text-blue-600 font-medium">Jobseeker</a></li>
+                        <li><a href="#" class="text-foreground hover:text-blue-600 font-medium">Employer</a></li>
+                        <li><a href="#" class="text-foreground hover:text-blue-600 font-medium">Service</a></li>
+                        <li><a href="#" class="text-foreground hover:text-blue-600 font-medium">Training</a></li>
+                        <li><a href="#" class="text-foreground hover:text-blue-600 font-medium">Easy Learning</a></li>
+                        <li><a href="#" class="text-foreground hover:text-blue-600 font-medium">Career Resource</a></li>
+                        <li><a href="#" class="text-foreground hover:text-blue-600 font-medium">Contact Us</a></li>
+                    </ul>
+
+                    <button class="relative text-foreground hover:text-foreground">
+                        <i class="ri-notification-3-line text-xl"></i>
+                        <span class="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full"></span>
+                    </button>
+
+                    <div class="relative block text-left group  profile-dropdown">
+                        <div class="dropdown relative group" data-dropdown="profile">
+                            <button id="theme-toggle-btn"
+                                class="flex border w-10 h-10 bg-gray-50 justify-center items-center text-black hover:text-blue-600 rounded-full transition-colors">
+                                <i id="theme-icon" class="text-xl"></i>
+                            </button>
+
+                            <div class="dropdown-menu absolute w-40 z-50">
+                                <div class=" bg-background rounded-lg shadow-xl border border-gray-400 mt-3">
+                                    <ul class="p-2 space-y-2 text-foreground">
+                                        <li>
+                                            <button data-theme="light"
+                                                class="theme-button w-full flex group hover:!text-white items-center gap-2 py-2 px-4 rounded-md hover:bg-primary-600 transition-colors duration-200">
+                                                <i class="ri-sun-foggy-fill text-xl !text-warning-500"></i> Light
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button data-theme="dark"
+                                                class="theme-button w-full flex group hover:!text-white items-center gap-2 py-2 px-4 rounded-md hover:bg-primary-600 transition-colors duration-200">
+                                                <i class="ri-moon-foggy-fill text-xl !text-gray-300"></i> Dark
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button data-theme="teal"
+                                                class="theme-button w-full flex group hover:!text-white items-center gap-2 py-2 px-4 rounded-md hover:bg-primary-600 transition-colors duration-200">
+                                                <i class="ri-palette-fill text-xl !text-teal-500"></i> Teal
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button data-theme="orange"
+                                                class="theme-button w-full flex group hover:!text-white items-center gap-2 py-2 px-4 rounded-md hover:bg-primary-600 transition-colors duration-200">
+                                                <i class="ri-palette-fill text-xl !text-orange-500"></i> Orange
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="mt-3">
+            <section class="card bg-white rounded-lg shadow-sm border border-gray-300 lg:p-6 md:p-4 p-3">
+                <div class="flex flex-col gap-3 md:flex-row md:justify-between md:items-center mb-4">
+                    <h2 class="text-xl font-semibold text-gray-900">Jobs: 40</h2>
+
+                    <div class="flex relative flex-col md:flex-row gap-2 md:items-center w-full md:w-auto">
+                        <i class="ri-search-line absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                        <input type="text" placeholder="Search..."
+                            class="input-control md:!w-[300px] !pl-8 !pr-2" />
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div style="border: 1px solid #e5e7eb;" class="relative overflow-x-auto  sm:rounded-lg ">
+                        <table class="w-full text-sm text-left text-gray-500">
+                            <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                                <tr>
+                                    <th scope="col" class="px-6 py-3">
+                                        Title
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Company
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Start Date
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        End Date
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Status
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        <span class="sr-only">Actions</span> <!-- For screen readers -->
+                                        Actions
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Row 1 -->
+                                <tr class="bg-white border-b hover:bg-gray-50">
+                                    <td class="px-6 py-4 font-medium text-gray-900">Frontend Developer</td>
+                                    <td class="px-6 py-4">TechSoft Ltd</td>
+                                    <td class="px-6 py-4">2024-07-01</td>
+                                    <td class="px-6 py-4">2024-12-31</td>
+                                    <td class="px-6 py-4 text-success-600">Applied</td>
+                                    <td class="px-6 py-4">
+                                        <div class="flex gap-2">
+                                            <button data-id="traning-1"
+                                                class="delete-item delete-item  bg-red-50 hover:bg-danger-500 hover:text-white duration-150 open-modal-btn px-3 py-1 text-danger-500 hover:text-danger-700 rounded transition-colors font-medium">
+                                                <i class="ri-delete-bin-line "></i>
+                                                Delete
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- Row 2 -->
+                                <tr class="bg-white border-b hover:bg-gray-50">
+                                    <td class="px-6 py-4 font-medium text-gray-900">Backend Developer</td>
+                                    <td class="px-6 py-4">CodeWorks</td>
+                                    <td class="px-6 py-4">2024-06-15</td>
+                                    <td class="px-6 py-4">2024-11-30</td>
+                                    <td class="px-6 py-4 text-success-600">Applied</td>
+                                    <td class="px-6 py-4">
+                                        <div class="flex gap-2">
+                                            <button data-id="traning-1"
+                                                class="delete-item delete-item  bg-red-50 hover:bg-danger-500 hover:text-white duration-150 open-modal-btn px-3 py-1 text-danger-500 hover:text-danger-700 rounded transition-colors font-medium">
+                                                <i class="ri-delete-bin-line "></i>
+                                                Delete
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- Row 3 -->
+                                <tr class="bg-white border-b hover:bg-gray-50">
+                                    <td class="px-6 py-4 font-medium text-gray-900">UI/UX Designer</td>
+                                    <td class="px-6 py-4">DesignPro</td>
+                                    <td class="px-6 py-4">2024-08-01</td>
+                                    <td class="px-6 py-4">2025-01-15</td>
+                                    <td class="px-6 py-4 text-success-600">Applied</td>
+                                    <td class="px-6 py-4">
+                                        <div class="flex gap-2">
+                                            <button data-id="traning-1"
+                                                class="delete-item delete-item  bg-red-50 hover:bg-danger-500 hover:text-white duration-150 open-modal-btn px-3 py-1 text-danger-500 hover:text-danger-700 rounded transition-colors font-medium">
+                                                <i class="ri-delete-bin-line "></i>
+                                                Delete
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- Row 4 -->
+                                <tr class="bg-white border-b hover:bg-gray-50">
+                                    <td class="px-6 py-4 font-medium text-gray-900">DevOps Engineer</td>
+                                    <td class="px-6 py-4">CloudNet</td>
+                                    <td class="px-6 py-4">2024-05-01</td>
+                                    <td class="px-6 py-4">2024-10-31</td>
+                                    <td class="px-6 py-4 text-success-600">Applied</td>
+                                    <td class="px-6 py-4">
+                                        <div class="flex gap-2">
+                                            <button data-id="traning-1"
+                                                class="delete-item delete-item  bg-red-50 hover:bg-danger-500 hover:text-white duration-150 open-modal-btn px-3 py-1 text-danger-500 hover:text-danger-700 rounded transition-colors font-medium">
+                                                <i class="ri-delete-bin-line "></i>
+                                                Delete
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- Row 5 -->
+                                <tr class="bg-white border-b hover:bg-gray-50">
+                                    <td class="px-6 py-4 font-medium text-gray-900">Mobile App Developer</td>
+                                    <td class="px-6 py-4">AppGenie</td>
+                                    <td class="px-6 py-4">2024-07-10</td>
+                                    <td class="px-6 py-4">2024-12-10</td>
+                                    <td class="px-6 py-4 text-success-600">Applied</td>
+                                    <td class="px-6 py-4">
+                                        <div class="flex gap-2">
+                                            <button data-id="traning-1"
+                                                class="delete-item delete-item  bg-red-50 hover:bg-danger-500 hover:text-white duration-150 open-modal-btn px-3 py-1 text-danger-500 hover:text-danger-700 rounded transition-colors font-medium">
+                                                <i class="ri-delete-bin-line "></i>
+                                                Delete
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- Row 6 -->
+                                <tr class="bg-white border-b hover:bg-gray-50">
+                                    <td class="px-6 py-4 font-medium text-gray-900">QA Tester</td>
+                                    <td class="px-6 py-4">TestLab</td>
+                                    <td class="px-6 py-4">2024-07-20</td>
+                                    <td class="px-6 py-4">2025-01-20</td>
+                                    <td class="px-6 py-4 text-success-600">Applied</td>
+                                    <td class="px-6 py-4">
+                                        <div class="flex gap-2">
+                                            <button data-id="traning-1"
+                                                class="delete-item delete-item  bg-red-50 hover:bg-danger-500 hover:text-white duration-150 open-modal-btn px-3 py-1 text-danger-500 hover:text-danger-700 rounded transition-colors font-medium">
+                                                <i class="ri-delete-bin-line "></i>
+                                                Delete
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- Row 7 -->
+                                <tr class="bg-white border-b hover:bg-gray-50">
+                                    <td class="px-6 py-4 font-medium text-gray-900">Project Manager</td>
+                                    <td class="px-6 py-4">InnovateX</td>
+                                    <td class="px-6 py-4">2024-06-01</td>
+                                    <td class="px-6 py-4">2024-12-01</td>
+                                    <td class="px-6 py-4 text-success-600">Applied</td>
+                                    <td class="px-6 py-4">
+                                        <div class="flex gap-2">
+                                            <button data-id="traning-1"
+                                                class="delete-item delete-item  bg-red-50 hover:bg-danger-500 hover:text-white duration-150 open-modal-btn px-3 py-1 text-danger-500 hover:text-danger-700 rounded transition-colors font-medium">
+                                                <i class="ri-delete-bin-line "></i>
+                                                Delete
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- Row 8 -->
+                                <tr class="bg-white hover:bg-gray-50">
+                                    <td class="px-6 py-4 font-medium text-gray-900">Full Stack Developer</td>
+                                    <td class="px-6 py-4">DevHouse</td>
+                                    <td class="px-6 py-4">2024-07-05</td>
+                                    <td class="px-6 py-4">2024-11-30</td>
+                                    <td class="px-6 py-4 text-success-600">Applied</td>
+                                    <td class="px-6 py-4">
+                                        <div class="flex gap-2">
+                                            <button data-id="traning-1"
+                                                class="delete-item delete-item  bg-red-50 hover:bg-danger-500 hover:text-white duration-150 open-modal-btn px-3 py-1 text-danger-500 hover:text-danger-700 rounded transition-colors font-medium">
+                                                <i class="ri-delete-bin-line "></i>
+                                                Delete
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="hidden flex-col md:flex-row items-center justify-between px-4 py-3 bg-white ">
+                        <div class="text-sm text-gray-700 mb-2 md:mb-0">
+                            Showing <span class="font-medium">1</span> to <span class="font-medium">5</span> of
+                            <span class="font-medium">25</span> results
+                        </div>
+                        <div class="inline-flex -space-x-px text-sm">
+                            <a href="#"
+                                class="px-3 py-2 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700">
+                                Prev
+                            </a>
+                            <a href="#"
+                                class="px-3 py-2 leading-tight text-white bg-blue-600 border border-gray-300 hover:bg-blue-700 hover:text-white">
+                                1
+                            </a>
+                            <a href="#"
+                                class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">
+                                2
+                            </a>
+                            <a href="#"
+                                class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">
+                                3
+                            </a>
+                            <span
+                                class="px-3 py-2 leading-tight text-gray-400 bg-white border border-gray-300 cursor-not-allowed">...</span>
+                            <a href="#"
+                                class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">
+                                5
+                            </a>
+                            <a href="#"
+                                class="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700">
+                                Next
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <!------------------------------------------------------------>
+    <!--//////////////////// Script //////////////////////-->
+    <!--------------------------------------------------------->
+    <script type="module" src="/src/js/dashboard/dashboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/src/js/dashboard/profile.js"></script>
+
+</body>

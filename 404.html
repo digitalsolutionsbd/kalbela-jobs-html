@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>404 - পেজ খুঁজে পাওয়া যায়নি</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen flex items-center justify-center p-4">
+    <div class="app-container m-auto text-center">
+        <!-- 404 Illustration -->
+        <div class="mb-8">
+            <div class="relative">
+                <!-- Large 404 Text -->
+                <h1 class="text-8xl md:text-9xl font-bold text-gray-200 select-none">404</h1>
+                
+                <!-- Floating Elements -->
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="animate-float">
+                        <svg class="w-24 h-24 md:w-32 md:h-32 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 12h6m-6-4h6m2 5.291A7.962 7.962 0 0112 15c-2.34 0-4.29-1.009-5.824-2.562M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- Decorative Elements -->
+                <div class="absolute top-4 left-4 animate-pulse-slow">
+                    <div class="w-4 h-4 bg-yellow-400 rounded-full"></div>
+                </div>
+                <div class="absolute top-8 right-8 animate-bounce-slow">
+                    <div class="w-3 h-3 bg-pink-400 rounded-full"></div>
+                </div>
+                <div class="absolute bottom-4 left-8 animate-pulse-slow">
+                    <div class="w-5 h-5 bg-green-400 rounded-full"></div>
+                </div>
+                <div class="absolute bottom-8 right-4 animate-bounce-slow">
+                    <div class="w-2 h-2 bg-purple-400 rounded-full"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Error Message -->
+        <div class="mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Oops! Page Not Found</h2>
+            <p class="text-lg text-gray-600 mb-2">The page you're looking for seems to have wandered off.</p>
+            <p class="text-gray-500">Don't worry, it happens to the best of us!</p>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <button onclick="goHome()" class="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                </svg>
+                Go Home
+            </button>
+            
+            <button onclick="goBack()" class="px-6 py-3 bg-gray-100 text-gray-700 font-medium rounded-lg hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                </svg>
+                Go Back
+            </button>
+        </div>
+
+        <!-- Helpful Links -->
+        <div class="bg-white rounded-lg shadow-lg p-6 max-w-2xl mx-auto">
+            <div class="flex pb-4 justify-center items-center space-x-3">
+                <a href="/">
+                    <img class="logo lg:w-[180px] w-[130px]" src="/src/image/logo_dark.png" alt="logo" />
+                </a>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Maybe you're looking for:</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <a href="#" class="flex items-center justify-start p-3 rounded-lg hover:bg-gray-50 transition-colors group">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3 group-hover:bg-blue-200 transition-colors">
+                        <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                        </svg>
+                    </div>
+                    <div class="text-start">
+                        <h4 class="font-medium text-gray-800">About Us</h4>
+                        <p class="text-sm text-gray-500">Learn more about our company</p>
+                    </div>
+                </a>
+                
+                <a href="#" class="flex items-center p-3 rounded-lg hover:bg-gray-50 transition-colors group">
+                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center mr-3 group-hover:bg-green-200 transition-colors">
+                        <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="text-start">
+                        <h4 class="font-medium text-gray-800">Help Center</h4>
+                        <p class="text-sm text-gray-500">Get support and answers</p>
+                    </div>
+                </a>
+                
+                <a href="#" class="flex items-center p-3 rounded-lg hover:bg-gray-50 transition-colors group">
+                    <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mr-3 group-hover:bg-purple-200 transition-colors">
+                        <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <div class="text-start">
+                        <h4 class="font-medium text-gray-800">Contact</h4>
+                        <p class="text-sm text-gray-500">Get in touch with us</p>
+                    </div>
+                </a>
+                
+                <a href="#" class="flex items-center p-3 rounded-lg hover:bg-gray-50 transition-colors group">
+                    <div class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center mr-3 group-hover:bg-yellow-200 transition-colors">
+                        <svg class="w-5 h-5 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                        </svg>
+                    </div>
+                    <div class="text-start">
+                        <h4 class="font-medium text-gray-800">Products</h4>
+                        <p class="text-sm text-gray-500">Browse our offerings</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="mt-8 text-center text-gray-500 text-sm">
+            <p>Error Code: 404 | Page Not Found</p>
+            <p class="mt-1">If you believe this is a mistake, please <a href="#" class="text-blue-600 hover:text-blue-800">contact our support team</a></p>
+        </div>
+    </div>
+
+    <script>
+        // Navigation functions
+        function goHome() {
+            window.location.href = '/';
+        }
+
+        function goBack() {
+            if (window.history.length > 1) {
+                window.history.back();
+            } else {
+                window.location.href = '/';
+            }
+        }
+
+        function reportIssue() {
+            // Show modal or redirect to support
+            showNotification('Thank you for reporting this issue. Our team has been notified.', 'success');
+        }
+
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                const searchTerm = e.target.value.trim();
+                if (searchTerm) {
+                    // Simulate search redirect
+                    showNotification(`Searching for "${searchTerm}"...`, 'info');
+                    setTimeout(() => {
+                        // In a real app, this would redirect to search results
+                        window.location.href = `/search?q=${encodeURIComponent(searchTerm)}`;
+                    }, 1000);
+                }
+            }
+        });
+
+        // Notification function
+        function showNotification(message, type = 'info') {
+            const colors = {
+                success: 'bg-green-500',
+                error: 'bg-red-500',
+                info: 'bg-blue-500',
+                warning: 'bg-yellow-500'
+            };
+
+            const notification = document.createElement('div');
+            notification.className = `fixed top-4 right-4 ${colors[type]} text-white px-6 py-3 rounded-lg shadow-lg z-50 transform translate-x-full transition-transform duration-300`;
+            notification.textContent = message;
+            document.body.appendChild(notification);
+
+            // Slide in
+            setTimeout(() => {
+                notification.classList.remove('translate-x-full');
+            }, 100);
+
+            // Slide out and remove
+            setTimeout(() => {
+                notification.classList.add('translate-x-full');
+                setTimeout(() => {
+                    notification.remove();
+                }, 300);
+            }, 3000);
+        }
+
+        // Add some interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add click effect to decorative elements
+            const decorativeElements = document.querySelectorAll('.absolute div');
+            decorativeElements.forEach(element => {
+                element.addEventListener('click', function() {
+                    this.style.transform = 'scale(1.5)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 200);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

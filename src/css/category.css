@@ -1,7 +1,77 @@
+
+/*=======================================================================*/
+/************************* Production Issue *****************************/
+/*=======================================================================*/
+.search-modal {
+  background-image: linear-gradient(to bottom, var(--primary), #ffffff);
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 50;
+
+  /* Hidden state */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.search-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+ /* Base state when input is empty */
+.search-rounded {
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -2px rgba(128, 128, 128, 0.06);
+  border: 1px solid #e5e7eb;
+  border-radius: 9999px;
+  width: 100%;
+  height: 45px;
+  margin-top: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+  align-items: center;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: border-radius 0.3s ease;
+}
+
+/* Modified border radius when search input has content */
+.search-rounded-open {
+  height: 45px;
+  background-color: white;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+}
+
+/* Input styling */
+.search-input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border: none; 
+  font-size: 14px;
+  background-color: transparent;
+}
+ 
 .category {
     /* border: 1px solid orange; */
     position: relative;
   }
+
+
+
   .category .category-header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
