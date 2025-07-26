@@ -35,6 +35,8 @@
   <link rel="stylesheet" href="/src/css/output.css?v=1">
   <link rel="stylesheet" href="/src/css/category.css?v=1">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/swiper.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 
@@ -799,62 +801,117 @@
                 <img src="src/image/mic.svg" alt="mic" />
               </div>
               <ul id="jobResults"
-                class="bg-white space-y-2 max-h-[300px] w-full overflow-y-auto scroll-sm last:rounded-b-xl rounded-b-xl">
+                class="bg-white mb-6 space-y-2 max-h-[300px] w-full overflow-y-auto scroll-sm last:rounded-b-xl rounded-b-xl">
               </ul>
-              <div class="w-full h-20 mb-12 mt-6">
-                <div class="flex flex-wrap justify-center gap-2">
-                  <a
-                    class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag
-                    1</a>
-                  <a
-                    class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag
-                    2</a>
-                  <a
-                    class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag
-                    3</a>
-                  <a
-                    class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag
-                    4</a>
-                  <a
-                    class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag
-                    5</a>
-                  <a
-                    class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag
-                    6</a>
-                  <a
-                    class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag
-                    7</a>
-                  <a
-                    class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag
-                    8</a> <a
-                    class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag
-                    6</a>
-
-                </div>
-                <!-- our tags -->
-                <div class="flex flex-wrap justify-center gap-2 mt-2">
-                  <a
-                    class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Our
-                    Tag1</a>
-                  <a
-                    class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Our
-                    Tag2</a>
-                  <a
-                    class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Our
-                    Tag3</a>
-                  <a
-                    class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Our
-                    Tag4</a>
-                  <a
-                    class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Our
-                    Tag5</a>
-                  <a
-                    class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Our
-                    Tag6</a> <a
-                    class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Our
-                    Tag5</a>
+              
+              
+              <div class="lg:hidden block w-full ">
+                <div class="swiper tagsSlider relative">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide !flex !items-center  ">
+                      <div class="flex pt-2 w-full px-2">
+                        <a
+                          class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white w-full cursor-pointer duration-150 rounded-full text-center">
+                          Tag 1
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide !flex !items-center ">
+                      <div class="flex pt-2 w-full px-2">
+                        <a
+                          class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white w-full cursor-pointer duration-150 rounded-full text-center">
+                          Tag 2
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide !flex !items-center  ">
+                      <div class="flex pt-2 w-full px-2">
+                        <a
+                          class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white w-full cursor-pointer duration-150 rounded-full text-center">
+                          Tag 3
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide !flex !items-center  ">
+                      <div class="flex pt-2 w-full px-2">
+                        <a
+                          class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white w-full cursor-pointer duration-150 rounded-full text-center">
+                          Tag 4
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide !flex !items-center  ">
+                      <div class="flex pt-2 w-full px-2">
+                        <a
+                          class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white w-full cursor-pointer duration-150 rounded-full text-center">
+                          Tag 6
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide !flex !items-center  ">
+                      <div class="flex pt-2 w-full px-2">
+                        <a
+                          class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white w-full cursor-pointer duration-150 rounded-full text-center">
+                          Tag 7
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide !flex !items-center  ">
+                      <div class="flex pt-2 w-full px-2">
+                        <a
+                          class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white w-full cursor-pointer duration-150 rounded-full text-center">
+                          Tag 8
+                        </a>
+                      </div>
+                    </div>
+              
+                  </div>
+              
+                  <div class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10">
+                    <button class="custom-prev bg-gray-50 text-gray-700 w-10 h-10 rounded-full border hover:border-gray-700"><i
+                        class="ri-arrow-left-s-line text-2xl"></i></button>
+                  </div>
+                  <div class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10">
+                    <button class="custom-next bg-gray-50 text-gray-700 w-10 h-10 rounded-full border hover:border-gray-700"><i
+                        class="ri-arrow-right-s-line text-2xl"></i></button>
+                  </div>
+              
+              
                 </div>
               </div>
+              
+              <div class="md:flex hidden flex-wrap justify-center gap-2">
+                <a
+                  class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag
+                  1</a>
+                <a
+                  class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag
+                  2</a>
+                <a
+                  class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag
+                  3</a>
+                <a
+                  class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag
+                  4</a>
+                <a
+                  class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag
+                  5</a>
+                <a
+                  class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag
+                  6</a>
+                <a
+                  class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag
+                  7</a>
+                <a
+                  class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag
+                  8</a> <a
+                  class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag
+                  6</a>
+              
+              </div>
+              </div>
+
+              <a href="/all-government-jobs.php" class="flex justify-center border-b border-black hover:text-primary-blue hover:border-primary-blue duration-200 !w-[220px] m-auto pb-1 mt-6 font-semibold items-center gap-2 text-gray-700 text-center  "><i class="ri-menu-search-line"></i> Search Government Jobs</a>
 
             </div>
             <button id="closeModal"></button>
@@ -5686,6 +5743,8 @@
 
   <script type="module" src="/src/js/main.js"></script>
   <script src="/src/js/specialJob.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/src/js/swiper.js"></script>
   <script>
     let deferredPrompt;
 
