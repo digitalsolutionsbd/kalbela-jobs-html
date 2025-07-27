@@ -89,33 +89,33 @@
 
           data.forEach((billing) => {
             const row = `
-                  <tr class="hover:bg-gray-50">
+                  <tr class="group">
                     <td class="p-0">
-                        <div class=" border-t border-b border-l border-gray-300 px-6 py-2 text-sm text-gray-900 rounded-l-md overflow-hidden min-h-[45px] h-full flex items-center mb-4">${billing.sl}</div>
+                        <div class="group-hover:bg-gray-50  border-t border-b border-l border-gray-300 px-6 py-2 text-sm text-gray-900 rounded-l-md overflow-hidden min-h-[45px] h-full flex items-center mb-4">${billing.sl}</div>
                     </td>
                     <td class="p-0">
-                        <div class="border border-t border-b border-gray-300 px-6 py-2 text-sm text-gray-900 min-h-[45px] h-full flex items-center mb-4">${billing.quotationNo}</div>
+                        <div class="group-hover:bg-gray-50 border border-t border-b border-gray-300 px-6 py-2 text-sm text-gray-900 min-h-[45px] h-full flex items-center mb-4">${billing.quotationNo}</div>
                     </td>
                    <td class="p-0">
-  <div class="border-t border-b border-gray-300 px-6 py-2 text-sm text-gray-900 min-h-[45px] h-full flex items-center mb-4 overflow-hidden whitespace-nowrap text-ellipsis">
+  <div class="group-hover:bg-gray-50 border-t border-b border-gray-300 px-6 py-2 text-sm text-gray-900 min-h-[45px] h-full flex items-center mb-4 overflow-hidden whitespace-nowrap text-ellipsis">
     ${new Date(billing.orderDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
   </div>
 </td>
 
                     <td class="p-0">
-                        <div class="border-t border-b border-gray-300 px-6 py-2 text-sm text-gray-900 min-h-[45px] h-full flex items-center mb-4 overflow-hidden whitespace-nowrap text-ellipsis">${billing.service}</div>
+                        <div class="group-hover:bg-gray-50 border-t border-l border-b border-gray-300 px-6 py-2 text-sm text-gray-900 min-h-[45px] h-full flex items-center mb-4 overflow-hidden whitespace-nowrap text-ellipsis">${billing.service}</div>
                     </td>
                     <td class="p-0">
-                        <div class="border-t border-b border-gray-300 px-6 py-2 text-sm text-gray-900 min-h-[45px] h-full flex items-center mb-4">${billing.amount}</div>
+                        <div class="group-hover:bg-gray-50 border-t border-l border-b border-gray-300 px-6 py-2 text-sm text-gray-900 min-h-[45px] h-full flex items-center mb-4">${billing.amount}</div>
                     </td>
                     <td class="p-0">
-                        <div class="border-t border-b border-gray-300 px-6 py-2 text-sm min-h-[45px] h-full flex items-center mb-4 ${billing.status === 'Paid' ? 'text-green-600' : 'text-red-600'}">${billing.status}</div>
+                        <div class="group-hover:bg-gray-50 border-t border-l border-b border-gray-300 px-6 py-2 text-sm min-h-[45px] h-full flex items-center mb-4 ${billing.status === 'Paid' ? 'text-green-600' : 'text-red-600'}">${billing.status}</div>
                     </td>
                     <td class="p-0">
-                        <div class="border-t border-b border-gray-300 px-6 py-2 text-sm text-gray-900 min-h-[45px] h-full flex items-center mb-4">${billing.invoiceNo}</div>
+                        <div class="group-hover:bg-gray-50 border-t border-l border-b border-gray-300 px-6 py-2 text-sm text-gray-900 min-h-[45px] h-full flex items-center mb-4">${billing.invoiceNo}</div>
                     </td>
                     <td class="p-0">
-                        <div class="border-t border-b border-r rounded-r-md  border-gray-300 px-6 py-1 text-sm text-gray-900 min-h-[45px] h-full flex items-center mb-4 overflow-hidden whitespace-nowrap text-ellipsis">
+                        <div class="group-hover:bg-gray-50 border-t border-l border-b border-r rounded-r-md  border-gray-300 px-6 py-1 text-sm text-gray-900 min-h-[45px] h-full flex items-center mb-4 overflow-hidden whitespace-nowrap text-ellipsis">
                             ${billing.status === 'Unpaid' ?
                                 '<button class="bg-success-500 hover:bg-success-600 duration-200 text-white px-4 rounded font-semibold !py-1">Go for payment</button>' :
                                 `<button class="download-invoice-btn text-success-500 hover:bg-success-600 hover:text-white duration-200 px-4 rounded font-semibold !py-1" data-invoice-no="${billing.invoiceNo}"><i class="ri-download-line"></i> Invoice</button>

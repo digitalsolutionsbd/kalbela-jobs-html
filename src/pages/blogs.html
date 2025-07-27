@@ -613,11 +613,50 @@
     <!----------------------->
     <div class="md:mt-0 mt-6 base-container grid md:grid-cols-3 gap-4 bg-white p-4 pb-6 shadow-xl ">
       <div class="md:col-span-2">
-        <div class="flex items-center gap-2">
+        <div id="latest" class="flex justify-between items-center pb-2 gap-2">
           <h4 class="text-lg font-semibold text-gray-500">সর্বশেষঃ</h4>
-          <div class="stripe-line h-[10px] w-full bg-red-700"></div>
+        
+ <div class="relative md:hidden inline-block">
+  <button
+    class="dropdownToggle text-gray-400 hover:text-black transition-colors"
+    onclick="toggleDropdown(event)"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+         fill="none" stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round"
+         class="lucide lucide-logs-icon">
+      <path d="M13 12h8" />
+      <path d="M13 18h8" />
+      <path d="M13 6h8" />
+      <path d="M3 12h1" />
+      <path d="M3 18h1" />
+      <path d="M3 6h1" />
+      <path d="M8 12h1" />
+      <path d="M8 18h1" />
+      <path d="M8 6h1" />
+    </svg>
+  </button>
+
+  <div
+    class="dropdownMenu absolute top-10 right-0 hidden flex-col items-start bg-white w-[200px] p-2 border rounded-lg shadow z-10"
+  >
+    <a href="#latest" class="hash-link block w-full px-3 py-2 text-sm hover:bg-gray-200 rounded">সর্বশেষ</a>
+    <a href="#admissionInfo" class="hash-link block w-full px-3 py-2 text-sm hover:bg-gray-200 rounded">ভর্তি তথ্য</a>
+    <a href="#syllabus" class="hash-link block w-full px-3 py-2 text-sm hover:bg-gray-200 rounded">সময়সূচি</a>
+    <a href="#applicationForm" class="hash-link block w-full px-3 py-2 text-sm hover:bg-gray-200 rounded">আবেদন ফরম পূরণ</a>
+  </div>
+</div>
+
+
+<div class="md:flex hidden md:flex-row items-center gap-2">
+<a href="#latest" class="hash-link text-xs font-semibold hover:bg-gray-200 duration-150 rounded bg-gray-100 px-3 py-1 text-primary-blue">সর্বশেষ</a>
+<a href="#admissionInfo" class="hash-link text-xs font-semibold hover:bg-gray-200 duration-150 rounded bg-gray-100 px-3 py-1 text-primary-blue">ভর্তি তথ্য</a>
+<a href="#syllabus" class="hash-link text-xs font-semibold hover:bg-gray-200 duration-150 rounded bg-gray-100 px-3 py-1 text-primary-blue">সময়সূচি</a>
+<a href="#applicationForm" class="hash-link text-xs font-semibold hover:bg-gray-200 duration-150 rounded bg-gray-100 px-3 py-1 text-primary-blue">আবেদন ফরম পূরণ</a>
+</div>
+
         </div>
-        <div class="border border-b-4 border-b-primary-blue p-4">
+        <div  class="border border-b-4 border-b-primary-blue p-4">
           <div class="grid md:grid-cols-4 gap-3">
               <!-- Blog card 1 -->
                <div class="">
@@ -836,13 +875,51 @@
 
 
 <br>
-<div class=" border border-b-4 border-b-primary-blue ">
-    <div class="flex items-center gap-2 px-4 pt-4">
+<div id="admissionInfo" class="   ">
+    <div class="flex items-center justify-between gap-2  py-2">
           <h4 class="text-lg font-semibold text-gray-500 text-nowrap">ভর্তি তথ্য</h4>
-          <div class="stripe-line h-[10px] w-full bg-red-700"></div>
+         
+           <div class="relative md:hidden inline-block">
+  <button
+    class="dropdownToggle text-gray-400 hover:text-black transition-colors"
+    onclick="toggleDropdown(event)"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+         fill="none" stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round"
+         class="lucide lucide-logs-icon">
+      <path d="M13 12h8" />
+      <path d="M13 18h8" />
+      <path d="M13 6h8" />
+      <path d="M3 12h1" />
+      <path d="M3 18h1" />
+      <path d="M3 6h1" />
+      <path d="M8 12h1" />
+      <path d="M8 18h1" />
+      <path d="M8 6h1" />
+    </svg>
+  </button>
+
+  <div
+    class="dropdownMenu absolute top-10 right-0 hidden flex-col items-start bg-white w-[200px] p-2 border rounded-lg shadow z-10"
+  >
+    <a href="#latest" class="hash-link block w-full px-3 py-2 text-sm hover:bg-gray-200 rounded">সর্বশেষ</a>
+    <a href="#admissionInfo" class="hash-link block w-full px-3 py-2 text-sm hover:bg-gray-200 rounded">ভর্তি তথ্য</a>
+    <a href="#syllabus" class="hash-link block w-full px-3 py-2 text-sm hover:bg-gray-200 rounded">সময়সূচি</a>
+    <a href="#applicationForm" class="hash-link block w-full px-3 py-2 text-sm hover:bg-gray-200 rounded">আবেদন ফরম পূরণ</a>
+  </div>
+</div>
+
+
+<div class="md:flex hidden md:flex-row items-center gap-2">
+<a href="#latest" class="hash-link text-xs font-semibold hover:bg-gray-200 duration-150 rounded bg-gray-100 px-3 py-1 text-primary-blue">সর্বশেষ</a>
+<a href="#admissionInfo" class="hash-link text-xs font-semibold hover:bg-gray-200 duration-150 rounded bg-gray-100 px-3 py-1 text-primary-blue">ভর্তি তথ্য</a>
+<a href="#syllabus" class="hash-link text-xs font-semibold hover:bg-gray-200 duration-150 rounded bg-gray-100 px-3 py-1 text-primary-blue">সময়সূচি</a>
+<a href="#applicationForm" class="hash-link text-xs font-semibold hover:bg-gray-200 duration-150 rounded bg-gray-100 px-3 py-1 text-primary-blue">আবেদন ফরম পূরণ</a>
+</div>
         </div>
 
-      <div class="grid md:grid-cols-2 ">
+      <div class="grid md:grid-cols-2 border">
           <div class="px-4 py-4">
              <div class="">
                  <div class="relative group duration-200 overflow-hidden">
@@ -865,8 +942,9 @@
                 </div>
           </div>
           <div class="bg-[#F7F7F7] px-4 py-4">
-            <div class="space-y-3 ">
-               <div class="grid grid-cols-3 items-start gap-3">
+            <div class="space-y-0 h-[410px] overflow-y-auto">
+               
+              <div class="border-b grid grid-cols-3 items-start gap-3">
                    <div class="relative group duration-200 overflow-hidden">
                     <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
                     <div class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
@@ -875,14 +953,14 @@
                         </a>
                     </div>
                    </div>
-                    <div class="col-span-2 card-body ">
+                    <div class="col-span-2 card-body py-2 ">
                         <a href="/src/pages/blog-details.html" class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
                 </a>
                     </div>
                   </div>
   
-                  <div class="grid grid-cols-3 items-start gap-3">
+                  <div class="border-b grid grid-cols-3 items-start gap-3">
                    <div class="relative group duration-200 overflow-hidden">
                     <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
                     <div class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
@@ -891,14 +969,14 @@
                         </a>
                     </div>
                    </div>
-                    <div class="col-span-2 card-body ">
+                    <div class="col-span-2 card-body py-2 ">
                         <a href="/src/pages/blog-details.html" class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
                 </a>
                     </div>
                   </div>
   
-                  <div class="grid grid-cols-3 items-start gap-3">
+                  <div class="border-b grid grid-cols-3 items-start gap-3">
                    <div class="relative group duration-200 overflow-hidden">
                     <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
                     <div class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
@@ -907,14 +985,14 @@
                         </a>
                     </div>
                    </div>
-                    <div class="col-span-2 card-body ">
+                    <div class="col-span-2 card-body py-2 ">
                         <a href="/src/pages/blog-details.html" class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
                 </a>
                     </div>
                   </div>
   
-                  <div class="grid grid-cols-3 items-start gap-3">
+                  <div class="border-b grid grid-cols-3 items-start gap-3">
                    <div class="relative group duration-200 overflow-hidden">
                     <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
                     <div class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
@@ -923,7 +1001,71 @@
                         </a>
                     </div>
                    </div>
-                    <div class="col-span-2 card-body ">
+                    <div class="col-span-2 card-body py-2 ">
+                        <a href="/src/pages/blog-details.html" class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
+                 জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
+                    </div>
+                  </div>
+
+                  <div class="border-b grid grid-cols-3 items-start gap-3">
+                   <div class="relative group duration-200 overflow-hidden">
+                    <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
+                    <div class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
+                        <a href="/src/pages/blog-details.html" class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                           <i class="ri-article-line"></i>
+                        </a>
+                    </div>
+                   </div>
+                    <div class="col-span-2 card-body py-2 ">
+                        <a href="/src/pages/blog-details.html" class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
+                 জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
+                    </div>
+                  </div>
+  
+                  <div class="border-b grid grid-cols-3 items-start gap-3">
+                   <div class="relative group duration-200 overflow-hidden">
+                    <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
+                    <div class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
+                        <a href="/src/pages/blog-details.html" class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                           <i class="ri-article-line"></i>
+                        </a>
+                    </div>
+                   </div>
+                    <div class="col-span-2 card-body py-2 ">
+                        <a href="/src/pages/blog-details.html" class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
+                 জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
+                    </div>
+                  </div>
+  
+                  <div class="border-b grid grid-cols-3 items-start gap-3">
+                   <div class="relative group duration-200 overflow-hidden">
+                    <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
+                    <div class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
+                        <a href="/src/pages/blog-details.html" class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                           <i class="ri-article-line"></i>
+                        </a>
+                    </div>
+                   </div>
+                    <div class="col-span-2 card-body py-2 ">
+                        <a href="/src/pages/blog-details.html" class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
+                 জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
+                    </div>
+                  </div>
+  
+                  <div class="border-b grid grid-cols-3 items-start gap-3">
+                   <div class="relative group duration-200 overflow-hidden">
+                    <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
+                    <div class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
+                        <a href="/src/pages/blog-details.html" class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                           <i class="ri-article-line"></i>
+                        </a>
+                    </div>
+                   </div>
+                    <div class="col-span-2 card-body py-2 ">
                         <a href="/src/pages/blog-details.html" class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
                 </a>
@@ -931,17 +1073,78 @@
                   </div>
   
             </div>
+           
           </div>
       </div>
 </div>
+
+<div class="flex justify-center mt-3 overflow-x-auto">
+  <nav class="inline-flex items-center text-sm border border-gray-300 rounded divide-x divide-gray-300">
+    <!-- Previous Button -->
+    <button class="px-3 py-1 bg-white hover:bg-blue-100 text-gray-700 disabled:opacity-50 disabled:cursor-not-allowed">
+      Previous
+    </button>
+
+    <!-- Page Numbers -->
+    <button class="px-3 py-1 bg-primary-blue text-white">1</button>
+    <button class="px-3 py-1 bg-white hover:bg-blue-100 text-gray-700">2</button>
+    <span class="px-3 py-1 text-gray-400">...</span>
+    <button class="px-3 py-1 bg-white hover:bg-blue-100 text-gray-700">9</button>
+    <button class="px-3 py-1 bg-white hover:bg-blue-100 text-gray-700">10</button>
+
+    <!-- Next Button -->
+    <button class="px-3 py-1 bg-white hover:bg-blue-100 text-gray-700 disabled:opacity-50 disabled:cursor-not-allowed">
+      Next
+    </button>
+  </nav>
+</div>
+
 <br>
-<div class=" border border-b-4 border-b-primary-blue ">
-    <div class="flex items-center gap-2 px-4 pt-4">
+<div id="syllabus" class="  ">
+    <div class="flex items-center justify-between gap-2 py-2">
           <h4 class="text-lg font-semibold text-gray-500 text-nowrap">সময়সূচি</h4>
-          <div class="stripe-line h-[10px] w-full bg-red-700"></div>
+          
+           <div class="relative md:hidden inline-block">
+  <button
+    class="dropdownToggle text-gray-400 hover:text-black transition-colors"
+    onclick="toggleDropdown(event)"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+         fill="none" stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round"
+         class="lucide lucide-logs-icon">
+      <path d="M13 12h8" />
+      <path d="M13 18h8" />
+      <path d="M13 6h8" />
+      <path d="M3 12h1" />
+      <path d="M3 18h1" />
+      <path d="M3 6h1" />
+      <path d="M8 12h1" />
+      <path d="M8 18h1" />
+      <path d="M8 6h1" />
+    </svg>
+  </button>
+
+  <div
+    class="dropdownMenu absolute top-10 right-0 hidden flex-col items-start bg-white w-[200px] p-2 border rounded-lg shadow z-10"
+  >
+    <a href="#latest" class="hash-link block w-full px-3 py-2 text-sm hover:bg-gray-200 rounded">সর্বশেষ</a>
+    <a href="#admissionInfo" class="hash-link block w-full px-3 py-2 text-sm hover:bg-gray-200 rounded">ভর্তি তথ্য</a>
+    <a href="#syllabus" class="hash-link block w-full px-3 py-2 text-sm hover:bg-gray-200 rounded">সময়সূচি</a>
+    <a href="#applicationForm" class="hash-link block w-full px-3 py-2 text-sm hover:bg-gray-200 rounded">আবেদন ফরম পূরণ</a>
+  </div>
+</div>
+
+
+<div class="md:flex hidden md:flex-row items-center gap-2">
+<a href="#latest" class="hash-link text-xs font-semibold hover:bg-gray-200 duration-150 rounded bg-gray-100 px-3 py-1 text-primary-blue">সর্বশেষ</a>
+<a href="#admissionInfo" class="hash-link text-xs font-semibold hover:bg-gray-200 duration-150 rounded bg-gray-100 px-3 py-1 text-primary-blue">ভর্তি তথ্য</a>
+<a href="#syllabus" class="hash-link text-xs font-semibold hover:bg-gray-200 duration-150 rounded bg-gray-100 px-3 py-1 text-primary-blue">সময়সূচি</a>
+<a href="#applicationForm" class="hash-link text-xs font-semibold hover:bg-gray-200 duration-150 rounded bg-gray-100 px-3 py-1 text-primary-blue">আবেদন ফরম পূরণ</a>
+</div>
         </div>
 
-      <div class="grid md:grid-cols-2 ">
+      <div class="grid md:grid-cols-2 border">
           <div class="px-4 py-4">
              <div class="">
                  <div class="relative group duration-200 overflow-hidden">
@@ -964,8 +1167,9 @@
                 </div>
           </div>
           <div class="bg-[#F7F7F7] px-4 py-4">
-            <div class="space-y-3 ">
-               <div class="grid grid-cols-3 items-start gap-3">
+            <div class="space-y-0 h-[410px] overflow-y-auto ">
+              
+                 <div class="border-b grid grid-cols-3 items-start gap-3">
                    <div class="relative group duration-200 overflow-hidden">
                     <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
                     <div class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
@@ -974,14 +1178,14 @@
                         </a>
                     </div>
                    </div>
-                    <div class="col-span-2 card-body ">
+                    <div class="col-span-2 card-body py-2 ">
                         <a href="/src/pages/blog-details.html" class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
                 </a>
                     </div>
                   </div>
   
-                  <div class="grid grid-cols-3 items-start gap-3">
+                  <div class="border-b grid grid-cols-3 items-start gap-3">
                    <div class="relative group duration-200 overflow-hidden">
                     <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
                     <div class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
@@ -990,14 +1194,14 @@
                         </a>
                     </div>
                    </div>
-                    <div class="col-span-2 card-body ">
+                    <div class="col-span-2 card-body py-2 ">
                         <a href="/src/pages/blog-details.html" class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
                 </a>
                     </div>
                   </div>
   
-                  <div class="grid grid-cols-3 items-start gap-3">
+                  <div class="border-b grid grid-cols-3 items-start gap-3">
                    <div class="relative group duration-200 overflow-hidden">
                     <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
                     <div class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
@@ -1006,14 +1210,14 @@
                         </a>
                     </div>
                    </div>
-                    <div class="col-span-2 card-body ">
+                    <div class="col-span-2 card-body py-2 ">
                         <a href="/src/pages/blog-details.html" class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
                 </a>
                     </div>
                   </div>
   
-                  <div class="grid grid-cols-3 items-start gap-3">
+                  <div class="border-b grid grid-cols-3 items-start gap-3">
                    <div class="relative group duration-200 overflow-hidden">
                     <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
                     <div class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
@@ -1022,26 +1226,146 @@
                         </a>
                     </div>
                    </div>
-                    <div class="col-span-2 card-body ">
+                    <div class="col-span-2 card-body py-2">
                         <a href="/src/pages/blog-details.html" class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
                 </a>
                     </div>
                   </div>
   
+                  <div class="border-b grid grid-cols-3 items-start gap-3">
+                   <div class="relative group duration-200 overflow-hidden">
+                    <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
+                    <div class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
+                        <a href="/src/pages/blog-details.html" class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                           <i class="ri-article-line"></i>
+                        </a>
+                    </div>
+                   </div>
+                    <div class="col-span-2 card-body py-2 ">
+                        <a href="/src/pages/blog-details.html" class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
+                 জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
+                    </div>
+                  </div>
+  
+                  <div class="border-b grid grid-cols-3 items-start gap-3">
+                   <div class="relative group duration-200 overflow-hidden">
+                    <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
+                    <div class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
+                        <a href="/src/pages/blog-details.html" class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                           <i class="ri-article-line"></i>
+                        </a>
+                    </div>
+                   </div>
+                    <div class="col-span-2 card-body py-2 ">
+                        <a href="/src/pages/blog-details.html" class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
+                 জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
+                    </div>
+                  </div>
+  
+                  <div class="border-b grid grid-cols-3 items-start gap-3">
+                   <div class="relative group duration-200 overflow-hidden">
+                    <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
+                    <div class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
+                        <a href="/src/pages/blog-details.html" class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                           <i class="ri-article-line"></i>
+                        </a>
+                    </div>
+                   </div>
+                    <div class="col-span-2 card-body py-2 ">
+                        <a href="/src/pages/blog-details.html" class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
+                 জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
+                    </div>
+                  </div>
+  
+                  <div class="border-b grid grid-cols-3 items-start gap-3">
+                   <div class="relative group duration-200 overflow-hidden">
+                    <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
+                    <div class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
+                        <a href="/src/pages/blog-details.html" class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                           <i class="ri-article-line"></i>
+                        </a>
+                    </div>
+                   </div>
+                    <div class="col-span-2 card-body py-2">
+                        <a href="/src/pages/blog-details.html" class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
+                 জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
+                    </div>
+                  </div>
             </div>
           </div>
       </div>
 </div>
+<div class="flex justify-center mt-3 overflow-x-auto">
+  <nav class="inline-flex items-center text-sm border border-gray-300 rounded divide-x divide-gray-300">
+    <!-- Previous Button -->
+    <button class="px-3 py-1 bg-white hover:bg-blue-100 text-gray-700 disabled:opacity-50 disabled:cursor-not-allowed">
+      Previous
+    </button>
 
+    <!-- Page Numbers -->
+    <button class="px-3 py-1 bg-primary-blue text-white">1</button>
+    <button class="px-3 py-1 bg-white hover:bg-blue-100 text-gray-700">2</button>
+    <span class="px-3 py-1 text-gray-400">...</span>
+    <button class="px-3 py-1 bg-white hover:bg-blue-100 text-gray-700">9</button>
+    <button class="px-3 py-1 bg-white hover:bg-blue-100 text-gray-700">10</button>
+
+    <!-- Next Button -->
+    <button class="px-3 py-1 bg-white hover:bg-blue-100 text-gray-700 disabled:opacity-50 disabled:cursor-not-allowed">
+      Next
+    </button>
+  </nav>
+</div>
 <br>
-<div class=" border border-b-4 border-b-primary-blue ">
-    <div class="flex items-center gap-2 px-4 pt-4">
+<div id="applicationForm" class=" ">
+    <div class="flex items-center justify-between gap-2 py-2">
           <h4 class="text-lg font-semibold text-gray-500 text-nowrap">আবেদন ফরম পূরণ</h4>
-          <div class="stripe-line h-[10px] w-full bg-red-700"></div>
+          
+           <div class="relative md:hidden inline-block">
+  <button
+    class="dropdownToggle text-gray-400 hover:text-black transition-colors"
+    onclick="toggleDropdown(event)"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+         fill="none" stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round"
+         class="lucide lucide-logs-icon">
+      <path d="M13 12h8" />
+      <path d="M13 18h8" />
+      <path d="M13 6h8" />
+      <path d="M3 12h1" />
+      <path d="M3 18h1" />
+      <path d="M3 6h1" />
+      <path d="M8 12h1" />
+      <path d="M8 18h1" />
+      <path d="M8 6h1" />
+    </svg>
+  </button>
+
+  <div
+    class="dropdownMenu absolute top-10 right-0 hidden flex-col items-start bg-white w-[200px] p-2 border rounded-lg shadow z-10"
+  >
+    <a href="#latest" class="hash-link block w-full px-3 py-2 text-sm hover:bg-gray-200 rounded">সর্বশেষ</a>
+    <a href="#admissionInfo" class="hash-link block w-full px-3 py-2 text-sm hover:bg-gray-200 rounded">ভর্তি তথ্য</a>
+    <a href="#syllabus" class="hash-link block w-full px-3 py-2 text-sm hover:bg-gray-200 rounded">সময়সূচি</a>
+    <a href="#applicationForm" class="hash-link block w-full px-3 py-2 text-sm hover:bg-gray-200 rounded">আবেদন ফরম পূরণ</a>
+  </div>
+</div>
+
+
+<div class="md:flex hidden md:flex-row items-center gap-2">
+<a href="#latest" class="hash-link text-xs font-semibold hover:bg-gray-200 duration-150 rounded bg-gray-100 px-3 py-1 text-primary-blue">সর্বশেষ</a>
+<a href="#admissionInfo" class="hash-link text-xs font-semibold hover:bg-gray-200 duration-150 rounded bg-gray-100 px-3 py-1 text-primary-blue">ভর্তি তথ্য</a>
+<a href="#syllabus" class="hash-link text-xs font-semibold hover:bg-gray-200 duration-150 rounded bg-gray-100 px-3 py-1 text-primary-blue">সময়সূচি</a>
+<a href="#applicationForm" class="hash-link text-xs font-semibold hover:bg-gray-200 duration-150 rounded bg-gray-100 px-3 py-1 text-primary-blue">আবেদন ফরম পূরণ</a>
+</div>
         </div>
 
-      <div class="grid md:grid-cols-2 ">
+      <div class="border grid md:grid-cols-2 ">
           <div class="px-4 py-4">
              <div class="">
                  <div class="relative group duration-200 overflow-hidden">
@@ -1064,8 +1388,9 @@
                 </div>
           </div>
           <div class="bg-[#F7F7F7] px-4 py-4">
-            <div class="space-y-3 ">
-               <div class="grid grid-cols-3 items-start gap-3">
+            <div class="space-y-0 h-[410px] overflow-y-auto ">
+            
+              <div class="border-b grid grid-cols-3 items-start gap-3">
                    <div class="relative group duration-200 overflow-hidden">
                     <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
                     <div class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
@@ -1074,14 +1399,14 @@
                         </a>
                     </div>
                    </div>
-                    <div class="col-span-2 card-body ">
+                    <div class="col-span-2 card-body py-2 ">
                         <a href="/src/pages/blog-details.html" class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
                 </a>
                     </div>
                   </div>
   
-                  <div class="grid grid-cols-3 items-start gap-3">
+                  <div class="border-b grid grid-cols-3 items-start gap-3">
                    <div class="relative group duration-200 overflow-hidden">
                     <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
                     <div class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
@@ -1090,14 +1415,14 @@
                         </a>
                     </div>
                    </div>
-                    <div class="col-span-2 card-body ">
+                    <div class="col-span-2 card-body py-2 ">
                         <a href="/src/pages/blog-details.html" class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
                 </a>
                     </div>
                   </div>
   
-                  <div class="grid grid-cols-3 items-start gap-3">
+                  <div class="border-b grid grid-cols-3 items-start gap-3">
                    <div class="relative group duration-200 overflow-hidden">
                     <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
                     <div class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
@@ -1106,14 +1431,14 @@
                         </a>
                     </div>
                    </div>
-                    <div class="col-span-2 card-body ">
+                    <div class="col-span-2 card-body py-2 ">
                         <a href="/src/pages/blog-details.html" class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
                 </a>
                     </div>
                   </div>
   
-                  <div class="grid grid-cols-3 items-start gap-3">
+                  <div class="border-b grid grid-cols-3 items-start gap-3">
                    <div class="relative group duration-200 overflow-hidden">
                     <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
                     <div class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
@@ -1122,7 +1447,71 @@
                         </a>
                     </div>
                    </div>
-                    <div class="col-span-2 card-body ">
+                    <div class="col-span-2 card-body py-2 ">
+                        <a href="/src/pages/blog-details.html" class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
+                 জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
+                    </div>
+                  </div>
+
+                  <div class="border-b grid grid-cols-3 items-start gap-3">
+                   <div class="relative group duration-200 overflow-hidden">
+                    <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
+                    <div class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
+                        <a href="/src/pages/blog-details.html" class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                           <i class="ri-article-line"></i>
+                        </a>
+                    </div>
+                   </div>
+                    <div class="col-span-2 card-body py-2 ">
+                        <a href="/src/pages/blog-details.html" class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
+                 জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
+                    </div>
+                  </div>
+  
+                  <div class="border-b grid grid-cols-3 items-start gap-3">
+                   <div class="relative group duration-200 overflow-hidden">
+                    <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
+                    <div class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
+                        <a href="/src/pages/blog-details.html" class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                           <i class="ri-article-line"></i>
+                        </a>
+                    </div>
+                   </div>
+                    <div class="col-span-2 card-body py-2 ">
+                        <a href="/src/pages/blog-details.html" class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
+                 জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
+                    </div>
+                  </div>
+  
+                  <div class="border-b grid grid-cols-3 items-start gap-3">
+                   <div class="relative group duration-200 overflow-hidden">
+                    <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
+                    <div class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
+                        <a href="/src/pages/blog-details.html" class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                           <i class="ri-article-line"></i>
+                        </a>
+                    </div>
+                   </div>
+                    <div class="col-span-2 card-body py-2 ">
+                        <a href="/src/pages/blog-details.html" class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
+                 জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
+                    </div>
+                  </div>
+  
+                  <div class="border-b grid grid-cols-3 items-start gap-3">
+                   <div class="relative group duration-200 overflow-hidden">
+                    <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
+                    <div class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
+                        <a href="/src/pages/blog-details.html" class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                           <i class="ri-article-line"></i>
+                        </a>
+                    </div>
+                   </div>
+                    <div class="col-span-2 card-body py-2 ">
                         <a href="/src/pages/blog-details.html" class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
                 </a>
@@ -1133,7 +1522,30 @@
           </div>
       </div>
 </div>
+
+<div class="flex justify-center mt-3 overflow-x-auto">
+  <nav class="inline-flex items-center text-sm border border-gray-300 rounded divide-x divide-gray-300">
+    <!-- Previous Button -->
+    <button class="px-3 py-1 bg-white hover:bg-blue-100 text-gray-700 disabled:opacity-50 disabled:cursor-not-allowed">
+      Previous
+    </button>
+
+    <!-- Page Numbers -->
+    <button class="px-3 py-1 bg-primary-blue text-white">1</button>
+    <button class="px-3 py-1 bg-white hover:bg-blue-100 text-gray-700">2</button>
+    <span class="px-3 py-1 text-gray-400">...</span>
+    <button class="px-3 py-1 bg-white hover:bg-blue-100 text-gray-700">9</button>
+    <button class="px-3 py-1 bg-white hover:bg-blue-100 text-gray-700">10</button>
+
+    <!-- Next Button -->
+    <button class="px-3 py-1 bg-white hover:bg-blue-100 text-gray-700 disabled:opacity-50 disabled:cursor-not-allowed">
+      Next
+    </button>
+  </nav>
+</div>
       </div>
+
+      
       
       <div class="w-full">
         <div class="w-full flex mt-2 items-center gap-2">
@@ -1149,6 +1561,7 @@
             <button class="px-3 py-2 bg-primary-blue hover:bg-blue-800 duration-150 text-white">Search</button>
           </div>
         </div>
+         <a href="#" target="_blank"> <img src="../image/adds/add9.jpg" alt="add" class="w-full my-4 border"></a>
         <!-- Recent Posts -->
         <div>
           <div class="mt-6 flex items-center gap-2">
@@ -1188,6 +1601,7 @@
             </li>
           </ul>
         </div>
+       <a href="#" target="_blank"> <img src="../image/adds/add4.jpg" alt="add" class="w-full my-4"></a>
         <!-- কোন বিষয়ে জানতে চান?  -->
         <div>
           <div class="mt-6 flex items-center gap-2">
@@ -1578,152 +1992,7 @@
                 </svg>
                 ব্যাংক নিয়োগ
               </a>
-            </li>
-            <li class="border-b pb-2">
-              <a href="/src/pages/blog-details.html"
-                class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm flex items-start gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-folder-icon lucide-folder">
-                  <path
-                    d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
-                </svg>
-                স্কলারশিপ নিউজ
-              </a>
-            </li>
-            <li class="border-b pb-2">
-              <a href="/src/pages/blog-details.html"
-                class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm flex items-start gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-folder-icon lucide-folder">
-                  <path
-                    d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
-                </svg>
-                চাকরির প্রস্তুতি
-              </a>
-            </li>
-            <li class="border-b pb-2">
-              <a href="/src/pages/blog-details.html"
-                class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm flex items-start gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-folder-icon lucide-folder">
-                  <path
-                    d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
-                </svg>
-                এইচ.এস.সি ফলাফল
-              </a>
-            </li>
-            <li class="pb-2">
-              <a href="/src/pages/blog-details.html"
-                class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm flex items-start gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-folder-icon lucide-folder">
-                  <path
-                    d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
-                </svg>
-                সরকারি নিয়োগ বিজ্ঞপ্তি
-              </a>
-            </li>
-            <li class="border-b pb-2">
-              <a href="/src/pages/blog-details.html"
-                class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm flex items-start gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-folder-icon lucide-folder">
-                  <path
-                    d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
-                </svg>
-                আই.ই.এল.টি.এস
-              </a>
-            </li>
-            <li class="border-b pb-2">
-              <a href="/src/pages/blog-details.html"
-                class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm flex items-start gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-folder-icon lucide-folder">
-                  <path
-                    d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
-                </svg>
-                বিসিএস প্রস্তুতি
-              </a>
-            </li>
-            <li class="border-b pb-2">
-              <a href="/src/pages/blog-details.html"
-                class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm flex items-start gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-folder-icon lucide-folder">
-                  <path
-                    d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
-                </svg>
-                বিশ্ববিদ্যালয় ভর্তি
-              </a>
-            </li>
-            <li class="border-b pb-2">
-              <a href="/src/pages/blog-details.html"
-                class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm flex items-start gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-folder-icon lucide-folder">
-                  <path
-                    d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
-                </svg>
-                সরকারি চাকরি
-              </a>
-            </li>
-            <li class="border-b pb-2">
-              <a href="/src/pages/blog-details.html"
-                class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm flex items-start gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-folder-icon lucide-folder">
-                  <path
-                    d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
-                </svg>
-                ব্যাংক নিয়োগ
-              </a>
-            </li>
-            <li class="border-b pb-2">
-              <a href="/src/pages/blog-details.html"
-                class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm flex items-start gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-folder-icon lucide-folder">
-                  <path
-                    d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
-                </svg>
-                স্কলারশিপ নিউজ
-              </a>
-            </li>
-            <li class="border-b pb-2">
-              <a href="/src/pages/blog-details.html"
-                class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm flex items-start gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-folder-icon lucide-folder">
-                  <path
-                    d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
-                </svg>
-                চাকরির প্রস্তুতি
-              </a>
-            </li>
-            <li class="border-b pb-2">
-              <a href="/src/pages/blog-details.html"
-                class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm flex items-start gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-folder-icon lucide-folder">
-                  <path
-                    d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
-                </svg>
-                এইচ.এস.সি ফলাফল
-              </a>
-            </li> 
-            
+            </li>             
           </ul>
 
         </div>
@@ -1831,6 +2100,23 @@
   <!--------------------------------------------------------->
   <script type="module" src="/src/js/main.js"></script>
   <script>
+     function updateActiveHashLink() {
+    const hash = window.location.hash;
+    document.querySelectorAll('.hash-link').forEach(link => {
+      if (link.getAttribute('href') === hash) {
+        link.classList.add('bg-primary-blue', 'text-white', 'hover:bg-primary-blue', 'hover:text-white');
+        link.classList.remove('bg-gray-100', 'text-primary-blue', 'hover:bg-gray-100', 'hover:text-primary-blue');
+      } else {
+        link.classList.remove('bg-primary-blue', 'text-white', 'hover:bg-primary-blue', 'hover:text-white');
+        link.classList.add('bg-gray-100', 'text-primary-blue', 'hover:bg-gray-100', 'hover:text-primary-blue');
+      }
+    });
+  }
+ 
+  updateActiveHashLink();
+ 
+  window.addEventListener('hashchange', updateActiveHashLink);
+
     window.addEventListener('scroll', () => {
 
       const nav = document.getElementById('mainNav');
@@ -1863,6 +2149,21 @@
         closeModal();
       }
     });
+
+
+    // dropdown
+     function toggleDropdown(event) {
+    const toggleBtn = event.currentTarget;
+    const dropdown = toggleBtn.nextElementSibling;
+    dropdown.classList.toggle('hidden');
+
+    document.addEventListener('click', function handler(e) {
+      if (!toggleBtn.parentElement.contains(e.target)) {
+        dropdown.classList.add('hidden');
+        document.removeEventListener('click', handler);
+      }
+    });
+  }
   </script>
 
 

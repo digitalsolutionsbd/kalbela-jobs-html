@@ -421,6 +421,21 @@
    box-shadow: 0px 4px 6px rgba(24, 68, 41, 0.233) !important;
 }
 
+.btn-danger{
+  background: var(--danger-500) !important;
+  padding: 8px 14px !important;
+  color: #fff !important;
+  transition: all 0.2s ease-in-out !important;
+  border-radius: 8px !important;
+}
+.btn-danger:hover{
+   background: var(--danger-700) !important;
+  padding: 8px 14px !important;
+  color: #fff !important;
+  transition: all 0.2s ease-in-out !important;
+   box-shadow: 0px 4px 6px rgba(24, 68, 41, 0.233) !important;
+}
+
 @media screen and (min-width: 1440px) and (max-width: 1800px) {
   .app-container {
       width: 1400px !important;

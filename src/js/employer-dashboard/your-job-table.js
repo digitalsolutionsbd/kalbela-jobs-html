@@ -80,7 +80,7 @@ const jobs = [
   }
 ];
 
-let filteredJobs = [...jobs]; // initially same as jobs
+let filteredJobs = [...jobs];
 
 
 const itemsPerPage = 5;
@@ -123,117 +123,29 @@ function renderTable(data) {
             </td>
             <td class="px-6 py-4 whitespace-nowrap">
                <div class="relative  block group duration-200 ">
-                                                        <button data-target="#educationEditModal"
-                                                            class="bg-gray-50 px-4 border w-8 h-8 flex justify-center items-center py-2 text-success-500 hover:text-success-700 rounded-lg transition-colors font-medium">
-                                                            <i class="ri-more-2-line text-xl"></i>
-                                                        </button>
-                                                        <div
-                                                            class="opacity-0 hidden group-hover:block invisible group-hover:opacity-100 duration-200 group-hover:visible absolute top-6 pt-4 right-0 z-10">
-                                                            <ul class=" bg-white shadow-xl p-2 border  rounded-lg">
-                                                                <li class="py-1">
-                                                                    <button
-  class="edit-button bg-green-50 hover:bg-green-500 duration-150 hover:text-white w-full flex px-8 py-2 text-success-500 hover:text-success-700 rounded-lg"
-  data-target="#editJobModal">
-  <i class="ri-edit-line"></i>
-  Edit
-</button>
+                     <button data-target="#educationEditModal" class="bg-gray-50 px-4 border w-8 h-8 flex justify-center items-center py-2 text-success-500 hover:text-success-700 rounded-lg transition-colors font-medium">
+                       <i class="ri-more-2-line text-xl"></i>
+                      </button>
+                      <div class="opacity-0 hidden group-hover:block invisible group-hover:opacity-100 duration-200 group-hover:visible absolute top-6 pt-4 right-0 z-10">
+                        <ul class=" bg-white shadow-xl p-2 border  rounded-lg">
+                        <li class="py-1">
+                          <a href="/src/pages/employer-dashboard/edit-your-job.html" class="edit-button bg-green-50 hover:bg-green-500 duration-150 hover:text-white w-full flex px-8 py-2 text-success-500 hover:text-success-700 rounded-lg"  data-target="#editJobModal">
+                            <i class="ri-edit-line"></i>
+                            Edit
+                          </a>
 
-                                                                </li>
-                                                                <li class="py-1">
-                                                                    <button data-id="traning-1"
-                                                                        class="delete-item bg-red-50 hover:bg-danger-500 duration-150 hover:text-white w-full flex edit-button px-8 py-2 text-danger-500 hover:text-danger-700 rounded-lg transition-colors font-medium">
-                                                                        <i class="ri-delete-bin-line "></i>
-                                                                        Delete
-                                                                    </button>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
+                           </li>
+                           <li class="py-1">
+                              <button data-id="traning-1"
+                              class="delete-item bg-red-50 hover:bg-danger-500 duration-150 hover:text-white w-full flex edit-button px-8 py-2 text-danger-500 hover:text-danger-700 rounded-lg transition-colors font-medium">
+                                <i class="ri-delete-bin-line "></i>
+                                Delete
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
             </td>
-            
-             <div id="editJobModal" class="bg-[#0000008e] animate__animated hidden modal-overlay w-full h-full fixed top-0 left-0 z-50 items-center justify-center p-4">
-  <div class="modal-content hidden m-auto relative py-6 px-4 bg-white rounded-lg shadow-sm border border-gray-200 lg:w-[800px] md:w-[600px] md:h-auto h-[90%] overflow-y-auto md:pb-0 pb-10 w-full">
-    <button class="close-btn absolute top-4 right-4 text-white rounded p-[1px] bg-gray-500 hover:text-black">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-    </button>
-    <div class="modal-body">
-      <h2 class="text-xl font-semibold">Edit Job</h2>
-       <form id="editJobForm" class="space-y-4 mt-6">
-  <input type="hidden" id="editJobIndex" />
-    <div class="grid md:grid-cols-2 gap-4">
-       <div class="space-y-2">
-    <label class="block text-sm font-medium">Job Title</label>
-    <input type="text" id="editTitle" class="w-full border rounded p-2" />
-  </div>
-
-  <div class="space-y-2">
-    <label class="block text-sm font-medium">Location</label>
-    <input type="text" id="editLocation" class="w-full border rounded p-2" />
-  </div>
-
-  <div class="space-y-2">
-    <label class="block text-sm font-medium">Company</label>
-    <input type="text" id="editCompany" class="w-full border rounded p-2" />
-  </div>
-
-  <div class="space-y-2">
-    <label class="block text-sm font-medium">Status</label>
-    <select id="editStatus" class="w-full border rounded p-2">
-      <option value="Interview">Interview</option>
-      <option value="Rejected">Rejected</option>
-      <option value="Pending">Pending</option>
-      <option value="Offer">Offer</option>
-    </select>
-  </div>
-
-  <div class="space-y-2">
-    <label class="block text-sm font-medium">Gender</label>
-    <select id="editGender" class="w-full border rounded p-2">
-      <option value="Male">Male</option>
-      <option value="Female">Female</option>
-    </select>
-  </div>
-
-  <div class="space-y-2">
-    <label class="block text-sm font-medium">Job Type</label>
-    <select id="editJobType" class="w-full border rounded p-2">
-      <option value="Full-time">Full-time</option>
-      <option value="Part-time">Part-time</option>
-      <option value="Contract">Contract</option>
-    </select>
-  </div>
-
-  <div class="space-y-2">
-    <label class="block text-sm font-medium">Vacancy</label>
-    <input type="number" id="editVacancy" class="w-full border rounded p-2" />
-  </div>
-
-  <div class="space-y-2">
-    <label class="block text-sm font-medium">Apply Count</label>
-    <input type="number" id="editApplyCount" class="w-full border rounded p-2" />
-  </div>
-
-  <div class="space-y-2">
-    <label class="block text-sm font-medium">Uploaded Date</label>
-    <input type="date" id="editUploadedDate" class="w-full border rounded p-2" />
-  </div>
-
-  <div class="space-y-2">
-    <label class="block text-sm font-medium">Deadline</label>
-    <input type="date" id="editDeadline" class="w-full border rounded p-2" />
-  </div>
-
-    </div>
-  <div class="pt-4 pb-6">
-    <button type="submit" class="btn-success ml-auto float-end">Edit Job</button>
-  </div>
-</form>
-
-    </div>
-  </div>
-</div>
-
-
           </tr>
         `;
     tbody.innerHTML += row;
