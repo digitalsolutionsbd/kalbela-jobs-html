@@ -314,7 +314,10 @@
 
  
   .btn-primary {
-    @apply btn-17 px-4 py-2 bg-primary-blue !border-[#cac9c9] text-white hover:!text-white rounded
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-blue);
+    color: white;
+    border-radius: 0.375rem ;
   }
   
 }
@@ -1772,15 +1775,18 @@ input:-internal-autofill-selected{
 }
 
 .btn-primary {
-  background-color: #38BDF8;
+  background-color: var(--primary-blue);
 color: #FFFFFF;
 border-radius: 8px;
 padding: 10px 20px;
 box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+transition: all 0.3s ease-in-out;
 }
 
 .btn-primary:hover {
-  background-color: #0EA5E9;
+  transition: all 0.3s ease-in-out;;
+  background-color: rgb(35, 35, 104);
+  box-shadow: 0 6px 8px rgba(0,0,0,0.2);
 }
 
 /* invoice */
