@@ -29,8 +29,7 @@ export default {
     'mr-2',
     'text-gray-400',
     'w-[760px]'
-  ],
-  theme: {
+  ],  theme: {
     extend: {
       screens: {
         '3xl': '1920px',
@@ -201,5 +200,6 @@ export default {
       },
     },
   },
+
   plugins: [],
 }

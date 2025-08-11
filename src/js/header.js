@@ -3,7 +3,8 @@ let isLeftSideVisible = false;
 export function handleNavbarScroll() {
   const mainNav = document.querySelectorAll('.mainNav');
   const rightSide = document.querySelectorAll('.right-side');
-  const profileDropdownMenu = document.querySelectorAll('.profile-dropdown-menu');
+  const showLeftProfileDropdown = document.querySelectorAll('.left-profile-box');
+  const showRightProfileDropdown = document.querySelectorAll('.right-profile-box');
   const loginDropdownMnu = document.querySelectorAll('.login-dropdown-menu');
   
   const logo = document.querySelectorAll('.nav-logo');
@@ -32,6 +33,34 @@ export function handleNavbarScroll() {
         isLeftSideVisible = true;
       }
     }
+
+    if (showLeftProfileDropdown) {
+      if (scrollY > scrollThreshold) {
+        showLeftProfileDropdown.forEach(box => {
+          box.classList.add('opacity-0', 'scale-90', '-translate-x-10', 'hidden');
+        });
+        
+      } else {
+        showLeftProfileDropdown.forEach(box => {
+          box.classList.remove('opacity-0', 'scale-90', '-translate-x-10', 'hidden');
+        });
+      }
+    }
+    
+    if (showRightProfileDropdown) {
+      if (scrollY > scrollThreshold) {
+        showRightProfileDropdown.forEach(box => {
+          box.classList.remove('hidden');
+          box.classList.add('flex');
+        }); 
+      } else {
+        showRightProfileDropdown.forEach(box => {
+          box.classList.add('hidden');
+          box.classList.remove('flex');}); 
+      }
+    }
+
+
     
     if (heroLogo) {
       if (scrollY > heroScrollThreshold) {

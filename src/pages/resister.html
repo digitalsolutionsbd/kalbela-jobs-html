@@ -31,6 +31,7 @@
 
     <!-- CSS & Plugins -->
     <link rel="stylesheet" href="/src/css/output.css">
+    <link rel="stylesheet" href="/src/css/custom-style.css">
     <link rel="stylesheet" href="/src/css/header.css">
     <link rel="stylesheet" href="/src/css/swiper.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -43,8 +44,8 @@
     <img src="../image/logo_dark.png" alt="" class="logo h-auto md:w-[17rem] w-[15rem] animated  animate-pulse animate-jump animate-infinite    ">
     <h2 class="text-xl md:mt-4 mt-2">Loading Please Wait...</h2>
   </div> -->
-  <!--------------------------------------------------------->
-  <!--//////////////////// Main Content ///////////////////->
+    <!--------------------------------------------------------->
+    <!--//////////////////// Main Content ///////////////////->
 <!--------------------------------------------------------->
     <header>
         <!--------------------------------------------------------->
@@ -121,157 +122,180 @@
                         </div>
 
                         <div class="flex items-center gap-4">
-              
+
                             <div class="relative text-left group  profile-dropdown">
-                              <button class=" bg-gray-100 text-primary-blue rounded-full flex items-center justify-center w-10 h-10 text-xl"><i class="ri-notification-line"></i></button>
-                              
-                              <div class="absolute -mt-2 pt-4 z-10 dropdown-menu profile-dropdown-menu">
-                                <div
-                                  class="py-1 bg-white w-[300px] border rounded-lg shadow-xl opacity-0 hidden group-hover:block invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 transform scale-95 group-hover:scale-100 ease-out"
-                                  role="menu" aria-orientation="vertical">
-                                  <div class="px-4 py-3 border-b border-gray-100">
-                                    <div class="flex items-center justify-between">
-                                        <h3 class="text-lg font-semibold text-gray-900">Notifications</h3>
-                                        <button class="text-sm text-primary-blue hover:text-blue-700 font-medium">
-                                            Mark all read
-                                        </button>
+                                <button
+                                    class=" bg-gray-100 text-primary-blue rounded-full flex items-center justify-center w-10 h-10 text-xl"><i
+                                        class="ri-notification-line"></i></button>
+
+                                <div class="absolute -mt-2 pt-4 z-10 dropdown-menu profile-dropdown-menu">
+                                    <div class="py-1 bg-white w-[300px] border rounded-lg shadow-xl opacity-0 hidden group-hover:block invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 transform scale-95 group-hover:scale-100 ease-out"
+                                        role="menu" aria-orientation="vertical">
+                                        <div class="px-4 py-3 border-b border-gray-100">
+                                            <div class="flex items-center justify-between">
+                                                <h3 class="text-lg font-semibold text-gray-900">Notifications</h3>
+                                                <button
+                                                    class="text-sm text-primary-blue hover:text-blue-700 font-medium">
+                                                    Mark all read
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <!-- Notification List -->
+                                        <div class="max-h-96 overflow-y-auto">
+                                            <!-- notification 1 -->
+                                            <div
+                                                class="px-4 py-3 hover:bg-gray-50 border-l-4 border-primary-blue bg-blue-50">
+                                                <div class="flex items-start space-x-3">
+                                                    <div class="flex-shrink-0">
+                                                        <div
+                                                            class="w-10 h-10 bg-primary-blue rounded-full flex items-center justify-center">
+                                                            <i class="ri-briefcase-line text-white text-sm"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1 min-w-0">
+                                                        <div class="flex items-center justify-between">
+                                                            <p class="text-sm font-medium text-gray-900">New Job Posted
+                                                            </p>
+                                                            <span class="w-2 h-2 bg-primary-blue rounded-full"></span>
+                                                        </div>
+                                                        <p class="text-sm text-gray-600 mt-1">
+                                                            <span class="font-medium">Senior Frontend Developer</span>
+                                                            at TechCorp Inc.
+                                                        </p>
+                                                        <p class="text-xs text-gray-500 mt-1">2 minutes ago</p>
+                                                        <div class="flex space-x-2 mt-2">
+                                                            <button
+                                                                class="text-xs bg-primary-blue text-white px-2 py-1 rounded hover:bg-blue-700">
+                                                                View Job
+                                                            </button>
+                                                            <button class="text-xs text-gray-600 hover:text-gray-800">
+                                                                Dismiss
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- notification 2 -->
+                                            <div
+                                                class="px-4 py-3 hover:bg-gray-50 border-l-4 border-green-500 bg-green-50">
+                                                <div class="flex items-start space-x-3">
+                                                    <div class="flex-shrink-0">
+                                                        <div
+                                                            class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
+                                                            <i class="ri-check-line text-white text-sm"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1 min-w-0">
+                                                        <div class="flex items-center justify-between">
+                                                            <p class="text-sm font-medium text-gray-900">Application
+                                                                Update</p>
+                                                            <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                                                        </div>
+                                                        <p class="text-sm text-gray-600 mt-1">
+                                                            Your application for <span class="font-medium">UX
+                                                                Designer</span> has been reviewed
+                                                        </p>
+                                                        <p class="text-xs text-gray-500 mt-1">1 hour ago</p>
+                                                        <div class="flex space-x-2 mt-2">
+                                                            <button
+                                                                class="text-xs bg-green-500 text-white px-2 py-1 rounded hover:bg-green-600">
+                                                                View Status
+                                                            </button>
+                                                            <button class="text-xs text-gray-600 hover:text-gray-800">
+                                                                Dismiss
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- notification 3 -->
+                                            <div
+                                                class="px-4 py-3 hover:bg-gray-50 border-l-4 border-primary-blue bg-blue-50">
+                                                <div class="flex items-start space-x-3">
+                                                    <div class="flex-shrink-0">
+                                                        <div
+                                                            class="w-10 h-10 bg-primary-blue rounded-full flex items-center justify-center">
+                                                            <i class="ri-briefcase-line text-white text-sm"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1 min-w-0">
+                                                        <div class="flex items-center justify-between">
+                                                            <p class="text-sm font-medium text-gray-900">New Job Posted
+                                                            </p>
+                                                            <span class="w-2 h-2 bg-primary-blue rounded-full"></span>
+                                                        </div>
+                                                        <p class="text-sm text-gray-600 mt-1">
+                                                            <span class="font-medium">Senior Frontend Developer</span>
+                                                            at TechCorp Inc.
+                                                        </p>
+                                                        <p class="text-xs text-gray-500 mt-1">2 minutes ago</p>
+                                                        <div class="flex space-x-2 mt-2">
+                                                            <button
+                                                                class="text-xs bg-primary-blue text-white px-2 py-1 rounded hover:bg-blue-700">
+                                                                View Job
+                                                            </button>
+                                                            <button class="text-xs text-gray-600 hover:text-gray-800">
+                                                                Dismiss
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- notification 4 -->
+                                            <div
+                                                class="px-4 py-3 hover:bg-gray-50 border-l-4 border-green-500 bg-green-50">
+                                                <div class="flex items-start space-x-3">
+                                                    <div class="flex-shrink-0">
+                                                        <div
+                                                            class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
+                                                            <i class="ri-check-line text-white text-sm"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-1 min-w-0">
+                                                        <div class="flex items-center justify-between">
+                                                            <p class="text-sm font-medium text-gray-900">Application
+                                                                Update</p>
+                                                            <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                                                        </div>
+                                                        <p class="text-sm text-gray-600 mt-1">
+                                                            Your application for <span class="font-medium">UX
+                                                                Designer</span> has been reviewed
+                                                        </p>
+                                                        <p class="text-xs text-gray-500 mt-1">1 hour ago</p>
+                                                        <div class="flex space-x-2 mt-2">
+                                                            <button
+                                                                class="text-xs bg-green-500 text-white px-2 py-1 rounded hover:bg-green-600">
+                                                                View Status
+                                                            </button>
+                                                            <button class="text-xs text-gray-600 hover:text-gray-800">
+                                                                Dismiss
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="px-4 py-3 border-t border-gray-100 bg-gray-50">
+                                            <button
+                                                class="w-full text-center text-sm text-primary-blue hover:text-blue-700 font-medium">
+                                                View All Notifications
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
-                
-                                <!-- Notification List -->
-                                <div class="max-h-96 overflow-y-auto">
-                                    <!-- notification 1 -->
-                                    <div class="px-4 py-3 hover:bg-gray-50 border-l-4 border-primary-blue bg-blue-50">
-                                        <div class="flex items-start space-x-3">
-                                            <div class="flex-shrink-0">
-                                                <div class="w-10 h-10 bg-primary-blue rounded-full flex items-center justify-center">
-                                                    <i class="ri-briefcase-line text-white text-sm"></i>
-                                                </div>
-                                            </div>
-                                            <div class="flex-1 min-w-0">
-                                                <div class="flex items-center justify-between">
-                                                    <p class="text-sm font-medium text-gray-900">New Job Posted</p>
-                                                    <span class="w-2 h-2 bg-primary-blue rounded-full"></span>
-                                                </div>
-                                                <p class="text-sm text-gray-600 mt-1">
-                                                    <span class="font-medium">Senior Frontend Developer</span> at TechCorp Inc.
-                                                </p>
-                                                <p class="text-xs text-gray-500 mt-1">2 minutes ago</p>
-                                                <div class="flex space-x-2 mt-2">
-                                                    <button class="text-xs bg-primary-blue text-white px-2 py-1 rounded hover:bg-blue-700">
-                                                        View Job
-                                                    </button>
-                                                    <button class="text-xs text-gray-600 hover:text-gray-800">
-                                                        Dismiss
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                
-                                    <!-- notification 2 -->
-                                    <div class="px-4 py-3 hover:bg-gray-50 border-l-4 border-green-500 bg-green-50">
-                                        <div class="flex items-start space-x-3">
-                                            <div class="flex-shrink-0">
-                                                <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
-                                                    <i class="ri-check-line text-white text-sm"></i>
-                                                </div>
-                                            </div>
-                                            <div class="flex-1 min-w-0">
-                                                <div class="flex items-center justify-between">
-                                                    <p class="text-sm font-medium text-gray-900">Application Update</p>
-                                                    <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-                                                </div>
-                                                <p class="text-sm text-gray-600 mt-1">
-                                                    Your application for <span class="font-medium">UX Designer</span> has been reviewed
-                                                </p>
-                                                <p class="text-xs text-gray-500 mt-1">1 hour ago</p>
-                                                <div class="flex space-x-2 mt-2">
-                                                    <button class="text-xs bg-green-500 text-white px-2 py-1 rounded hover:bg-green-600">
-                                                        View Status
-                                                    </button>
-                                                    <button class="text-xs text-gray-600 hover:text-gray-800">
-                                                        Dismiss
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                     <!-- notification 3 -->
-                                    <div class="px-4 py-3 hover:bg-gray-50 border-l-4 border-primary-blue bg-blue-50">
-                                        <div class="flex items-start space-x-3">
-                                            <div class="flex-shrink-0">
-                                                <div class="w-10 h-10 bg-primary-blue rounded-full flex items-center justify-center">
-                                                    <i class="ri-briefcase-line text-white text-sm"></i>
-                                                </div>
-                                            </div>
-                                            <div class="flex-1 min-w-0">
-                                                <div class="flex items-center justify-between">
-                                                    <p class="text-sm font-medium text-gray-900">New Job Posted</p>
-                                                    <span class="w-2 h-2 bg-primary-blue rounded-full"></span>
-                                                </div>
-                                                <p class="text-sm text-gray-600 mt-1">
-                                                    <span class="font-medium">Senior Frontend Developer</span> at TechCorp Inc.
-                                                </p>
-                                                <p class="text-xs text-gray-500 mt-1">2 minutes ago</p>
-                                                <div class="flex space-x-2 mt-2">
-                                                    <button class="text-xs bg-primary-blue text-white px-2 py-1 rounded hover:bg-blue-700">
-                                                        View Job
-                                                    </button>
-                                                    <button class="text-xs text-gray-600 hover:text-gray-800">
-                                                        Dismiss
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                
-                                    <!-- notification 4 -->
-                                    <div class="px-4 py-3 hover:bg-gray-50 border-l-4 border-green-500 bg-green-50">
-                                        <div class="flex items-start space-x-3">
-                                            <div class="flex-shrink-0">
-                                                <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
-                                                    <i class="ri-check-line text-white text-sm"></i>
-                                                </div>
-                                            </div>
-                                            <div class="flex-1 min-w-0">
-                                                <div class="flex items-center justify-between">
-                                                    <p class="text-sm font-medium text-gray-900">Application Update</p>
-                                                    <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-                                                </div>
-                                                <p class="text-sm text-gray-600 mt-1">
-                                                    Your application for <span class="font-medium">UX Designer</span> has been reviewed
-                                                </p>
-                                                <p class="text-xs text-gray-500 mt-1">1 hour ago</p>
-                                                <div class="flex space-x-2 mt-2">
-                                                    <button class="text-xs bg-green-500 text-white px-2 py-1 rounded hover:bg-green-600">
-                                                        View Status
-                                                    </button>
-                                                    <button class="text-xs text-gray-600 hover:text-gray-800">
-                                                        Dismiss
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-4 py-3 border-t border-gray-100 bg-gray-50">
-                                  <button class="w-full text-center text-sm text-primary-blue hover:text-blue-700 font-medium">
-                                      View All Notifications
-                                  </button>
-                              </div>
-                                </div>
-                              </div>
                             </div>
-              
-              
+
+
                             <button class="menuButton w-8 h-8 lg:hidden rounded-full flex items-center justify-center ">
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z"></path>
-                              </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z"></path>
+                                </svg>
                             </button>
-                          </div>
-              
+                        </div>
+
 
                     </div>
                 </div>
@@ -309,15 +333,14 @@
     <main class="mt-[60px]">
         <section class="bg-white">
             <div class="grid grid-cols-1 lg:grid-cols-2">
-                <div class="md:order-1 order-2 flex items-center justify-center px-4 py-10 sm:py-16 lg:py-24 bg-gray-50 sm:px-6 lg:px-8">
+                <div
+                    class="md:order-1 order-2 flex items-center justify-center px-4 py-10 sm:py-16 lg:py-24 bg-gray-50 sm:px-6 lg:px-8">
                     <div class="swiper mySwiperCompanies p-0">
                         <div class="swiper-wrapper pb-10">
                             <!-- Slide 1 -->
                             <div class="swiper-slide p-0">
                                 <div>
-                                    <img class="mx-auto md:!w-[70%] "
-                                        src="../image/icon/license.png"
-                                        alt="" />
+                                    <img class="mx-auto md:!w-[70%] " src="../image/icon/license.png" alt="" />
                                     <div class="w-full max-w-md mx-auto xl:max-w-xl">
                                         <h3 class="text-2xl font-bold text-center text-black">Commercial License</h3>
                                         <p class="leading-relaxed text-center text-gray-500 mt-2.5">Use our platform for
@@ -329,9 +352,7 @@
                             <!-- Slide 2 -->
                             <div class="swiper-slide p-0">
                                 <div>
-                                    <img class="mx-auto md:!w-[70%] "
-                                    src="../image/icon/joblist.png"
-                                        alt="" />
+                                    <img class="mx-auto md:!w-[70%] " src="../image/icon/joblist.png" alt="" />
                                     <div class="w-full max-w-md mx-auto xl:max-w-xl">
                                         <h3 class="text-2xl font-bold text-center text-black">Unlimited Job Listings
                                         </h3>
@@ -344,9 +365,7 @@
                             <!-- Slide 3 -->
                             <div class="swiper-slide p-0">
                                 <div>
-                                    <img class="mx-auto md:!w-[70%] "
-                                    src="../image/icon/category.png"
-                                        alt="" />
+                                    <img class="mx-auto md:!w-[70%] " src="../image/icon/category.png" alt="" />
                                     <div class="w-full max-w-md mx-auto xl:max-w-xl">
                                         <h3 class="text-2xl font-bold text-center text-black">120+ Job Categories</h3>
                                         <p class="leading-relaxed text-center text-gray-500 mt-2.5">Access a wide range
@@ -354,13 +373,11 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <!-- Slide 3 -->
                             <div class="swiper-slide p-0">
                                 <div>
-                                    <img class="mx-auto md:!w-[70%] "
-                                    src="../image/icon/resume.png"
-                                        alt="" />
+                                    <img class="mx-auto md:!w-[70%] " src="../image/icon/resume.png" alt="" />
                                     <div class="w-full max-w-md mx-auto xl:max-w-xl">
                                         <h3 class="text-2xl font-bold text-center text-black">Resume & Application
                                             Management</h3>
@@ -373,22 +390,27 @@
                         <div class="swiper-pagination mt-8"></div>
                     </div>
                 </div>
-                <div class="md:order-2 order-1 flex items-center justify-center px-4 py-10 bg-white sm:px-6 lg:px-8 sm:py-16 lg:py-24">
+                <div
+                    class="md:order-2 order-1 flex items-center justify-center px-4 py-10 bg-white sm:px-6 lg:px-8 sm:py-16 lg:py-24">
                     <div class="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
-                        <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl">Your Future Starts Here – Register Now</h2>
-                        <p class="mt-2 text-base text-gray-600">Already have an account? <a href="/src/pages/sign-in.html" title=""
-                                class="font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 hover:underline focus:text-blue-700">Sign in?</a></p>
+                        <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl">Your Future Starts Here –
+                            Register Now</h2>
+                        <p class="mt-2 text-base text-gray-600">Already have an account? <a
+                                href="/src/pages/sign-in.html" title=""
+                                class="font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 hover:underline focus:text-blue-700">Sign
+                                in?</a></p>
 
                         <form action="#" method="POST" class="mt-8">
                             <div class="space-y-5">
                                 <div>
                                     <label for="" class="text-base font-medium text-gray-900"> Full Name </label>
                                     <div class="mt-2.5">
-                                        <input type="fullName" name="fullName" id="fullName" placeholder="Enter email to get started"
+                                        <input type="fullName" name="fullName" id="fullName"
+                                            placeholder="Enter email to get started"
                                             class="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600" />
                                     </div>
                                 </div>
-                                
+
                                 <div>
                                     <label for="" class="text-base font-medium text-gray-900"> Email address </label>
                                     <div class="mt-2.5">
@@ -547,11 +569,15 @@
                     <p class="text-base text-gray-400">Jobs by Section</p>
                     <ul class="mt-8 space-y-4 text-white">
                         <li><a href="/src/pages/local-jobs.html" class="hover:text-opacity-80">Local Jobs</a></li>
-                        <li><a href="/src/pages/all-government-jobs.html" class="hover:text-opacity-80">Government Jobs</a></li>
-                        <li><a href="/src/pages/world-wide-job.html" class="hover:text-opacity-80">Worldwide Jobs</a></li>
+                        <li><a href="/src/pages/all-government-jobs.html" class="hover:text-opacity-80">Government
+                                Jobs</a></li>
+                        <li><a href="/src/pages/world-wide-job.html" class="hover:text-opacity-80">Worldwide Jobs</a>
+                        </li>
                         <li><a href="/pbo-professional" class="hover:text-opacity-80">Kalbela Pro</a></li>
-                        <li><a href="/src/pages/unskilled-jobs.html" class="hover:text-opacity-80">Semi-Unskilled Jobs</a></li>>
-                         <li><a href="/src/pages/skilled-jobs.html" class="hover:text-opacity-80">Skilled Worker Jobs</a></li>
+                        <li><a href="/src/pages/unskilled-jobs.html" class="hover:text-opacity-80">Semi-Unskilled
+                                Jobs</a></li>>
+                        <li><a href="/src/pages/skilled-jobs.html" class="hover:text-opacity-80">Skilled Worker Jobs</a>
+                        </li>
                     </ul>
                 </div>
 

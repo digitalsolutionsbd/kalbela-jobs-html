@@ -33,10 +33,11 @@
 
   <!-- CSS & Plugins -->
   <link rel="stylesheet" href="/src/css/output.css?v=1">
+  <link rel="stylesheet" href="/src/css/custom-style.css">
   <link rel="stylesheet" href="/src/css/category.css?v=1">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="/src/css/swiper.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 
@@ -53,71 +54,105 @@
         <!-- large layout -->
         <div class="base-container mx-auto px-4 lg:flex hidden gap-4 items-center justify-between">
           <!-- profile dropdown -->
-          <div class="dropdown md:hidden block relative group" data-dropdown="profile">
-            <button
-              class="flex items-center bg-gray-100 rounded-full space-x-2 text-gray-700 hover:text-blue-600 transition-colors">
-              <img src="/src/image/icon/job.png" alt="Profile" class="w-10 h-10 rounded-full">
-            </button>
-            <div class="dropdown-menu absolute w-64 z-50">
-              <div class=" bg-[#fff] rounded-lg shadow-xl border border-gray-200 py-2 mt-3">
-                <!-- Profile Header -->
-                <div class="px-4 py-3 border-b border-gray-100">
-                  <div class="flex items-center space-x-3">
-                    <img src="/src/image/icon/job.png" alt="Profile" class="w-10 h-10 rounded-full">
-                    <div>
-                      <div class="font-medium text-gray-800">Nahid</div>
-                      <div class="text-sm text-gray-500">nahid@s.com</div>
+          <div class="left-profile-box">
+            <div class="dropdown md:hidden hidden relative group" data-dropdown="profile2">
+              <button
+                class="flex items-center border bg-gray-100 rounded-full space-x-2 text-gray-700 hover:text-blue-600 transition-colors">
+                <img src="/src/image/icon/job.png" alt="Profile" class="w-10 h-10 rounded-full">
+              </button>
+              <div class="dropdown-menu absolute w-64 z-50">
+                <div class=" bg-[#fff] rounded-lg shadow-xl border border-gray-200 py-2 mt-3">
+                  <!-- Profile Header -->
+                  <div class="px-4 py-3 border-b border-gray-100">
+                    <div class="flex items-center space-x-3">
+                      <img src="/src/image/icon/job.png" alt="Profile" class="w-10 h-10 rounded-full">
+                      <div>
+                        <div class="font-medium text-gray-800">Nahid</div>
+                        <div class="text-sm text-gray-500">nahid@s.com</div>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <!-- Menu Items -->
-                <div class="py-1">
-                  <a href="/src/pages/dashboard/home.html" target="_blank"
-                    class="menu-item flex items-center px-4 py-2 text-gray-700 hover:bg-purple-50 mr-3 hover:text-purple-700 transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                      class="lucide text-purple-500 lucide-briefcase-business-icon lucide-briefcase-business">
-                      <path d="M12 12h.01" />
-                      <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
-                      <path d="M22 13a18.15 18.15 0 0 1-20 0" />
-                      <rect width="20" height="14" x="2" y="6" rx="2" />
-                    </svg>
-                    <span class="ml-3">Dashboard</span>
-                  </a>
-                  <a href="/src/pages/job-dashboard.html" target="_blank"
-                    class="menu-item flex items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-colors">
-                    <i class="ri-dashboard-line mr-3 text-blue-600"></i>
-                    <span>Job Dashboard</span>
-                  </a>
-                  <a href="#"
-                    class="menu-item flex items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-colors">
-                    <i class="ri-user-line mr-3 text-blue-600"></i>
-                    <span>My Profile</span>
-                  </a>
-                  <a href="#"
-                    class="menu-item flex items-center px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">
-                    <i class="ri-settings-3-line mr-3 text-green-600"></i>
-                    <span>Settings</span>
-                  </a>
-                  <a href="#"
-                    class="menu-item flex items-center px-4 py-2 text-gray-700 hover:bg-orange-50 hover:text-orange-700 transition-colors">
-                    <i class="ri-question-line mr-3 text-orange-600"></i>
-                    <span>Help & Support</span>
-                  </a>
-                </div>
+                  <!-- Menu Items -->
+                  <div class="py-1">
+                    <a href="/src/pages/dashboard/home.html" target="_blank"
+                      class="menu-item flex items-center px-4 py-2 text-gray-700 hover:bg-purple-50 mr-3 hover:text-purple-700 transition-colors">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide text-purple-500 lucide-briefcase-business-icon lucide-briefcase-business">
+                        <path d="M12 12h.01" />
+                        <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                        <path d="M22 13a18.15 18.15 0 0 1-20 0" />
+                        <rect width="20" height="14" x="2" y="6" rx="2" />
+                      </svg>
+                      <span class="ml-3">Dashboard</span>
+                    </a>
+                    <a href="/src/pages/job-dashboard.html" target="_blank"
+                      class="menu-item flex items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-colors">
+                      <i class="ri-dashboard-line mr-3 text-blue-600"></i>
+                      <span>Job Dashboard</span>
+                    </a>
+                    <a href="#"
+                      class="menu-item flex items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-colors">
+                      <i class="ri-user-line mr-3 text-blue-600"></i>
+                      <span>My Profile</span>
+                    </a>
+                    <a href="#"
+                      class="menu-item flex items-center px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">
+                      <i class="ri-settings-3-line mr-3 text-green-600"></i>
+                      <span>Settings</span>
+                    </a>
+                    <a href="#"
+                      class="menu-item flex items-center px-4 py-2 text-gray-700 hover:bg-orange-50 hover:text-orange-700 transition-colors">
+                      <i class="ri-question-line mr-3 text-orange-600"></i>
+                      <span>Help & Support</span>
+                    </a>
+                  </div>
 
-                <!-- Footer -->
-                <div class="border-t border-gray-100 py-1">
-                  <a href="#"
-                    class="menu-item flex items-center px-4 py-2 text-red-600 hover:bg-red-50 transition-colors">
-                    <i class="ri-logout-box-line mr-3"></i>
-                    <span>Sign Out</span>
-                  </a>
+                  <!-- Footer -->
+                  <div class="border-t border-gray-100 py-1">
+                    <a href="#"
+                      class="menu-item flex items-center px-4 py-2 text-red-600 hover:bg-red-50 transition-colors">
+                      <i class="ri-logout-box-line mr-3"></i>
+                      <span>Sign Out</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdown md:block hidden relative group" data-dropdown="login">
+              <button
+                class="bg-gray-100 text-primary-blue rounded-full flex items-center justify-center w-10 h-10 text-xl">
+                <i class="ri-user-line"></i>
+              </button>
+              <div class="dropdown-menu md:py-2 py-1 absolute w-64 z-50">
+                <div class=" md:mt-2 w-full">
+                  <div
+                    class="py-1 bg-white w-full border rounded-lg shadow-xl opacity-0 hidden group-hover:block invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300  transform scale-95 group-hover:scale-100 ease-out"
+                    role="menu">
+                    <div class=" flex items-center md:w-[97%] w-[95%] m-auto ">
+                      <button
+                        class="selectJobseeker rounded-r-none text-white py-1 px-4 w-full rounded">Jobseeker</button>
+                      <button
+                        class="selectEmployer rounded-l-none text-white py-1 px-4 w-full rounded">Employer</button>
+                    </div>
+
+                    <a href="#"
+                      class="menu-link block px-4 py-2 text-sm text-gray-700 hover:bg-blue-500 hover:text-white rounded-md mx-1 my-0.5"
+                      data-path="signin">Sign in</a>
+                    <a href="#"
+                      class="menu-link block px-4 py-2 text-sm text-gray-700 hover:bg-blue-500 hover:text-white rounded-md mx-1 my-0.5"
+                      data-path="register">Register</a>
+                    <a href="#"
+                      class="menu-link block px-4 py-2 text-sm text-gray-700 hover:bg-blue-500 hover:text-white rounded-md mx-1 my-0.5"
+                      data-path="help">Help Center</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
           <!-- end profile dropdown -->
           <div
             class="nav-logo opacity-0 hidden scale-90 transform -translate-x-10 transition-all duration-300 ease-in-out ">
@@ -128,7 +163,8 @@
 
           <div
             class="navLinksContainer justify-between lg:flex  items-center  w-full transition-all duration-300 ease-in-out">
-            <ul class="lg:flex hidden text-sm space-x-2 lg:space-x-4">
+            <span class="md:block hidden"></span>
+            <ul class="lg:hidden hidden text-sm space-x-2 lg:space-x-4">
               <li><a href="/" class="text-gray-700 hover:text-blue-600 font-medium">Home</a></li>
               <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Jobseeker</a></li>
               <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Employer</a></li>
@@ -137,7 +173,8 @@
               <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Easy Learning</a></li>
               <li><a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Career Resource</a></li>
               <li><a href="#blog" class="text-gray-700 hover:text-blue-600 font-medium">Blogs</a></li>
-              <li><a href="./src/pages/contact.html" class="text-gray-700 hover:text-blue-600 font-medium">Contact Us</a></li>
+              <li><a href="./src/pages/contact.html" class="text-gray-700 hover:text-blue-600 font-medium">Contact
+                  Us</a></li>
             </ul>
 
             <div class="right-side duration-150 flex justify-between items-center gap-4 ">
@@ -206,73 +243,74 @@
               </div>
 
               <!-- profile dropdown -->
-              <div class="dropdown md:block hidden relative group" data-dropdown="profile2">
-                <button
-                  class="flex items-center border bg-gray-100 rounded-full space-x-2 text-gray-700 hover:text-blue-600 transition-colors">
-                  <img src="/src/image/icon/job.png" alt="Profile" class="w-10 h-10 rounded-full">
-                </button>
-                <div class="dropdown-menu absolute w-64 z-50">
-                  <div class=" bg-[#fff] rounded-lg shadow-xl border border-gray-200 py-2 mt-3">
-                    <!-- Profile Header -->
-                    <div class="px-4 py-3 border-b border-gray-100">
-                      <div class="flex items-center space-x-3">
-                        <img src="/src/image/icon/job.png" alt="Profile" class="w-10 h-10 rounded-full">
-                        <div>
-                          <div class="font-medium text-gray-800">Nahid</div>
-                          <div class="text-sm text-gray-500">nahid@s.com</div>
+              <div class="right-profile-box hidden">
+                <div class="dropdown md:hidden hidden relative group" data-dropdown="profile2">
+                  <button
+                    class="flex items-center border bg-gray-100 rounded-full space-x-2 text-gray-700 hover:text-blue-600 transition-colors">
+                    <img src="/src/image/icon/job.png" alt="Profile" class="w-10 h-10 rounded-full">
+                  </button>
+                  <div class="dropdown-menu absolute w-64 z-50">
+                    <div class=" bg-[#fff] rounded-lg shadow-xl border border-gray-200 py-2 mt-3">
+                      <!-- Profile Header -->
+                      <div class="px-4 py-3 border-b border-gray-100">
+                        <div class="flex items-center space-x-3">
+                          <img src="/src/image/icon/job.png" alt="Profile" class="w-10 h-10 rounded-full">
+                          <div>
+                            <div class="font-medium text-gray-800">Nahid</div>
+                            <div class="text-sm text-gray-500">nahid@s.com</div>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <!-- Menu Items -->
-                    <div class="py-1">
-                      <a href="/src/pages/dashboard/home.html" target="_blank"
-                        class="menu-item flex items-center px-4 py-2 text-gray-700 hover:bg-purple-50 mr-3 hover:text-purple-700 transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                          stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                          class="lucide text-purple-500 lucide-briefcase-business-icon lucide-briefcase-business">
-                          <path d="M12 12h.01" />
-                          <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
-                          <path d="M22 13a18.15 18.15 0 0 1-20 0" />
-                          <rect width="20" height="14" x="2" y="6" rx="2" />
-                        </svg>
-                        <span class="ml-3">Dashboard</span>
-                      </a>
-                      <a href="/src/pages/job-dashboard.html" target="_blank"
-                        class="menu-item flex items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-colors">
-                        <i class="ri-dashboard-line mr-3 text-blue-600"></i>
-                        <span>Job Dashboard</span>
-                      </a>
-                      <a href="#"
-                        class="menu-item flex items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-colors">
-                        <i class="ri-user-line mr-3 text-blue-600"></i>
-                        <span>My Profile</span>
-                      </a>
-                      <a href="#"
-                        class="menu-item flex items-center px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">
-                        <i class="ri-settings-3-line mr-3 text-green-600"></i>
-                        <span>Settings</span>
-                      </a>
-                      <a href="#"
-                        class="menu-item flex items-center px-4 py-2 text-gray-700 hover:bg-orange-50 hover:text-orange-700 transition-colors">
-                        <i class="ri-question-line mr-3 text-orange-600"></i>
-                        <span>Help & Support</span>
-                      </a>
-                    </div>
+                      <!-- Menu Items -->
+                      <div class="py-1">
+                        <a href="/src/pages/dashboard/home.html" target="_blank"
+                          class="menu-item flex items-center px-4 py-2 text-gray-700 hover:bg-purple-50 mr-3 hover:text-purple-700 transition-colors">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide text-purple-500 lucide-briefcase-business-icon lucide-briefcase-business">
+                            <path d="M12 12h.01" />
+                            <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                            <path d="M22 13a18.15 18.15 0 0 1-20 0" />
+                            <rect width="20" height="14" x="2" y="6" rx="2" />
+                          </svg>
+                          <span class="ml-3">Dashboard</span>
+                        </a>
+                        <a href="/src/pages/job-dashboard.html" target="_blank"
+                          class="menu-item flex items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-colors">
+                          <i class="ri-dashboard-line mr-3 text-blue-600"></i>
+                          <span>Job Dashboard</span>
+                        </a>
+                        <a href="#"
+                          class="menu-item flex items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-colors">
+                          <i class="ri-user-line mr-3 text-blue-600"></i>
+                          <span>My Profile</span>
+                        </a>
+                        <a href="#"
+                          class="menu-item flex items-center px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">
+                          <i class="ri-settings-3-line mr-3 text-green-600"></i>
+                          <span>Settings</span>
+                        </a>
+                        <a href="#"
+                          class="menu-item flex items-center px-4 py-2 text-gray-700 hover:bg-orange-50 hover:text-orange-700 transition-colors">
+                          <i class="ri-question-line mr-3 text-orange-600"></i>
+                          <span>Help & Support</span>
+                        </a>
+                      </div>
 
-                    <!-- Footer -->
-                    <div class="border-t border-gray-100 py-1">
-                      <a href="#"
-                        class="menu-item flex items-center px-4 py-2 text-red-600 hover:bg-red-50 transition-colors">
-                        <i class="ri-logout-box-line mr-3"></i>
-                        <span>Sign Out</span>
-                      </a>
+                      <!-- Footer -->
+                      <div class="border-t border-gray-100 py-1">
+                        <a href="#"
+                          class="menu-item flex items-center px-4 py-2 text-red-600 hover:bg-red-50 transition-colors">
+                          <i class="ri-logout-box-line mr-3"></i>
+                          <span>Sign Out</span>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-                <div class="dropdown md:hidden hidden relative group" data-dropdown="login">
+                <div class="dropdown md:block hidden relative group" data-dropdown="login">
                   <button
                     class="bg-gray-100 text-primary-blue rounded-full flex items-center justify-center w-10 h-10 text-xl">
                     <i class="ri-user-line"></i>
@@ -288,7 +326,7 @@
                           <button
                             class="selectEmployer rounded-l-none text-white py-1 px-4 w-full rounded">Employer</button>
                         </div>
-  
+
                         <a href="#"
                           class="menu-link block px-4 py-2 text-sm text-gray-700 hover:bg-blue-500 hover:text-white rounded-md mx-1 my-0.5"
                           data-path="signin">Sign in</a>
@@ -302,6 +340,7 @@
                     </div>
                   </div>
                 </div>
+              </div>
               <!-- end profile dropdown -->
 
               <div class="flex items-center gap-4">
@@ -449,7 +488,7 @@
                 </div>
 
                 <!-- theme dropdown -->
-                <div class="dropdown relative group" data-dropdown="profile">
+                <div class="dropdown relative group hidden" data-dropdown="profile">
                   <button id="theme-toggle-btn"
                     class="flex border w-10 h-10 bg-gray-50 justify-center items-center text-gray-700 hover:text-blue-600 rounded-full transition-colors">
                     <i class="theme-icon text-xl"></i>
@@ -562,36 +601,35 @@
             </div>
           </div>
 
-           <div class="dropdown md:hideen hidden relative group" data-dropdown="login">
-                  <button
-                    class="bg-gray-100 text-primary-blue rounded-full flex items-center justify-center w-10 h-10 text-xl">
-                    <i class="ri-user-line"></i>
-                  </button>
-                  <div class="dropdown-menu md:py-2 py-1 absolute w-64 z-50">
-                    <div class=" md:mt-2 w-full">
-                      <div
-                        class="py-1 bg-white w-full border rounded-lg shadow-xl opacity-0 hidden group-hover:block invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300  transform scale-95 group-hover:scale-100 ease-out"
-                        role="menu">
-                        <div class=" flex items-center md:w-[97%] w-[95%] m-auto ">
-                          <button
-                            class="selectJobseeker rounded-r-none text-white py-1 px-4 w-full rounded">Jobseeker</button>
-                          <button
-                            class="selectEmployer rounded-l-none text-white py-1 px-4 w-full rounded">Employer</button>
-                        </div>
-  
-                        <a href="#"
-                          class="menu-link block px-4 py-2 text-sm text-gray-700 hover:bg-blue-500 hover:text-white rounded-md mx-1 my-0.5"
-                          data-path="signin">Sign in</a>
-                        <a href="#"
-                          class="menu-link block px-4 py-2 text-sm text-gray-700 hover:bg-blue-500 hover:text-white rounded-md mx-1 my-0.5"
-                          data-path="register">Register</a>
-                        <a href="#"
-                          class="menu-link block px-4 py-2 text-sm text-gray-700 hover:bg-blue-500 hover:text-white rounded-md mx-1 my-0.5"
-                          data-path="help">Help Center</a>
-                      </div>
-                    </div>
+          <div class="dropdown md:hideen hidden relative group" data-dropdown="login">
+            <button
+              class="bg-gray-100 text-primary-blue rounded-full flex items-center justify-center w-10 h-10 text-xl">
+              <i class="ri-user-line"></i>
+            </button>
+            <div class="dropdown-menu md:py-2 py-1 absolute w-64 z-50">
+              <div class=" md:mt-2 w-full">
+                <div
+                  class="py-1 bg-white w-full border rounded-lg shadow-xl opacity-0 hidden group-hover:block invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300  transform scale-95 group-hover:scale-100 ease-out"
+                  role="menu">
+                  <div class=" flex items-center md:w-[97%] w-[95%] m-auto ">
+                    <button
+                      class="selectJobseeker rounded-r-none text-white py-1 px-4 w-full rounded">Jobseeker</button>
+                    <button class="selectEmployer rounded-l-none text-white py-1 px-4 w-full rounded">Employer</button>
                   </div>
+
+                  <a href="#"
+                    class="menu-link block px-4 py-2 text-sm text-gray-700 hover:bg-blue-500 hover:text-white rounded-md mx-1 my-0.5"
+                    data-path="signin">Sign in</a>
+                  <a href="#"
+                    class="menu-link block px-4 py-2 text-sm text-gray-700 hover:bg-blue-500 hover:text-white rounded-md mx-1 my-0.5"
+                    data-path="register">Register</a>
+                  <a href="#"
+                    class="menu-link block px-4 py-2 text-sm text-gray-700 hover:bg-blue-500 hover:text-white rounded-md mx-1 my-0.5"
+                    data-path="help">Help Center</a>
                 </div>
+              </div>
+            </div>
+          </div>
           <!-- end profile dropdown -->
 
 
@@ -603,128 +641,137 @@
           </div>
 
           <div class="flex items-center gap-2">
-             <div class="dropdown md:hidden block relative group" data-dropdown="notification">
-          <button
-              class="flex w-10 h-10 justify-center items-center bg-gray-50 rounded-full space-x-2 text-gray-700 hover:text-blue-600 transition-colors">
-              <i class="ri-notification-line text-xl"></i> 
-            </button>
-            <div class="dropdown-menu absolute w-64 z-50">
-              <div class=" bg-[#fff] rounded-lg shadow-xl border border-gray-200 overflow-hidden mt-3">
-                
-                 <div class="p-4 border-b border-gray-100 bg-gradient-to-r from-primary-blue to-blue-600 rounded-t-xl">
-                                        <div class="flex items-center justify-between">
-                                            <h3 class="text-lg font-semibold text-white flex items-center">
-                                                <i class="ri-notification-line mr-2"></i>
-                                                Notifications
-                                            </h3>
-                                            <div class="flex items-center space-x-2">
-                                                <span class="bg-white bg-opacity-20 text-white text-xs px-2 py-1 rounded-full font-medium">5 new</span> 
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <!-- Notifications List -->
-                                    <div class="max-h-80 overflow-y-auto">
-                                        <!-- Job Match Notification -->
-                                        <div class="notification-item p-4 hover:bg-blue-50 border-b border-gray-50 transition-all duration-200 cursor-pointer">
-                                            <div class="flex items-start space-x-3">
-                                                <div class="flex-shrink-0">
-                                                    <div class="w-10 h-10 bg-gradient-to-r from-green-400 to-green-500 rounded-full flex items-center justify-center">
-                                                        <i class="ri-briefcase-line text-white text-lg"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-1 min-w-0">
-                                                    <div class="flex items-center justify-between">
-                                                        <p class="text-xs font-semibold text-gray-900">Perfect Job Match Found!</p>
-                                                        <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
-                                                    </div>
-                                                    <p class="text-xs text-gray-600 mt-1">Senior Software Developer at TechCorp matches your profile</p> 
-                                                </div>
-                                            </div>
-                                        </div>
+            <div class="dropdown md:hidden block relative group" data-dropdown="notification">
+              <button
+                class="flex w-10 h-10 justify-center items-center bg-gray-50 rounded-full space-x-2 text-gray-700 hover:text-blue-600 transition-colors">
+                <i class="ri-notification-line text-xl"></i>
+              </button>
+              <div class="dropdown-menu absolute w-64 z-50">
+                <div class=" bg-[#fff] rounded-lg shadow-xl border border-gray-200 overflow-hidden mt-3">
 
-                                        <!-- Application Update -->
-                                        <div class="notification-item p-4 hover:bg-blue-50 border-b border-gray-50 transition-all duration-200 cursor-pointer">
-                                            <div class="flex items-start space-x-3">
-                                                <div class="flex-shrink-0">
-                                                    <div class="w-10 h-10 bg-gradient-to-r from-blue-400 to-blue-500 rounded-full flex items-center justify-center">
-                                                        <i class="ri-eye-line text-white text-lg"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-1 min-w-0">
-                                                    <div class="flex items-center justify-between">
-                                                        <p class="text-xs font-semibold text-gray-900">Application Viewed</p>
-                                                        <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
-                                                    </div>
-                                                    <p class="text-xs text-gray-600 mt-1">Your application for Marketing Manager at InnovateCorp has been viewed</p> 
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Interview Invitation -->
-                                        <div class="notification-item p-4 hover:bg-blue-50 transition-all duration-200 cursor-pointer">
-                                            <div class="flex items-start space-x-3">
-                                                <div class="flex-shrink-0">
-                                                    <div class="w-10 h-10 bg-gradient-to-r from-purple-400 to-purple-500 rounded-full flex items-center justify-center">
-                                                        <i class="ri-calendar-check-line text-white text-lg"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-1 min-w-0">
-                                                    <div class="flex items-center justify-between">
-                                                        <p class="text-xs font-semibold text-gray-900">Interview Invitation!</p>
-                                                        <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
-                                                    </div>
-                                                    <p class="text-xs text-gray-600 mt-1">You're invited for an interview at DataTech Solutions</p> 
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-              </div>
-            </div>
-          </div>
-             <!-- theme dropdown -->
-                  <div class="dropdown relative group" data-dropdown="theme-toggle-btn">
-                    <button id="theme-toggle-btn"
-                      class="flex border w-10 h-10 bg-gray-50 justify-center items-center text-gray-700 hover:text-blue-600 rounded-full transition-colors">
-                      <i class="theme-icon text-xl"></i>
-                    </button>
-  
-                    <div class="dropdown-menu absolute w-40 z-50">
-                      <div class=" bg-background rounded-lg shadow-xl border border-gray-400 mt-3">
-                        <!-- Menu Items -->
-                        <ul class="p-2 space-y-2">
-                          <li>
-                            <button data-theme="light"
-                              class="theme-button w-full flex group hover:!text-white items-center gap-2 py-2 px-4 rounded-md hover:bg-primary-600 transition-colors duration-200">
-                              <i class="ri-sun-foggy-fill text-xl !text-warning-500"></i> Light
-                            </button>
-                          </li>
-                          <li>
-                            <button data-theme="dark"
-                              class="theme-button w-full flex group hover:!text-white items-center gap-2 py-2 px-4 rounded-md hover:bg-primary-600 transition-colors duration-200">
-                              <i class="ri-moon-foggy-fill text-xl !text-gray-300"></i> Dark
-                            </button>
-                          </li>
-                          <li>
-                            <button data-theme="teal"
-                              class="theme-button w-full flex group hover:!text-white items-center gap-2 py-2 px-4 rounded-md hover:bg-primary-600 transition-colors duration-200">
-                              <i class="ri-palette-fill text-xl !text-teal-500"></i> Teal
-                            </button>
-                          </li>
-                          <li>
-                            <button data-theme="orange"
-                              class="theme-button w-full flex group hover:!text-white items-center gap-2 py-2 px-4 rounded-md hover:bg-primary-600 transition-colors duration-200">
-                              <i class="ri-palette-fill text-xl !text-orange-500"></i> Orange
-                            </button>
-                          </li>
-                        </ul>
+                  <div class="p-4 border-b border-gray-100 bg-gradient-to-r from-primary-blue to-blue-600 rounded-t-xl">
+                    <div class="flex items-center justify-between">
+                      <h3 class="text-lg font-semibold text-white flex items-center">
+                        <i class="ri-notification-line mr-2"></i>
+                        Notifications
+                      </h3>
+                      <div class="flex items-center space-x-2">
+                        <span class="bg-white bg-opacity-20 text-white text-xs px-2 py-1 rounded-full font-medium">5
+                          new</span>
                       </div>
                     </div>
                   </div>
-                  <!-- end theme dropdown -->
 
-              
+                  <!-- Notifications List -->
+                  <div class="max-h-80 overflow-y-auto">
+                    <!-- Job Match Notification -->
+                    <div
+                      class="notification-item p-4 hover:bg-blue-50 border-b border-gray-50 transition-all duration-200 cursor-pointer">
+                      <div class="flex items-start space-x-3">
+                        <div class="flex-shrink-0">
+                          <div
+                            class="w-10 h-10 bg-gradient-to-r from-green-400 to-green-500 rounded-full flex items-center justify-center">
+                            <i class="ri-briefcase-line text-white text-lg"></i>
+                          </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <div class="flex items-center justify-between">
+                            <p class="text-xs font-semibold text-gray-900">Perfect Job Match Found!</p>
+                            <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                          </div>
+                          <p class="text-xs text-gray-600 mt-1">Senior Software Developer at TechCorp matches your
+                            profile</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Application Update -->
+                    <div
+                      class="notification-item p-4 hover:bg-blue-50 border-b border-gray-50 transition-all duration-200 cursor-pointer">
+                      <div class="flex items-start space-x-3">
+                        <div class="flex-shrink-0">
+                          <div
+                            class="w-10 h-10 bg-gradient-to-r from-blue-400 to-blue-500 rounded-full flex items-center justify-center">
+                            <i class="ri-eye-line text-white text-lg"></i>
+                          </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <div class="flex items-center justify-between">
+                            <p class="text-xs font-semibold text-gray-900">Application Viewed</p>
+                            <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                          </div>
+                          <p class="text-xs text-gray-600 mt-1">Your application for Marketing Manager at InnovateCorp
+                            has been viewed</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Interview Invitation -->
+                    <div class="notification-item p-4 hover:bg-blue-50 transition-all duration-200 cursor-pointer">
+                      <div class="flex items-start space-x-3">
+                        <div class="flex-shrink-0">
+                          <div
+                            class="w-10 h-10 bg-gradient-to-r from-purple-400 to-purple-500 rounded-full flex items-center justify-center">
+                            <i class="ri-calendar-check-line text-white text-lg"></i>
+                          </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <div class="flex items-center justify-between">
+                            <p class="text-xs font-semibold text-gray-900">Interview Invitation!</p>
+                            <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                          </div>
+                          <p class="text-xs text-gray-600 mt-1">You're invited for an interview at DataTech Solutions
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- theme dropdown -->
+            <div class="dropdown relative group hidden" data-dropdown="theme-toggle-btn">
+              <button id="theme-toggle-btn"
+                class="flex border w-10 h-10 bg-gray-50 justify-center items-center text-gray-700 hover:text-blue-600 rounded-full transition-colors">
+                <i class="theme-icon text-xl"></i>
+              </button>
+
+              <div class="dropdown-menu absolute w-40 z-50">
+                <div class=" bg-background rounded-lg shadow-xl border border-gray-400 mt-3">
+                  <!-- Menu Items -->
+                  <ul class="p-2 space-y-2">
+                    <li>
+                      <button data-theme="light"
+                        class="theme-button w-full flex group hover:!text-white items-center gap-2 py-2 px-4 rounded-md hover:bg-primary-600 transition-colors duration-200">
+                        <i class="ri-sun-foggy-fill text-xl !text-warning-500"></i> Light
+                      </button>
+                    </li>
+                    <li>
+                      <button data-theme="dark"
+                        class="theme-button w-full flex group hover:!text-white items-center gap-2 py-2 px-4 rounded-md hover:bg-primary-600 transition-colors duration-200">
+                        <i class="ri-moon-foggy-fill text-xl !text-gray-300"></i> Dark
+                      </button>
+                    </li>
+                    <li>
+                      <button data-theme="teal"
+                        class="theme-button w-full flex group hover:!text-white items-center gap-2 py-2 px-4 rounded-md hover:bg-primary-600 transition-colors duration-200">
+                        <i class="ri-palette-fill text-xl !text-teal-500"></i> Teal
+                      </button>
+                    </li>
+                    <li>
+                      <button data-theme="orange"
+                        class="theme-button w-full flex group hover:!text-white items-center gap-2 py-2 px-4 rounded-md hover:bg-primary-600 transition-colors duration-200">
+                        <i class="ri-palette-fill text-xl !text-orange-500"></i> Orange
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- end theme dropdown -->
+
+
           </div>
         </div>
       </nav>
@@ -803,8 +850,8 @@
               <ul id="jobResults"
                 class="bg-white mb-6 space-y-2 max-h-[300px] w-full overflow-y-auto scroll-sm last:rounded-b-xl rounded-b-xl">
               </ul>
-              
-              
+
+
               <div class="lg:hidden block w-full ">
                 <div class="swiper tagsSlider relative">
                   <div class="swiper-wrapper">
@@ -864,22 +911,24 @@
                         </a>
                       </div>
                     </div>
-              
+
                   </div>
-              
+
                   <div class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10">
-                    <button class="custom-prev bg-gray-50 text-gray-700 w-10 h-10 rounded-full border hover:border-gray-700"><i
+                    <button
+                      class="custom-prev bg-gray-50 text-gray-700 w-10 h-10 rounded-full border hover:border-gray-700"><i
                         class="ri-arrow-left-s-line text-2xl"></i></button>
                   </div>
                   <div class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10">
-                    <button class="custom-next bg-gray-50 text-gray-700 w-10 h-10 rounded-full border hover:border-gray-700"><i
+                    <button
+                      class="custom-next bg-gray-50 text-gray-700 w-10 h-10 rounded-full border hover:border-gray-700"><i
                         class="ri-arrow-right-s-line text-2xl"></i></button>
                   </div>
-              
-              
+
+
                 </div>
               </div>
-              
+
               <div class="md:flex hidden flex-wrap justify-center gap-2">
                 <a
                   class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag
@@ -907,297 +956,299 @@
                   8</a> <a
                   class="border px-4 py-1 text-sm border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white  cursor-pointer duration-150 rounded-full">Tag
                   6</a>
-              
-              </div>
-              </div>
 
-              <a href="/all-government-jobs.php" class="flex justify-center border-b border-black hover:text-primary-blue hover:border-primary-blue duration-200 !w-[220px] m-auto pb-1 mt-6 font-semibold items-center gap-2 text-gray-700 text-center  "><i class="ri-menu-search-line"></i> Search Government Jobs</a>
-
+              </div>
             </div>
-            <button id="closeModal"></button>
+
+            <a href="/all-government-jobs.php"
+              class="flex justify-center border-b border-black hover:text-primary-blue hover:border-primary-blue duration-200 !w-[220px] m-auto pb-1 mt-6 font-semibold items-center gap-2 text-gray-700 text-center  "><i
+                class="ri-menu-search-line"></i> Search Government Jobs</a>
+
           </div>
+          <button id="closeModal"></button>
         </div>
       </div>
-    </header>
+  </div>
+  </header>
 
-    <!--------------------------------------------------------->
-    <!--/////////////////// Bottom Nav //////////////////////-->
-    <!--------------------------------------------------------->
-    <!-- Mobile Bottom Navigation -->
-    <div class="fixed bottom-0 left-0 right-0 w-[100%] max-w-md lg:hidden block mx-auto z-[9000]">
-      <div class="bg-white border rounded-t-xl shadow-[rgba(0,0,0,0.09)_10px_-20px_20px_0px] p-2 h-[70px]">
-        <div class="flex items-center justify-between h-full px-2">
+  <!--------------------------------------------------------->
+  <!--/////////////////// Bottom Nav //////////////////////-->
+  <!--------------------------------------------------------->
+  <!-- Mobile Bottom Navigation -->
+  <div class="fixed bottom-0 left-0 right-0 w-[100%] max-w-md lg:hidden block mx-auto z-[9000]">
+    <div class="bg-white border rounded-t-xl shadow-[rgba(0,0,0,0.09)_10px_-20px_20px_0px] p-2 h-[70px]">
+      <div class="flex items-center justify-between h-full px-2">
 
-          <!-- Menu Button -->
-          <button
-            class="nav-button menuButton w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-300">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="4" x2="20" y1="6" y2="6" />
-              <line x1="4" x2="20" y1="12" y2="12" />
-              <line x1="4" x2="20" y1="18" y2="18" />
+        <!-- Menu Button -->
+        <button
+          class="nav-button menuButton w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" x2="20" y1="6" y2="6" />
+            <line x1="4" x2="20" y1="12" y2="12" />
+            <line x1="4" x2="20" y1="18" y2="18" />
+          </svg>
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <!-- Shortcut Button -->
+        <button data-modal="shortcut"
+          class="nav-button w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon
+              points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+          </svg>
+          <span class="sr-only">Shortcuts</span>
+        </button>
+
+        <!-- Home Button -->
+        <a href="/"
+          class="nav-button w-12 h-12 rounded-full flex items-center justify-center bg-blue-50 hover:bg-blue-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+            <polyline points="9,22 9,12 15,12 15,22" />
+          </svg>
+          <span class="sr-only">Home</span>
+        </a>
+
+        <!-- Search Button -->
+        <button data-modal="search"
+          class="nav-button w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.35-4.35" />
+          </svg>
+          <span class="sr-only">Search</span>
+        </button>
+
+        <!-- Profile Button -->
+        <button data-modal="profile"
+          class="nav-button w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          <span class="sr-only">Profile</span>
+        </button>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Overlay -->
+  <div id="modal-overlay"
+    class="modal-overlay lg:hidden block fixed inset-0 bg-black bg-opacity-50 z-[60] opacity-0 pointer-events-none">
+
+    <!-- Menu Modal -->
+    <div id="menu-modal"
+      class="modal-content fixed bottom-0 left-0 right-0 bg-white rounded-t-3xl p-6 pb-8 max-h-[80vh] overflow-y-auto">
+      <div class="w-12 h-1 bg-gray-300 rounded-full mx-auto mb-6"></div>
+      <h2 class="text-xl font-bold text-gray-800 mb-4">Menu</h2>
+      <div class="space-y-3">
+        <div class="flex items-center p-3 rounded-lg hover:bg-gray-50 cursor-pointer">
+          <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
+              </path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
             </svg>
-            <span class="sr-only">Menu</span>
-          </button>
-
-          <!-- Shortcut Button -->
-          <button data-modal="shortcut"
-            class="nav-button w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-300">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polygon
-                points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+          </div>
+          <div>
+            <h3 class="font-medium text-gray-800">Settings</h3>
+            <p class="text-sm text-gray-500">Manage your preferences</p>
+          </div>
+        </div>
+        <div class="flex items-center p-3 rounded-lg hover:bg-gray-50 cursor-pointer">
+          <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3">
+            <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
             </svg>
-            <span class="sr-only">Shortcuts</span>
-          </button>
-
-          <!-- Home Button -->
-          <a href="/"
-            class="nav-button w-12 h-12 rounded-full flex items-center justify-center bg-blue-50 hover:bg-blue-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-300">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-              <polyline points="9,22 9,12 15,12 15,22" />
-            </svg>
-            <span class="sr-only">Home</span>
-          </a>
-
-          <!-- Search Button -->
-          <button data-modal="search"
-            class="nav-button w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-300">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="11" cy="11" r="8" />
-              <path d="m21 21-4.35-4.35" />
-            </svg>
-            <span class="sr-only">Search</span>
-          </button>
-
-          <!-- Profile Button -->
-          <button data-modal="profile"
-            class="nav-button w-12 h-12 rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-300">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-              <circle cx="12" cy="7" r="4" />
-            </svg>
-            <span class="sr-only">Profile</span>
-          </button>
-
+          </div>
+          <div>
+            <h3 class="font-medium text-gray-800">Help & Support</h3>
+            <p class="text-sm text-gray-500">Get help when you need it</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Modal Overlay -->
-    <div id="modal-overlay"
-      class="modal-overlay lg:hidden block fixed inset-0 bg-black bg-opacity-50 z-[60] opacity-0 pointer-events-none">
-
-      <!-- Menu Modal -->
-      <div id="menu-modal"
-        class="modal-content fixed bottom-0 left-0 right-0 bg-white rounded-t-3xl p-6 pb-8 max-h-[80vh] overflow-y-auto">
-        <div class="w-12 h-1 bg-gray-300 rounded-full mx-auto mb-6"></div>
-        <h2 class="text-xl font-bold text-gray-800 mb-4">Menu</h2>
-        <div class="space-y-3">
-          <div class="flex items-center p-3 rounded-lg hover:bg-gray-50 cursor-pointer">
-            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-              <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
-                </path>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-              </svg>
-            </div>
-            <div>
-              <h3 class="font-medium text-gray-800">Settings</h3>
-              <p class="text-sm text-gray-500">Manage your preferences</p>
-            </div>
-          </div>
-          <div class="flex items-center p-3 rounded-lg hover:bg-gray-50 cursor-pointer">
-            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3">
-              <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
-                </path>
-              </svg>
-            </div>
-            <div>
-              <h3 class="font-medium text-gray-800">Help & Support</h3>
-              <p class="text-sm text-gray-500">Get help when you need it</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Shortcut Modal -->
-      <div id="shortcut-modal"
-        class="modal-content fixed -bottom-20 left-0 right-0 bg-white rounded-t-3xl p-6 pb-8 max-h-[80vh] h-full overflow-y-auto hidden">
-        <div class="w-12 h-1 bg-gray-300 rounded-full mx-auto mb-6"></div>
-        <h2 class="text-xl font-bold text-gray-800 mb-4">Quick Actions</h2>
-        <div class="grid grid-cols-3 gap-4">
-          <div class="flex flex-col items-center p-4 rounded-lg hover:bg-gray-50 cursor-pointer">
-            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-2">
-              <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                </path>
-              </svg>
-            </div>
-            <span class="text-sm font-medium text-gray-800 text-center">My Resume</span>
-          </div>
-          <div class="flex flex-col items-center p-4 rounded-lg hover:bg-gray-50 cursor-pointer">
-            <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-2">
-              <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0H8m8 0v2a2 2 0 01-2 2H10a2 2 0 01-2-2V6m8 0H8">
-                </path>
-              </svg>
-            </div>
-            <span class="text-sm font-medium text-gray-800 text-center">Applications</span>
-          </div>
-          <div class="flex flex-col items-center p-4 rounded-lg hover:bg-gray-50 cursor-pointer">
-            <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-2">
-              <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
-                </path>
-              </svg>
-            </div>
-            <span class="text-sm font-medium text-gray-800 text-center">Saved Jobs</span>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Enhanced Search Modal with Job Search -->
-      <div id="search-modal"
-        class="modal-content fixed -bottom-20 left-0 right-0 bg-white rounded-t-3xl p-6 pb-8 max-h-[80vh] h-full overflow-y-auto hidden">
-        <div class="w-12 h-1 bg-gray-300 rounded-full mx-auto mb-6"></div>
-        <h2 class="text-xl font-bold text-gray-800 mb-4">Search Jobs</h2>
-
-        <!-- Search Input -->
-        <div class="relative mb-6">
-          <input type="text" id="job-search-input" placeholder="Search for jobs, companies, or skills..."
-            class="w-full p-2 pl-8 pr-12 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-700"
-            autocomplete="off">
-          <svg class="w-5 h-5 text-gray-600 absolute top-3  left-2 bottom-3" fill="none" stroke="currentColor"
-            viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-          </svg>
-          <button id="clear-search" class="absolute right-3 top-3 text-gray-600 hover:text-gray-700 hidden">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+    <!-- Shortcut Modal -->
+    <div id="shortcut-modal"
+      class="modal-content fixed -bottom-20 left-0 right-0 bg-white rounded-t-3xl p-6 pb-8 max-h-[80vh] h-full overflow-y-auto hidden">
+      <div class="w-12 h-1 bg-gray-300 rounded-full mx-auto mb-6"></div>
+      <h2 class="text-xl font-bold text-gray-800 mb-4">Quick Actions</h2>
+      <div class="grid grid-cols-3 gap-4">
+        <div class="flex flex-col items-center p-4 rounded-lg hover:bg-gray-50 cursor-pointer">
+          <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-2">
+            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+              </path>
             </svg>
+          </div>
+          <span class="text-sm font-medium text-gray-800 text-center">My Resume</span>
+        </div>
+        <div class="flex flex-col items-center p-4 rounded-lg hover:bg-gray-50 cursor-pointer">
+          <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-2">
+            <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0H8m8 0v2a2 2 0 01-2 2H10a2 2 0 01-2-2V6m8 0H8">
+              </path>
+            </svg>
+          </div>
+          <span class="text-sm font-medium text-gray-800 text-center">Applications</span>
+        </div>
+        <div class="flex flex-col items-center p-4 rounded-lg hover:bg-gray-50 cursor-pointer">
+          <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-2">
+            <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+              </path>
+            </svg>
+          </div>
+          <span class="text-sm font-medium text-gray-800 text-center">Saved Jobs</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Enhanced Search Modal with Job Search -->
+    <div id="search-modal"
+      class="modal-content fixed -bottom-20 left-0 right-0 bg-white rounded-t-3xl p-6 pb-8 max-h-[80vh] h-full overflow-y-auto hidden">
+      <div class="w-12 h-1 bg-gray-300 rounded-full mx-auto mb-6"></div>
+      <h2 class="text-xl font-bold text-gray-800 mb-4">Search Jobs</h2>
+
+      <!-- Search Input -->
+      <div class="relative mb-6">
+        <input type="text" id="job-search-input" placeholder="Search for jobs, companies, or skills..."
+          class="w-full p-2 pl-8 pr-12 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-700"
+          autocomplete="off">
+        <svg class="w-5 h-5 text-gray-600 absolute top-3  left-2 bottom-3" fill="none" stroke="currentColor"
+          viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+        </svg>
+        <button id="clear-search" class="absolute right-3 top-3 text-gray-600 hover:text-gray-700 hidden">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Search Results Container -->
+      <div id="search-results" class="hidden">
+        <h3 class="text-sm font-medium text-gray-500 uppercase tracking-wide mb-3">Search Results</h3>
+        <div id="results-list" class="space-y-3"></div>
+      </div>
+
+      <!-- Auto Suggestions Container -->
+      <div id="auto-suggestions" class="hidden">
+        <h3 class="text-sm font-medium text-gray-500 uppercase tracking-wide mb-3">Suggestions</h3>
+        <div id="suggestions-list" class="space-y-2"></div>
+      </div>
+
+      <!-- Popular Searches -->
+      <div id="popular-searches" class="mb-6">
+        <h3 class="text-sm font-medium text-gray-500 uppercase tracking-wide mb-3">Popular Searches</h3>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span
+            class="popular-search-tag px-3 py-1.5 bg-blue-50 text-blue-700 rounded-full text-sm font-medium cursor-pointer hover:bg-blue-100 transition-colors">Frontend
+            Developer</span>
+          <span
+            class="popular-search-tag px-3 py-1.5 bg-green-50 text-green-700 rounded-full text-sm font-medium cursor-pointer hover:bg-green-100 transition-colors">React</span>
+          <span
+            class="popular-search-tag px-3 py-1.5 bg-purple-50 text-purple-700 rounded-full text-sm font-medium cursor-pointer hover:bg-purple-100 transition-colors">Remote</span>
+          <span
+            class="popular-search-tag px-3 py-1.5 bg-orange-50 text-orange-700 rounded-full text-sm font-medium cursor-pointer hover:bg-orange-100 transition-colors">Full
+            Stack</span>
+          <span
+            class="popular-search-tag px-3 py-1.5 bg-pink-50 text-pink-700 rounded-full text-sm font-medium cursor-pointer hover:bg-pink-100 transition-colors">UI/UX
+            Designer</span>
+          <span
+            class="popular-search-tag px-3 py-1.5 bg-indigo-50 text-indigo-700 rounded-full text-sm font-medium cursor-pointer hover:bg-indigo-100 transition-colors">Node.js</span>
+        </div>
+      </div>
+
+      <!-- Suggested Jobs -->
+      <div id="suggested-jobs">
+
+      </div>
+    </div>
+
+    <!-- Profile Modal -->
+    <div id="profile-modal"
+      class="modal-content fixed -bottom-20 left-0 right-0 bg-white rounded-t-3xl p-6 pb-20 max-h-[80vh] h-full overflow-y-auto hidden">
+      <div class="w-12 h-1 bg-gray-300 rounded-full mx-auto mb-6"></div>
+      <div class="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
+        <h2 class="text-2xl font-bold leading-tight text-black sm:text-3xl">Your Dream Job Awaits – Sign In</h2>
+        <p class="mt-2 text-base text-gray-700">Don’t have an account? <a href="/src/pages/resister.html" title=""
+            class="font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 hover:underline focus:text-blue-700">Create
+            a free account</a></p>
+
+        <form action="#" method="POST" class="mt-8">
+          <div class="space-y-5">
+            <div>
+              <label for="" class="text-base font-medium text-gray-900"> Email address </label>
+              <div class="mt-2.5">
+                <input type="email" name="" id="" placeholder="Enter email to get started"
+                  class="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600" />
+              </div>
+            </div>
+
+            <div>
+              <div class="flex items-center justify-between">
+                <label for="" class="text-base font-medium text-gray-900"> Password </label>
+
+                <a href="#" title=""
+                  class="text-sm font-medium text-blue-600 hover:underline hover:text-blue-700 focus:text-blue-700">
+                  Forgot password? </a>
+              </div>
+              <div class="mt-2.5">
+                <input type="password" name="" id="" placeholder="Enter your password"
+                  class="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600" />
+              </div>
+            </div>
+
+            <div>
+              <button type="submit"
+                class="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md focus:outline-none hover:bg-blue-700 focus:bg-blue-700">Log
+                in</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="mt-3 space-y-3">
+          <button type="button"
+            class="relative inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-gray-700 transition-all duration-200 bg-white border-2 border-gray-200 rounded-md hover:bg-gray-100 focus:bg-gray-100 hover:text-black focus:text-black focus:outline-none">
+            <div class="absolute inset-y-0 left-0 p-4">
+              <svg class="w-6 h-6 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                fill="currentColor">
+                <path
+                  d="M20.283 10.356h-8.327v3.451h4.792c-.446 2.193-2.313 3.453-4.792 3.453a5.27 5.27 0 0 1-5.279-5.28 5.27 5.27 0 0 1 5.279-5.279c1.259 0 2.397.447 3.29 1.178l2.6-2.599c-1.584-1.381-3.615-2.233-5.89-2.233a8.908 8.908 0 0 0-8.934 8.934 8.907 8.907 0 0 0 8.934 8.934c4.467 0 8.529-3.249 8.529-8.934 0-.528-.081-1.097-.202-1.625z">
+                </path>
+              </svg>
+            </div>
+            Sign in with Google
+          </button>
+
+          <button type="button"
+            class="relative inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-gray-700 transition-all duration-200 bg-white border-2 border-gray-200 rounded-md hover:bg-gray-100 focus:bg-gray-100 hover:text-black focus:text-black focus:outline-none">
+            <div class="absolute inset-y-0 left-0 p-4">
+              <img class="w-6 h-6 text-rose-500" src="src/image/icon/kalbela.png" alt="kalbela">
+            </div>
+            Sign in with Facebook
           </button>
         </div>
-
-        <!-- Search Results Container -->
-        <div id="search-results" class="hidden">
-          <h3 class="text-sm font-medium text-gray-500 uppercase tracking-wide mb-3">Search Results</h3>
-          <div id="results-list" class="space-y-3"></div>
-        </div>
-
-        <!-- Auto Suggestions Container -->
-        <div id="auto-suggestions" class="hidden">
-          <h3 class="text-sm font-medium text-gray-500 uppercase tracking-wide mb-3">Suggestions</h3>
-          <div id="suggestions-list" class="space-y-2"></div>
-        </div>
-
-        <!-- Popular Searches -->
-        <div id="popular-searches" class="mb-6">
-          <h3 class="text-sm font-medium text-gray-500 uppercase tracking-wide mb-3">Popular Searches</h3>
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span
-              class="popular-search-tag px-3 py-1.5 bg-blue-50 text-blue-700 rounded-full text-sm font-medium cursor-pointer hover:bg-blue-100 transition-colors">Frontend
-              Developer</span>
-            <span
-              class="popular-search-tag px-3 py-1.5 bg-green-50 text-green-700 rounded-full text-sm font-medium cursor-pointer hover:bg-green-100 transition-colors">React</span>
-            <span
-              class="popular-search-tag px-3 py-1.5 bg-purple-50 text-purple-700 rounded-full text-sm font-medium cursor-pointer hover:bg-purple-100 transition-colors">Remote</span>
-            <span
-              class="popular-search-tag px-3 py-1.5 bg-orange-50 text-orange-700 rounded-full text-sm font-medium cursor-pointer hover:bg-orange-100 transition-colors">Full
-              Stack</span>
-            <span
-              class="popular-search-tag px-3 py-1.5 bg-pink-50 text-pink-700 rounded-full text-sm font-medium cursor-pointer hover:bg-pink-100 transition-colors">UI/UX
-              Designer</span>
-            <span
-              class="popular-search-tag px-3 py-1.5 bg-indigo-50 text-indigo-700 rounded-full text-sm font-medium cursor-pointer hover:bg-indigo-100 transition-colors">Node.js</span>
-          </div>
-        </div>
-
-        <!-- Suggested Jobs -->
-        <div id="suggested-jobs">
-
-        </div>
       </div>
-
-      <!-- Profile Modal -->
-      <div id="profile-modal"
-        class="modal-content fixed -bottom-20 left-0 right-0 bg-white rounded-t-3xl p-6 pb-20 max-h-[80vh] h-full overflow-y-auto hidden">
-        <div class="w-12 h-1 bg-gray-300 rounded-full mx-auto mb-6"></div>
-        <div class="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
-          <h2 class="text-2xl font-bold leading-tight text-black sm:text-3xl">Your Dream Job Awaits – Sign In</h2>
-          <p class="mt-2 text-base text-gray-700">Don’t have an account? <a href="/src/pages/resister.html" title=""
-              class="font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 hover:underline focus:text-blue-700">Create
-              a free account</a></p>
-
-          <form action="#" method="POST" class="mt-8">
-            <div class="space-y-5">
-              <div>
-                <label for="" class="text-base font-medium text-gray-900"> Email address </label>
-                <div class="mt-2.5">
-                  <input type="email" name="" id="" placeholder="Enter email to get started"
-                    class="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600" />
-                </div>
-              </div>
-
-              <div>
-                <div class="flex items-center justify-between">
-                  <label for="" class="text-base font-medium text-gray-900"> Password </label>
-
-                  <a href="#" title=""
-                    class="text-sm font-medium text-blue-600 hover:underline hover:text-blue-700 focus:text-blue-700">
-                    Forgot password? </a>
-                </div>
-                <div class="mt-2.5">
-                  <input type="password" name="" id="" placeholder="Enter your password"
-                    class="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600" />
-                </div>
-              </div>
-
-              <div>
-                <button type="submit"
-                  class="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md focus:outline-none hover:bg-blue-700 focus:bg-blue-700">Log
-                  in</button>
-              </div>
-            </div>
-          </form>
-
-          <div class="mt-3 space-y-3">
-            <button type="button"
-              class="relative inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-gray-700 transition-all duration-200 bg-white border-2 border-gray-200 rounded-md hover:bg-gray-100 focus:bg-gray-100 hover:text-black focus:text-black focus:outline-none">
-              <div class="absolute inset-y-0 left-0 p-4">
-                <svg class="w-6 h-6 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                  fill="currentColor">
-                  <path
-                    d="M20.283 10.356h-8.327v3.451h4.792c-.446 2.193-2.313 3.453-4.792 3.453a5.27 5.27 0 0 1-5.279-5.28 5.27 5.27 0 0 1 5.279-5.279c1.259 0 2.397.447 3.29 1.178l2.6-2.599c-1.584-1.381-3.615-2.233-5.89-2.233a8.908 8.908 0 0 0-8.934 8.934 8.907 8.907 0 0 0 8.934 8.934c4.467 0 8.529-3.249 8.529-8.934 0-.528-.081-1.097-.202-1.625z">
-                  </path>
-                </svg>
-              </div>
-              Sign in with Google
-            </button>
-
-            <button type="button"
-              class="relative inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-gray-700 transition-all duration-200 bg-white border-2 border-gray-200 rounded-md hover:bg-gray-100 focus:bg-gray-100 hover:text-black focus:text-black focus:outline-none">
-              <div class="absolute inset-y-0 left-0 p-4">
-                <img class="w-6 h-6 text-rose-500" src="src/image/icon/kalbela.png" alt="kalbela">
-              </div>
-              Sign in with Facebook
-            </button>
-          </div>
-        </div>
-        <!-- <div class="text-center mb-6">
+      <!-- <div class="text-center mb-6">
               <div class="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <span class="text-2xl font-bold text-white">JD</span>
               </div>
@@ -1205,33 +1256,33 @@
               <p class="text-gray-500">Frontend Developer</p>
               <p class="text-sm text-gray-600">john.doe@example.com</p>
           </div> -->
-        <div class="space-y-3 hidden">
-          <div class="flex items-center p-3 rounded-lg hover:bg-gray-50 cursor-pointer">
-            <svg class="w-5 h-5 text-gray-700 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-            </svg>
-            <span class="font-medium text-gray-800">Edit Profile</span>
-          </div>
-          <div class="flex items-center p-3 rounded-lg hover:bg-gray-50 cursor-pointer">
-            <svg class="w-5 h-5 text-gray-700 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-              </path>
-            </svg>
-            <span class="font-medium text-gray-800">My Resume</span>
-          </div>
-          <div class="flex items-center p-3 rounded-lg hover:bg-gray-50 cursor-pointer">
-            <svg class="w-5 h-5 text-gray-700 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
-              </path>
-            </svg>
-            <span class="font-medium text-gray-800">Privacy Settings</span>
-          </div>
+      <div class="space-y-3 hidden">
+        <div class="flex items-center p-3 rounded-lg hover:bg-gray-50 cursor-pointer">
+          <svg class="w-5 h-5 text-gray-700 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+          </svg>
+          <span class="font-medium text-gray-800">Edit Profile</span>
+        </div>
+        <div class="flex items-center p-3 rounded-lg hover:bg-gray-50 cursor-pointer">
+          <svg class="w-5 h-5 text-gray-700 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+            </path>
+          </svg>
+          <span class="font-medium text-gray-800">My Resume</span>
+        </div>
+        <div class="flex items-center p-3 rounded-lg hover:bg-gray-50 cursor-pointer">
+          <svg class="w-5 h-5 text-gray-700 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
+            </path>
+          </svg>
+          <span class="font-medium text-gray-800">Privacy Settings</span>
         </div>
       </div>
     </div>
+  </div>
   </div>
   <div class=" base-container bg-transparent ">
     <div style="box-shadow: rgb(0 0 0 / 4%) 0px -20px 20px 0px"
@@ -3775,13 +3826,13 @@
 
       <!-- Tabs -->
       <div class="bg-white lg:w-[960px]  w-full mx-auto rounded-lg border border-gray-200 overflow-hidden mb-8">
-        <div id="tabs" class="grid md:grid-cols-5 grid-cols-2">
+        <div id="tabs" class="md:grid md:grid-cols-5 grid-cols-2 flex flex-wrap">
           <button class="tab-btn active-tab text-white bg-blue-800 hover:bg-blue-900"
             data-tab="domestic">Domestic</button>
-          <button class="tab-btn" data-tab="skilled">Skilled</button>
-          <button class="tab-btn" data-tab="expire">Expire in 3 days</button>
-          <button class="tab-btn" data-tab="unskilled">Unskilled</button>
-          <button class="tab-btn" data-tab="foreign">Foreign</button>
+          <button class="tab-btn text-nowrap md:border-none border-b" data-tab="skilled">Skilled</button>
+          <button class="tab-btn text-nowrap md:border-none border-b" data-tab="expire">Expire in 3 days</button>
+          <button class="tab-btn text-nowrap md:border-none border-b" data-tab="unskilled">Unskilled</button>
+          <button class="tab-btn text-nowrap md:border-none " data-tab="foreign">Foreign</button>
         </div>
       </div>
 
@@ -4644,7 +4695,7 @@
     <!--///////////////// Sat Features //////////////////////-->
     <!--------------------------------------------------------->
     <section class=" bg-[#f3f5f7] m-auto overflow-hidden">
-      <div class="py-20 base-container">
+      <div class="md:py-20 py-10 base-container">
         <!-- Header -->
         <div class='text-center font-bold md:text-[1.8rem]  text-[1.3rem]  text-2xl pb-6'>
           Kalbela Jobs Features
@@ -4655,11 +4706,11 @@
         </div>
 
         <!-- Services Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-2 md:gap-6 gap-2 mt-6">
           <!-- Card 1: টেক || প্রোগ্রামিং -->
           <a href="/src/pages/under-construction.html"
-            class="relative bg-white shadow-md border-l-4 border-purple-500 p-6 hover:shadow-lg transition-shadow">
-            <div class="flex items-start space-x-4">
+            class="relative bg-white shadow-md md:border-l-4 md:border-t-0 border-t-4 border-purple-500 md:p-6 p-3 hover:shadow-lg transition-shadow md:rounded-none rounded-md">
+            <div class="md:flex items-start md:space-x-4 md:space-y-0 space-y-4">
               <div class="w-16 h-16 text-white bg-purple-600 rounded-xl flex items-center justify-center flex-shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
@@ -4681,11 +4732,11 @@
                 </svg>
               </div>
               <div>
-                <h3 class="text-lg font-semibold text-gray-800 mb-1">টেক || প্রোগ্রামিং</h3>
+                <h3 class="md:text-lg text-sm font-semibold text-gray-800 mb-1">টেক || প্রোগ্রামিং</h3>
                 <p class="text-sm text-gray-600">টেক এবং প্রোগ্রামিং সেকশন</p>
               </div>
             </div>
-            <div class="absolute -right-2 -top-2">
+            <div class="absolute -right-2 -top-2 z-10 z-10">
               <div class="relative w-[32px] h-[32px]">
                 <span class="absolute inset-0 rounded-full animate-ping border-2 border-red-500"></span>
                 <span
@@ -4698,8 +4749,8 @@
 
           <!-- Card 2: সম-জাতক শেয়ার -->
           <a href="/src/pages/under-construction.html"
-            class="bg-white shadow-md border-l-4 border-green-500 p-6 hover:shadow-lg transition-shadow">
-            <div class="flex items-start space-x-4">
+            class="relative bg-white relative bg-white shadow-md md:border-l-4 md:border-t-0 border-t-4 border-green-500 md:p-6 p-3 hover:shadow-lg transition-shadow md:rounded-none rounded-md md:p-6 p-3 hover:shadow-lg transition-shadow md:rounded-none rounded-md">
+            <div class="md:flex items-start md:space-x-4 md:space-y-0 space-y-4">
               <div class="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center flex-shrink-0 text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
@@ -4711,7 +4762,7 @@
                 </svg>
               </div>
               <div>
-                <h3 class="text-lg font-semibold text-gray-800 mb-1">সম-জাতক শেয়ার</h3>
+                <h3 class="md:text-lg text-sm font-semibold text-gray-800 mb-1">সম-জাতক শেয়ার</h3>
                 <p class="text-sm text-gray-600">বন্ধুদের সাথে শেয়ার করুন</p>
               </div>
             </div>
@@ -4719,9 +4770,9 @@
 
           <!-- Card 3: তথ্য প্রযুক্তি -->
           <a href="/src/pages/under-construction.html"
-            class="bg-white shadow-md border-l-4 border-red-500 p-6 hover:shadow-lg transition-shadow">
-            <div class="flex items-start space-x-4">
-              <div class="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center flex-shrink-0 text-white">
+            class="relative bg-white relative bg-white shadow-md md:border-l-4 md:border-t-0 border-t-4 border-indigo-700 md:p-6 p-3 hover:shadow-lg transition-shadow md:rounded-none rounded-md  md:p-6 p-3 hover:shadow-lg transition-shadow md:rounded-none rounded-md">
+            <div class="md:flex items-start md:space-x-4 md:space-y-0 space-y-4">
+              <div class="w-16 h-16 bg-indigo-700 rounded-xl flex items-center justify-center flex-shrink-0 text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
                   class="lucide lucide-microchip-icon lucide-microchip">
@@ -4740,7 +4791,7 @@
                 </svg>
               </div>
               <div>
-                <h3 class="text-lg font-semibold text-gray-800 mb-1">তথ্য প্রযুক্তি</h3>
+                <h3 class="md:text-lg text-sm font-semibold text-gray-800 mb-1">তথ্য প্রযুক্তি</h3>
                 <p class="text-sm text-gray-600">তথ্যপ্রযুক্তি বিষয়ক পূর্ণাঙ্গ সমাধান</p>
               </div>
             </div>
@@ -4748,8 +4799,8 @@
 
           <!-- Card 4: চাকরির প্রযুক্তি -->
           <a href="/src/pages/under-construction.html"
-            class="bg-white shadow-md border-l-4 border-green-500 p-6 hover:shadow-lg transition-shadow">
-            <div class="flex items-start space-x-4">
+            class="relative bg-white relative bg-white shadow-md md:border-l-4 md:border-t-0 border-t-4 border-teal-600 md:p-6 p-3 hover:shadow-lg transition-shadow md:rounded-none rounded-md  md:p-6 p-3 hover:shadow-lg transition-shadow md:rounded-none rounded-md">
+            <div class="md:flex items-start md:space-x-4 md:space-y-0 space-y-4">
               <div class="w-16 h-16 bg-teal-600 rounded-xl flex items-center justify-center flex-shrink-0 text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
@@ -4761,7 +4812,7 @@
                 </svg>
               </div>
               <div>
-                <h3 class="text-lg font-semibold text-gray-800 mb-1">চাকরির প্রযুক্তি</h3>
+                <h3 class="md:text-lg text-sm font-semibold text-gray-800 mb-1">চাকরির প্রযুক্তি</h3>
                 <p class="text-sm text-gray-600">চাকরির প্রযুক্তির পূর্ণ সমাধান</p>
               </div>
             </div>
@@ -4769,9 +4820,9 @@
 
           <!-- Card 5: পার্টনার হাব -->
           <a href="/src/pages/under-construction.html"
-            class="relative bg-white shadow-md border-l-4 border-blue-500 p-6 hover:shadow-lg transition-shadow">
-            <div class="flex items-start space-x-4">
-              <div class="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center flex-shrink-0 text-white">
+            class="relative bg-white relative bg-white shadow-md md:border-l-4 md:border-t-0 border-t-4 border-violet-600 md:p-6 p-3 hover:shadow-lg transition-shadow md:rounded-none rounded-md md:p-6 p-3 hover:shadow-lg transition-shadow md:rounded-none rounded-md">
+            <div class="md:flex items-start md:space-x-4 md:space-y-0 space-y-4">
+              <div class="w-16 h-16 bg-violet-600 rounded-xl flex items-center justify-center flex-shrink-0 text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
                   class="lucide lucide-handshake-icon lucide-handshake">
@@ -4784,11 +4835,11 @@
                 </svg>
               </div>
               <div>
-                <h3 class="text-lg font-semibold text-gray-800 mb-1">পার্টনার হাব</h3>
+                <h3 class="md:text-lg text-sm font-semibold text-gray-800 mb-1">পার্টনার হাব</h3>
                 <p class="text-sm text-gray-600">পার্টনার আবেদনকারী</p>
               </div>
             </div>
-            <div class="absolute -right-2 -top-2">
+            <div class="absolute -right-2 -top-2 z-10">
               <div class="relative w-[32px] h-[32px]">
                 <span class="absolute inset-0 rounded-full animate-ping border-2 border-red-500"></span>
                 <span
@@ -4801,16 +4852,16 @@
 
           <!-- Card 6: কেস -->
           <a href="/src/pages/under-construction.html"
-            class="bg-white shadow-md border-l-4 border-blue-500 p-6 hover:shadow-lg transition-shadow">
-            <div class="flex items-start space-x-4">
-              <div class="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
+            class="relative bg-white relative bg-white shadow-md md:border-l-4 md:border-t-0 border-t-4 border-fuchsia-500 md:p-6 p-3 hover:shadow-lg transition-shadow md:rounded-none rounded-md  md:p-6 p-3 hover:shadow-lg transition-shadow md:rounded-none rounded-md">
+            <div class="md:flex items-start md:space-x-4 md:space-y-0 space-y-4">
+              <div class="w-16 h-16 bg-fuchsia-600 rounded-xl flex items-center justify-center flex-shrink-0">
                 <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path
                     d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
                 </svg>
               </div>
               <div>
-                <h3 class="text-lg font-semibold text-gray-800 mb-1">কেস</h3>
+                <h3 class="md:text-lg text-sm font-semibold text-gray-800 mb-1">কেস</h3>
                 <p class="text-sm text-gray-600">কেস স্টাডিজ</p>
               </div>
             </div>
@@ -4818,20 +4869,20 @@
 
           <!-- Card 7: E-Question Builder -->
           <a href="/src/pages/under-construction.html"
-            class="relative bg-white shadow-md border-l-4 border-teal-500 p-6 hover:shadow-lg transition-shadow">
-            <div class="flex items-start space-x-4">
-              <div class="w-16 h-16 bg-gray-600 rounded-xl flex items-center justify-center flex-shrink-0">
+            class="relative bg-white relative bg-white shadow-md md:border-l-4 md:border-t-0 border-t-4 border-pink-500 md:p-6 p-3 hover:shadow-lg transition-shadow md:rounded-none rounded-md  md:p-6 p-3 hover:shadow-lg transition-shadow md:rounded-none rounded-md">
+            <div class="md:flex items-start md:space-x-4 md:space-y-0 space-y-4">
+              <div class="w-16 h-16 bg-pink-600 rounded-xl flex items-center justify-center flex-shrink-0">
                 <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path
                     d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 2 2h8c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
                 </svg>
               </div>
               <div>
-                <h3 class="text-lg font-semibold text-gray-800 mb-1">E-Question Builder</h3>
+                <h3 class="md:text-lg text-sm font-semibold text-gray-800 mb-1">E-Question Builder</h3>
                 <p class="text-sm text-gray-600">প্রশ্ন তৈরি করার সহজ উপায়</p>
               </div>
             </div>
-            <div class="absolute -right-2 -top-2">
+            <div class="absolute -right-2 -top-2 z-10">
               <div class="relative w-[32px] h-[32px]">
                 <span class="absolute inset-0 rounded-full animate-ping border-2 border-red-500"></span>
                 <span
@@ -4844,15 +4895,15 @@
 
           <!-- Card 8: একাউন্ট বোর্ড -->
           <a href="/src/pages/under-construction.html"
-            class="bg-white shadow-md border-l-4 border-green-500 p-6 hover:shadow-lg transition-shadow relative">
-            <div class="flex items-start space-x-4">
-              <div class="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center flex-shrink-0">
+            class="relative bg-white  shadow-md md:border-l-4 md:border-t-0 border-t-4 border-emerald-500 md:p-6 p-3 hover:shadow-lg transition-shadow md:rounded-none rounded-md ">
+            <div class="md:flex items-start md:space-x-4 md:space-y-0 space-y-4">
+              <div class="w-16 h-16 bg-emerald-500 rounded-xl flex items-center justify-center flex-shrink-0">
                 <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z" />
                 </svg>
               </div>
               <div>
-                <h3 class="text-lg font-semibold text-gray-800 mb-1">একাউন্ট বোর্ড</h3>
+                <h3 class="md:text-lg text-sm font-semibold text-gray-800 mb-1">একাউন্ট বোর্ড</h3>
                 <p class="text-sm text-gray-600">ব্যাংকিং ও হিসাবরক্ষণ সেবা</p>
               </div>
             </div>
@@ -4860,27 +4911,26 @@
 
           <!-- Card 9: বই -->
           <a href="/src/pages/under-construction.html"
-            class="bg-white relative shadow-md border-l-4 border-red-500 p-6 hover:shadow-lg transition-shadow">
-            <div class="flex items-start space-x-4">
-              <div class="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center flex-shrink-0">
+            class="relative bg-white relative bg-white shadow-md md:border-l-4 md:border-t-0 border-t-4 border-cyan-600 md:p-6 p-3 hover:shadow-lg transition-shadow md:rounded-none rounded-md ">
+            <div class="md:flex items-start md:space-x-4 md:space-y-0 space-y-4">
+              <div class="w-16 h-16 bg-cyan-600 rounded-xl flex items-center justify-center flex-shrink-0">
                 <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path
                     d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z" />
                 </svg>
               </div>
               <div>
-                <h3 class="text-lg font-semibold text-gray-800 mb-1">বই</h3>
+                <h3 class="md:text-lg text-sm font-semibold text-gray-800 mb-1">বই</h3>
                 <p class="text-sm text-gray-600">বই সংগ্রহশালা</p>
               </div>
-
-              <div class="absolute -right-2 -top-2">
-                <div class="relative w-[32px] h-[32px]">
-                  <span class="absolute inset-0 rounded-full animate-ping border-2 border-red-500"></span>
-                  <span
-                    class="absolute top-0 left-0 bg-gradient-to-r from-[red] to-green-600 text-white text-[8px] text-center w-[30px] h-[30px] flex items-center justify-center rounded-full font-medium z-10">
-                    New
-                  </span>
-                </div>
+            </div>
+            <div class="absolute -right-2 -top-2 z-10">
+              <div class="relative w-[32px] h-[32px]">
+                <span class="absolute inset-0 rounded-full animate-ping border-2 border-red-500"></span>
+                <span
+                  class="absolute top-0 left-0 bg-gradient-to-r from-[red] to-green-600 text-white text-[8px] text-center w-[30px] h-[30px] flex items-center justify-center rounded-full font-medium z-10">
+                  New
+                </span>
               </div>
             </div>
           </a>
@@ -4900,10 +4950,10 @@
           </div>
         </div>
         <div
-          class="grid grid-cols-1 mt-10 text-center sm:mt-16 sm:grid-cols-2 sm:gap-x-12 gap-y-12 md:grid-cols-3 md:gap-0 xl:mt-16 lg:px-16 pb-4 pt-0">
+          class="grid grid-cols-2 mt-10 text-center sm:mt-16 sm:grid-cols-2 sm:gap-x-12 md:gap-y-0 gap-y-4 md:grid-cols-3 md:gap-0 xl:mt-16 lg:px-16 pb-4 pt-0">
 
           <!-- Card 1 -->
-          <a href="/search-details" class="md:p-8 group duration-150 lg:p-8">
+          <a href="/search-details" class="md:p-8  group duration-150 lg:p-8">
             <svg class="w-10 h-10 duration-150 group-hover:text-blue-700 group-hover:scale-[1.2] text-gray-500 m-auto"
               xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -4912,10 +4962,9 @@
               <circle cx="11" cy="11" r="8" />
             </svg>
 
-            <h3 class="mt-4 text-xl font-bold group-hover:text-blue-700">Search Job</h3>
-            <p class="mt-5 text-gray-500">Search, view apply to any jobs from anywhere.</p>
+            <h3 class="mt-4 md:text-xl text-md font-bold group-hover:text-blue-700">Search Job</h3>
+            <p class="md:mt-5 mt-3 md:text-sm text-xs text-gray-500">Search, view apply to any jobs from anywhere.</p>
           </a>
-
 
           <!-- Card 2 -->
           <a href="/search-details" class="md:p-8 group lg:p-8 md:border-l md:border-gray-200">
@@ -4928,12 +4977,12 @@
               <path d="M22 13a18.15 18.15 0 0 1-20 0" />
               <rect width="20" height="14" x="2" y="6" rx="2" />
             </svg>
-            <h3 class="mt-4 text-xl font-bold group-hover:text-blue-700">Apply a Job</h3>
-            <p class="mt-5 text-gray-500">Apply to machine jobs from different sections.</p>
+            <h3 class="mt-4 md:text-xl text-md font-bold group-hover:text-blue-700">Apply a Job</h3>
+            <p class="md:mt-5 mt-3 md:text-sm text-xs text-gray-500">Apply to machine jobs from different sections.</p>
           </a>
 
           <!-- Card 3 -->
-          <a href="/user/resume_builder" class="md:p-8 group lg:p-8 md:border-l md:border-gray-200">
+          <a href="/user/resume_builder" class="md:p-8  group lg:p-8 md:border-l md:border-gray-200">
             <svg class="w-10 h-10 duration-150 group-hover:text-blue-700 group-hover:scale-[1.2] text-gray-500 m-auto"
               xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -4943,8 +4992,9 @@
               <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z" />
               <circle cx="12" cy="13" r="2" />
             </svg>
-            <h3 class="mt-4 text-xl font-bold group-hover:text-blue-700">Resume Bank</h3>
-            <p class="mt-5 text-gray-500">Find a suitable candidate from out large resume database.</p>
+            <h3 class="mt-4 md:text-xl text-md font-bold group-hover:text-blue-700">Resume Bank</h3>
+            <p class="md:mt-5 mt-3 md:text-sm text-xs text-gray-500">Find a suitable candidate from out large resume
+              database.</p>
           </a>
 
           <!-- Card 4 -->
@@ -4957,8 +5007,9 @@
               <path
                 d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" />
             </svg>
-            <h3 class="mt-4 text-xl font-bold group-hover:text-blue-700">Notification</h3>
-            <p class="mt-5 text-gray-500">Get notify about new job posting matched jobs, and more.</p>
+            <h3 class="mt-4 md:text-xl text-md font-bold group-hover:text-blue-700">Notification</h3>
+            <p class="md:mt-5 mt-3 md:text-sm text-xs text-gray-500">Get notify about new job posting matched jobs, and
+              more.</p>
           </a>
 
           <!-- Card 5 -->
@@ -4971,8 +5022,9 @@
                 d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" />
               <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" />
             </svg>
-            <h3 class="mt-4 text-xl font-bold group-hover:text-blue-700">Easy Payment</h3>
-            <p class="mt-5 text-gray-500">Very easy to make payment for your purchased services.</p>
+            <h3 class="mt-4 md:text-xl text-md font-bold group-hover:text-blue-700">Easy Payment</h3>
+            <p class="md:mt-5 mt-3 md:text-sm text-xs text-gray-500">Very easy to make payment for your purchased
+              services.</p>
           </a>
 
           <!-- Card 6 -->
@@ -4985,8 +5037,9 @@
                 d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z" />
               <path d="M21 16v2a4 4 0 0 1-4 4h-5" />
             </svg>
-            <h3 class="mt-4 text-xl font-bold group-hover:text-blue-700">Happy Support</h3>
-            <p class="mt-5 text-gray-500">For any kind of assistance feel free to contact us.</p>
+            <h3 class="mt-4 md:text-xl text-md font-bold group-hover:text-blue-700">Happy Support</h3>
+            <p class="md:mt-5 mt-3 md:text-sm text-xs text-gray-500">For any kind of assistance feel free to contact us.
+            </p>
           </a>
 
         </div>
@@ -5009,170 +5062,170 @@
 
         <div class="grid md:grid-cols-3 md:gap-0 gap-4">
 
-          <div class="grid md:grid-cols-1 gap-1 overflow-y-auto h-[410px] bg-gray-50">
-          
-            <div class="grid grid-cols-3 items-start border-b">
+          <div class="grid md:grid-cols-1 md:gap-1 overflow-y-auto h-[410px] bg-gray-50">
+
+            <div class="grid grid-cols-3 items-start border-b group">
               <div class="relative group duration-200 overflow-hidden">
                 <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
                 <div
                   class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
-                    <a href="/src/pages/blog-details.html"
-                      class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
-                      <i class="ri-article-line"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-span-2 card-body px-2 py-2">
                   <a href="/src/pages/blog-details.html"
-                    class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
-                    জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                    class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                    <i class="ri-article-line"></i>
                   </a>
                 </div>
               </div>
-
-              <div class="grid grid-cols-3 items-start border-b">
-                <div class="relative group duration-200 overflow-hidden">
-                  <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
-                  <div
-                    class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
-                    <a href="/src/pages/blog-details.html"
-                      class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
-                      <i class="ri-article-line"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-span-2 card-body px-2 py-2 ">
-                  <a href="/src/pages/blog-details.html"
-                    class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
-                    জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
-                  </a>
-                </div>
+              <div class="col-span-2 card-body px-2 md:py-2 py-1">
+                <a href="/src/pages/blog-details.html"
+                  class="md:text-md text-sm text-primary_blue lg:mb-2 mr-2 md:mr-0 group-hover:text-blue-600 ">
+                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
               </div>
-
-
-              <div class="grid grid-cols-3 items-start border-b">
-                <div class="relative group duration-200 overflow-hidden">
-                  <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
-                  <div
-                    class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
-                    <a href="/src/pages/blog-details.html"
-                      class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
-                      <i class="ri-article-line"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-span-2 card-body px-2 py-2 ">
-                  <a href="/src/pages/blog-details.html"
-                    class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
-                    জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="grid grid-cols-3 items-start border-b">
-                <div class="relative group duration-200 overflow-hidden">
-                  <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
-                  <div
-                    class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
-                    <a href="/src/pages/blog-details.html"
-                      class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
-                      <i class="ri-article-line"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-span-2 card-body px-2 py-2 ">
-                  <a href="/src/pages/blog-details.html"
-                    class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
-                    জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
-                  </a>
-                </div>
-              </div>
-
-              <div class="grid grid-cols-3 items-start border-b">
-                <div class="relative group duration-200 overflow-hidden">
-                  <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
-                  <div
-                    class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
-                    <a href="/src/pages/blog-details.html"
-                      class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
-                      <i class="ri-article-line"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-span-2 card-body px-2 py-2 ">
-                  <a href="/src/pages/blog-details.html"
-                    class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
-                    জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
-                  </a>
-                </div>
-              </div>
-
-              <div class="grid grid-cols-3 items-start border-b">
-                <div class="relative group duration-200 overflow-hidden">
-                  <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
-                  <div
-                    class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
-                    <a href="/src/pages/blog-details.html"
-                      class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
-                      <i class="ri-article-line"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-span-2 card-body px-2 py-2 ">
-                  <a href="/src/pages/blog-details.html"
-                    class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
-                    জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="grid grid-cols-3 items-start border-b">
-                <div class="relative group duration-200 overflow-hidden">
-                  <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
-                  <div
-                    class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
-                    <a href="/src/pages/blog-details.html"
-                      class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
-                      <i class="ri-article-line"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-span-2 card-body px-2 py-2 ">
-                  <a href="/src/pages/blog-details.html"
-                    class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
-                    জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="grid grid-cols-3 items-start border-b">
-                <div class="relative group duration-200 overflow-hidden">
-                  <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
-                  <div
-                    class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
-                    <a href="/src/pages/blog-details.html"
-                      class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
-                      <i class="ri-article-line"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-span-2 card-body px-2 py-2 ">
-                  <a href="/src/pages/blog-details.html"
-                    class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
-                    জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
-                  </a>
-                </div>
-              </div>
-
-
-
             </div>
 
-          <div class="px-4">
-            <div class="">
+            <div class="grid grid-cols-3 items-start border-b group">
+              <div class="relative group duration-200 overflow-hidden">
+                <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
+                <div
+                  class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
+                  <a href="/src/pages/blog-details.html"
+                    class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                    <i class="ri-article-line"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-span-2 card-body px-2 md:py-2 py-1 ">
+                <a href="/src/pages/blog-details.html"
+                  class="md:text-md text-sm text-primary_blue lg:mb-2 mr-2 md:mr-0 group-hover:text-blue-600 ">
+                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
+              </div>
+            </div>
+
+
+            <div class="grid grid-cols-3 items-start border-b group">
+              <div class="relative group duration-200 overflow-hidden">
+                <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
+                <div
+                  class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
+                  <a href="/src/pages/blog-details.html"
+                    class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                    <i class="ri-article-line"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-span-2 card-body px-2 md:py-2 py-1 ">
+                <a href="/src/pages/blog-details.html"
+                  class="md:text-md text-sm text-primary_blue lg:mb-2 mr-2 md:mr-0 group-hover:text-blue-600 ">
+                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
+              </div>
+            </div>
+
+
+            <div class="grid grid-cols-3 items-start border-b group">
+              <div class="relative group duration-200 overflow-hidden">
+                <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
+                <div
+                  class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
+                  <a href="/src/pages/blog-details.html"
+                    class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                    <i class="ri-article-line"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-span-2 card-body px-2 md:py-2 py-1 ">
+                <a href="/src/pages/blog-details.html"
+                  class="md:text-md text-sm text-primary_blue lg:mb-2 mr-2 md:mr-0 group-hover:text-blue-600 ">
+                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 items-start border-b group">
+              <div class="relative group duration-200 overflow-hidden">
+                <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
+                <div
+                  class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
+                  <a href="/src/pages/blog-details.html"
+                    class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                    <i class="ri-article-line"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-span-2 card-body px-2 md:py-2 py-1 ">
+                <a href="/src/pages/blog-details.html"
+                  class="md:text-md text-sm text-primary_blue lg:mb-2 mr-2 md:mr-0 group-hover:text-blue-600 ">
+                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 items-start border-b group">
+              <div class="relative group duration-200 overflow-hidden">
+                <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
+                <div
+                  class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
+                  <a href="/src/pages/blog-details.html"
+                    class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                    <i class="ri-article-line"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-span-2 card-body px-2 md:py-2 py-1 ">
+                <a href="/src/pages/blog-details.html"
+                  class="md:text-md text-sm text-primary_blue lg:mb-2 mr-2 md:mr-0 group-hover:text-blue-600 ">
+                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
+              </div>
+            </div>
+
+
+            <div class="grid grid-cols-3 items-start border-b group">
+              <div class="relative group duration-200 overflow-hidden">
+                <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
+                <div
+                  class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
+                  <a href="/src/pages/blog-details.html"
+                    class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                    <i class="ri-article-line"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-span-2 card-body px-2 md:py-2 py-1 ">
+                <a href="/src/pages/blog-details.html"
+                  class="md:text-md text-sm text-primary_blue lg:mb-2 mr-2 md:mr-0 group-hover:text-blue-600 ">
+                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
+              </div>
+            </div>
+
+
+            <div class="grid grid-cols-3 items-start border-b group">
+              <div class="relative group duration-200 overflow-hidden">
+                <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
+                <div
+                  class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
+                  <a href="/src/pages/blog-details.html"
+                    class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                    <i class="ri-article-line"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-span-2 card-body px-2 md:py-2 py-1 ">
+                <a href="/src/pages/blog-details.html"
+                  class="md:text-md text-sm text-primary_blue lg:mb-2 mr-2 md:mr-0 group-hover:text-blue-600 ">
+                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <div class="md:px-4 px-0">
+            <div class="group">
               <div class="relative group duration-200 overflow-hidden">
                 <img src="https://lekhaporabd.net/wp-content/uploads/2025/07/BUBT-310x165.webp" alt="blog"
                   class="w-full">
@@ -5186,11 +5239,11 @@
               </div>
               <div class="card-body pt-2">
                 <a href="/src/pages/blog-details.html"
-                  class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-lg">
+                  class="md:text-xl text-lg text-primary_blue lg:mb-2 mr-2 md:mr-0 group-hover:text-blue-600 ">
                   ভর্তি চলছেঃ BUBT-এর অর্থনীতি প্রোগ্রামের মাধ্যমে আপনার ভবিষ্যৎ উন্মোচন করুন!
                 </a>
 
-                <p class="text-gray-500 text-sm mt-3">বাংলাদেশ ইউনিভার্সিটি অব বিজনেস অ্যান্ড টেকনোলজি (BUBT) তে এমএসসি,
+                <p class="text-gray-600 text-sm mt-3">বাংলাদেশ ইউনিভার্সিটি অব বিজনেস অ্যান্ড টেকনোলজি (BUBT) তে এমএসসি,
                   বিএসসি (সম্মান) অর্থনীতি প্রোগ্রামের মাধ্যমে আপনার …</p>
                 <br>
                 <a href="/src/pages/blog-details.html"
@@ -5200,168 +5253,163 @@
             </div>
           </div>
 
-          <div class="grid md:grid-cols-1 gap-3 overflow-y-auto h-[410px] bg-gray-50">
-            <div class="grid grid-cols-3 items-start gap-3">
+          <div class="grid md:grid-cols-1 md:gap-1 overflow-y-auto h-[410px] bg-gray-50">
+
+            <div class="grid grid-cols-3 items-start border-b group">
               <div class="relative group duration-200 overflow-hidden">
                 <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
                 <div
                   class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
-                    <a href="/src/pages/blog-details.html"
-                      class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
-                      <i class="ri-article-line"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-span-2 card-body px-2 py-2 ">
                   <a href="/src/pages/blog-details.html"
-                    class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
-                    জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                    class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                    <i class="ri-article-line"></i>
                   </a>
                 </div>
               </div>
-
-              <div class="grid grid-cols-3 items-start gap-3">
-                <div class="relative group duration-200 overflow-hidden">
-                  <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
-                  <div
-                    class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
-                    <a href="/src/pages/blog-details.html"
-                      class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
-                      <i class="ri-article-line"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-span-2 card-body px-2 py-2 ">
-                  <a href="/src/pages/blog-details.html"
-                    class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
-                    জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
-                  </a>
-                </div>
+              <div class="col-span-2 card-body px-2 md:py-2 py-1">
+                <a href="/src/pages/blog-details.html"
+                  class="md:text-md text-sm text-primary_blue lg:mb-2 mr-2 md:mr-0 group-hover:text-blue-600 ">
+                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
               </div>
-
-
-              <div class="grid grid-cols-3 items-start gap-3">
-                <div class="relative group duration-200 overflow-hidden">
-                  <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
-                  <div
-                    class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
-                    <a href="/src/pages/blog-details.html"
-                      class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
-                      <i class="ri-article-line"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-span-2 card-body px-2 py-2 ">
-                  <a href="/src/pages/blog-details.html"
-                    class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
-                    জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="grid grid-cols-3 items-start gap-3">
-                <div class="relative group duration-200 overflow-hidden">
-                  <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
-                  <div
-                    class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
-                    <a href="/src/pages/blog-details.html"
-                      class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
-                      <i class="ri-article-line"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-span-2 card-body px-2 py-2 ">
-                  <a href="/src/pages/blog-details.html"
-                    class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
-                    জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
-                  </a>
-                </div>
-              </div>
-
-              <div class="grid grid-cols-3 items-start gap-3">
-                <div class="relative group duration-200 overflow-hidden">
-                  <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
-                  <div
-                    class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
-                    <a href="/src/pages/blog-details.html"
-                      class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
-                      <i class="ri-article-line"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-span-2 card-body px-2 py-2 ">
-                  <a href="/src/pages/blog-details.html"
-                    class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
-                    জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
-                  </a>
-                </div>
-              </div>
-
-              <div class="grid grid-cols-3 items-start gap-3">
-                <div class="relative group duration-200 overflow-hidden">
-                  <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
-                  <div
-                    class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
-                    <a href="/src/pages/blog-details.html"
-                      class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
-                      <i class="ri-article-line"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-span-2 card-body px-2 py-2 ">
-                  <a href="/src/pages/blog-details.html"
-                    class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
-                    জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="grid grid-cols-3 items-start gap-3">
-                <div class="relative group duration-200 overflow-hidden">
-                  <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
-                  <div
-                    class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
-                    <a href="/src/pages/blog-details.html"
-                      class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
-                      <i class="ri-article-line"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-span-2 card-body px-2 py-2 ">
-                  <a href="/src/pages/blog-details.html"
-                    class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
-                    জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="grid grid-cols-3 items-start gap-3">
-                <div class="relative group duration-200 overflow-hidden">
-                  <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
-                  <div
-                    class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
-                    <a href="/src/pages/blog-details.html"
-                      class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
-                      <i class="ri-article-line"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-span-2 card-body px-2 py-2 ">
-                  <a href="/src/pages/blog-details.html"
-                    class="text-blue-600 hover:underline hover:text-danger-500 duration-150 text-sm">
-                    জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
-                  </a>
-                </div>
-              </div>
-
-
-
             </div>
 
-        </div> 
+            <div class="grid grid-cols-3 items-start border-b group">
+              <div class="relative group duration-200 overflow-hidden">
+                <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
+                <div
+                  class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
+                  <a href="/src/pages/blog-details.html"
+                    class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                    <i class="ri-article-line"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-span-2 card-body px-2 md:py-2 py-1 ">
+                <a href="/src/pages/blog-details.html"
+                  class="md:text-md text-sm text-primary_blue lg:mb-2 mr-2 md:mr-0 group-hover:text-blue-600 ">
+                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 items-start border-b group">
+              <div class="relative group duration-200 overflow-hidden">
+                <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
+                <div
+                  class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
+                  <a href="/src/pages/blog-details.html"
+                    class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                    <i class="ri-article-line"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-span-2 card-body px-2 md:py-2 py-1 ">
+                <a href="/src/pages/blog-details.html"
+                  class="md:text-md text-sm text-primary_blue lg:mb-2 mr-2 md:mr-0 group-hover:text-blue-600 ">
+                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 items-start border-b group">
+              <div class="relative group duration-200 overflow-hidden">
+                <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
+                <div
+                  class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
+                  <a href="/src/pages/blog-details.html"
+                    class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                    <i class="ri-article-line"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-span-2 card-body px-2 md:py-2 py-1 ">
+                <a href="/src/pages/blog-details.html"
+                  class="md:text-md text-sm text-primary_blue lg:mb-2 mr-2 md:mr-0 group-hover:text-blue-600 ">
+                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 items-start border-b group">
+              <div class="relative group duration-200 overflow-hidden">
+                <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
+                <div
+                  class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
+                  <a href="/src/pages/blog-details.html"
+                    class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                    <i class="ri-article-line"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-span-2 card-body px-2 md:py-2 py-1 ">
+                <a href="/src/pages/blog-details.html"
+                  class="md:text-md text-sm text-primary_blue lg:mb-2 mr-2 md:mr-0 group-hover:text-blue-600 ">
+                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 items-start border-b group">
+              <div class="relative group duration-200 overflow-hidden">
+                <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
+                <div
+                  class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
+                  <a href="/src/pages/blog-details.html"
+                    class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                    <i class="ri-article-line"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-span-2 card-body px-2 md:py-2 py-1 ">
+                <a href="/src/pages/blog-details.html"
+                  class="md:text-md text-sm text-primary_blue lg:mb-2 mr-2 md:mr-0 group-hover:text-blue-600 ">
+                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 items-start border-b group">
+              <div class="relative group duration-200 overflow-hidden">
+                <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
+                <div
+                  class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
+                  <a href="/src/pages/blog-details.html"
+                    class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                    <i class="ri-article-line"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-span-2 card-body px-2 md:py-2 py-1 ">
+                <a href="/src/pages/blog-details.html"
+                  class="md:text-md text-sm text-primary_blue lg:mb-2 mr-2 md:mr-0 group-hover:text-blue-600 ">
+                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 items-start border-b group">
+              <div class="relative group duration-200 overflow-hidden">
+                <img src="https://lekhaporabd.net/wp-content/uploads/2025/05/vorti.png" alt="blog" class="w-full">
+                <div
+                  class="opacity-0 group-hover:opacity-100  absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 text-white flex items-center justify-center duration-200 group">
+                  <a href="/src/pages/blog-details.html"
+                    class="duration-200 scale-[0.5] group-hover:scale-[1.3] w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                    <i class="ri-article-line"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-span-2 card-body px-2 md:py-2 py-1 ">
+                <a href="/src/pages/blog-details.html"
+                  class="md:text-md text-sm text-primary_blue lg:mb-2 mr-2 md:mr-0 group-hover:text-blue-600 ">
+                  জাতীয় বিশ্ববিদ্যালয়ের আন্ডারগ্রাজুয়েট ভর্তি বিজ্ঞপ্তি ২০২৪-২৫ প্রকাশিত
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
       </div>
 
       <br>
@@ -5389,10 +5437,10 @@
         <br>
         <div class="relative overflow-hidden">
           <div
-            class="absolute left-0 top-0 w-32 h-full bg-gradient-to-r from-white to-transparent z-10 pointer-events-none">
+            class="absolute left-0 top-0 md:w-32 w-4 h-full bg-gradient-to-r from-white to-transparent z-10 pointer-events-none">
           </div>
           <div
-            class="absolute right-0 top-0 w-32 h-full bg-gradient-to-l from-white to-transparent z-10 pointer-events-none">
+            class="absolute right-0 top-0 md:w-32 w-4 h-full bg-gradient-to-l from-white to-transparent z-10 pointer-events-none">
           </div>
           <div class="testimonial-container group pb-6">
             <div class="flex space-x-6 animate-scroll group-hover:pause">
@@ -5671,7 +5719,7 @@
             <h1 style="line-height: 1.4;" class="text-3xl font-bold text-white sm:text-4xl xl:text-4xl">
               Download Our Mobile App & Stay Connected!
             </h1>
-            <p class="mt-6 text-sm font-thin text-gray-600">
+            <p class="mt-6 text-sm font-thin text-gray-300">
               Experience seamless access to our platform with our mobile app, designed for convenience and efficiency.
               Stay updated, manage your activities, and enjoy a smooth user experience anytime, anywhere. Download now
               and unlock exclusive features at your fingertips!
@@ -5830,7 +5878,7 @@
 
         <!-- Column 2 -->
         <div>
-          <p class="text-base text-gray-600">Our Services</p>
+          <p class="text-base text-blue-300">Our Services</p>
           <ul class="mt-8 space-y-4 text-white">
             <li><a href="../src/pages/pbo-post.html" class="hover:text-opacity-80">POB Post</a></li>
             <li><a href="#" class="hover:text-opacity-80">Resume Bank</a></li>
@@ -5843,7 +5891,7 @@
 
         <!-- Column 3 -->
         <div>
-          <p class="text-base text-gray-600">Jobs by Section</p>
+          <p class="text-base text-blue-300">Jobs by Section</p>
           <ul class="mt-8 space-y-4 text-white">
             <li><a href="/src/pages/local-jobs.html" class="hover:text-opacity-80">Local Jobs</a></li>
             <li><a href="/src/pages/all-government-jobs.html" class="hover:text-opacity-80">Government Jobs</a></li>
@@ -5857,7 +5905,7 @@
 
         <!-- Column 4 -->
         <div>
-          <p class="text-base text-gray-600">Employers</p>
+          <p class="text-base text-blue-300">Employers</p>
           <ul class="mt-8 space-y-4 text-white">
             <li><a href="#" class="hover:text-opacity-80">Post Jobs</a></li>
             <li><a href="#" class="hover:text-opacity-80">Resume Bank</a></li>
@@ -5906,8 +5954,8 @@
 
   <script type="module" src="/src/js/main.js"></script>
   <script src="/src/js/specialJob.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="/src/js/swiper.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/src/js/swiper.js"></script>
   <script>
     let deferredPrompt;
 
