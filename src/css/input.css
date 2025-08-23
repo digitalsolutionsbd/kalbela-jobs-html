@@ -14,15 +14,15 @@
     --popover-foreground: #0a0a0a;
    
     --foreground: #0a0a0a;
-    --foreground-50: #f9fafb;
-    --foreground-100: #f3f4f6;
-    --foreground-200: #e5e7eb;
-    --foreground-300: #d1d5db;
-    --foreground-400: #9ca3af;
-    --foreground-500: #6b7280;
-    --foreground-600: #4b5563;
-    --foreground-700: #374151;
-    --foreground-800: #1f2937;
+    --foreground-50: #cfd0d0;
+    --foreground-100: #737578;
+    --foreground-200: #53555b;
+    --foreground-300: #3a404b;
+    --foreground-400: #38404f;
+    --foreground-500: #31353c;
+    --foreground-600: #2a313a;
+    --foreground-700: #2a313c;
+    --foreground-800: #262d37;
     --foreground-900: #111827; 
     
     --primary: #005aec;

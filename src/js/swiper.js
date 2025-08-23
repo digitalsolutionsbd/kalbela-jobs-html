@@ -81,35 +81,3 @@
       clickable: true,
     },
   })
-  
-  /********************************
-   **** Tags slider ****
-   ********************************/
-  const tagsSlider = new Swiper(".tagsSlider", {
-  spaceBetween: 15,
-  loop: true,
-  autoplay: false,
-  navigation: {
-     nextEl: ".custom-next",
-    prevEl: ".custom-prev", 
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-  breakpoints: {
-    320: {
-      slidesPerView: 3,
-    },
-    480: {
-      slidesPerView: 3,
-    },
-    768: {
-      slidesPerView: 3,
-    },
-    1024: {
-      slidesPerView: 6,  
-    },
-  },
-});

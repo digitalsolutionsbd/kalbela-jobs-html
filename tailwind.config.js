@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{html,js}"
+    "./src/**/*.{html,js}",
   ],  
   safelist: [
     'opacity-0',
@@ -29,12 +29,13 @@ export default {
     'mr-2',
     'text-gray-400',
     'w-[760px]'
-  ],  theme: {
+  ],
+  important: true,
+  theme: {
     extend: {
       screens: {
         '3xl': '1920px',
       },
-      important: true,
       maxWidth: {
         'screen-3xl': '1920px',
       },
@@ -92,7 +93,6 @@ export default {
         'primary-blue': 'var(--primary-blue)',
         'dark-blue': 'var(--dark-blue)',
         background: 'var(--background)',
-        foreground: 'var(--foreground)',
         card: 'var(--card)',
         'card-foreground': 'var(--card-foreground)',
         popover: 'var(--popover)',

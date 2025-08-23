@@ -1,13 +1,10 @@
 import { initSmartDropdown, setupGlobalDropdownEvents } from "../dropdown.js";
 import { initTheme } from "../theme.js";
-import { initSidebar } from "./sidebar.js";
 
 window.addEventListener("DOMContentLoaded", () => {
      initSmartDropdown();
       setupGlobalDropdownEvents();
-  initSidebar();
-  initTheme();
-
+initTheme();
    // Delete Functionality
    document.addEventListener('click', function (event) {
     const deleteButton = event.target.closest('.delete-item');

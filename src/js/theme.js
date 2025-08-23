@@ -1,35 +1,3 @@
-// const saveTheme = (theme) => {
-//   localStorage.setItem('theme', theme);
-// };
-
-// const getSavedTheme = () => {
-//   return localStorage.getItem('theme') || 'light';
-// };
-
-// const applyTheme = (theme) => {
-//   const root = document.documentElement;
-//   root.classList.remove('theme-light', 'theme-dark', 'theme-teal', 'theme-orange');
-//   root.classList.add(`theme-${theme}`);
-//   saveTheme(theme);
-// };
-
-
-// const setupThemeButtons = () => {
-//   const themeButtons = document.querySelectorAll('.theme-button');
-//   themeButtons.forEach(button => {
-//     button.addEventListener('click', (event) => {
-//       const selectedTheme = event.target.dataset.theme;
-//       applyTheme(selectedTheme);
-//     });
-//   });
-// };
- 
-
-// export const initTheme = () => {
-//   const savedTheme = getSavedTheme();
-//    applyTheme(savedTheme);
-//   setupThemeButtons();
-// };
 
 
 const saveTheme = (theme) => {
